@@ -47,7 +47,7 @@ func (tree *BTree) InsertElement (element int) (_ int, err error) {
             return 1, err
         }
 
-        _, err = splitedRoot.insertNonFull(element)
+        _, err = splitedRoot.insertNonFull(element, tree.minNodes)
 
         if err != nil {
             return 1, err
@@ -56,7 +56,7 @@ func (tree *BTree) InsertElement (element int) (_ int, err error) {
         return 0, err
     }
 
-    _, err = currentRoot.insertNonFull(element)
+    _, err = currentRoot.insertNonFull(element, tree.minNodes)
 
     return 0, err
 }
@@ -81,14 +81,36 @@ func (tree *BTree) splitTreeNode (parentNode BTreeNode, indexChildNode int) (_ i
     }
 
     splitChild.numKeys = tree.minNodes - 1
-    slices.Insert(parentNode.children, indexChildNode + 1, newChild)
-    slices.Insert(parentNode.keys, indexChildNode, tree.minNodes)
+    parentNode.children = slices.Insert(parentNode.children, indexChildNode + 1, newChild)
+    parentNode.keys = slices.Insert(parentNode.keys, indexChildNode, tree.minNodes)
     parentNode.numKeys++
 
     return 0, err
 }
 
-func (treeNode *BTreeNode) insertNonFull (element int) (_ int, err error) {
+func (treeNode *BTreeNode) insertNonFull (element int, minNodes int) (_ int, err error) {
+    numNodeElements := treeNode.numKeys
+
+    if treeNode.leaf {
+        for numNodeElements >= 1 && element < treeNode.keys[numNodeElements] {
+            numNodeElements--    
+        }
+        
+        treeNode.keys = slices.Insert(treeNode.keys, numNodeElements + 1, element)
+
+    } else {
+        for numNodeElements >= 1 && element < treeNode.keys[numNodeElements] {
+            numNodeElements--
+        }
+
+        numNodeElements++
+        
+        if treeNode.children[numNodeElements].numKeys == (2 * minNodes) - 1 {
+            
+        }
+    }
+        
+
     return 0, err
 }
 
