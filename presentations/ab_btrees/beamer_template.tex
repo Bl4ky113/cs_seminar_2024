@@ -1,0 +1,52 @@
+% Listings code env and inline stuff
+\lstset{%
+basicstyle=\ttfamily%
+}
+
+\lstdefinestyle{codeinc}{%
+    escapechar=\%,%
+    numbers=left,%
+    stepnumber=1,%
+    tabsize=1,%
+    commentstyle=\color{gray},%
+    basicstyle=\small,%
+    breaklines=true,%
+    language=C%
+}
+
+% Text
+\setbeamercolor{titlelike}{fg=black}
+\setbeamerfont{titlelike}{size=\Large,series=\bfseries}
+
+\setbeamerfont{title}{series=\bfseries,size=\huge}
+\setbeamerfont{structure}{series=\bfseries,size=\large}
+\setbeamercolor{structure}{fg=black}
+
+\setbeamercolor{footline}{fg=gray}
+\setbeamerfont{footline}{size*={4.5}{-1}}
+\setbeamerfont{framenumber}{size*={8}{0}}
+
+% Frame columns sizes
+
+\newcommand{\textlecolumn}{0.9\textwidth}
+\newcommand{\textricolumn}{0.1\textwidth}
+
+% Footline
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{%
+    \hbox{%
+        \begin{beamercolorbox}[wd=1\paperwidth,dp=2.5ex,right]{framenumber}%
+            \usebeamerfont{framenumber}
+            \insertframenumber{}%
+            \hspace*{2ex}%
+        \end{beamercolorbox}
+    }%
+    \vskip0pt%
+    %
+    \begin{center}%
+        \vspace{-4mm}
+        Presentation made by \shortauthors{}. Contents and figures extracted from the book: Advanced Data Structures. Peter Brass. Cambridge University Press. 2008.
+        \vspace{-3mm}
+    \end{center}%
+%
+}

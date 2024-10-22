@@ -1,0 +1,195 @@
+\defverbatim[colored] \btreeStructure {%
+\begin{lstlisting}[style=codeinc]
+int alpha = 2 /* any int >= 2 */
+typedef struct btr_n_t { 
+    int isLeaf;
+    int numKeys;
+    int keys[2*alpha - 1];
+    struct btr_n_t *kids[2*alpha - 1];
+} tree_node_t;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeCreateEmpty {%
+\begin{lstlisting}[style=codeinc]
+bTree btCreate(void) {
+    bTree b;
+
+    b = malloc(sizeof(*b));
+    b->isLeaf = 1;
+    b->numKeys = 0;
+
+    return b;
+}
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchKey {%
+\begin{lstlisting}[style=codeinc]
+int searchKey(int n, const int *a, int key) {
+  int lo = -1;
+  int hi = n;
+  int mid;
+  while(lo + 1 < hi) {
+    mid = (lo+hi)/2;
+    if(a[mid] == key) {
+      return mid;
+    } else if(a[mid] < key) {
+      lo = mid;
+    } else {
+      hi = mid;
+    }
+  }
+  
+  return hi;
+}
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearch {%
+\begin{lstlisting}[style=codeinc]
+int btSearch(bTree b, int key) {
+  int pos;
+  /* have to check for empty tree */
+  if(b->numKeys == 0) {
+    return 0;
+  }
+  pos = searchKey(b->numKeys, b->keys, key);
+  if(pos < b->numKeys && b->keys[pos] == key) 
+    return 1;
+  else {
+    return(!b->isLeaf && btSearch(disk_read(b->kids[pos]), key));
+  }
+}
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeDestroy {%
+\begin{lstlisting}[style=codeinc]
+void btDestroy(bTree b) {
+  if(!b->isLeaf) {
+    for (int i = 0; i < b->numKeys + 1; i++) {
+      btDestroy(b->kids[i]);
+    }
+  }
+  free(b);
+}
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepOne {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+n = 2
+a = {3, 5}
+key = 4
+
+/* 
+  Start / First / Second / Third 
+*/
+lo = -1 ; 0 ; 1 ; 0 ;
+hi = 2 ; 2 ; 1 ; 1 ;
+mid = NULL ; 0 ; 1 ; 1 ;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepTwo {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+key = 4 ; pos = 1
+
+n = 2
+a = {3, 4}
+
+/* 
+  Start / First / Second
+*/
+lo = -1 ; 0 ; 1 ;
+hi = 2 ; 2 ; 1 ;
+mid = NULL ; 0 ; 1 ;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeInsert {%
+\begin{lstlisting}[style=codeinc]
+void btInsert(bTree b, int key) {
+  bTree b1, b2;
+  int median;
+
+  b2 = btInsertInternal(b, key, &median);
+  if(!b2) {
+    return;
+  }
+  
+  b1 = malloc(sizeof(*b1));
+  memmove(b1, b, sizeof(*b));
+  b->numKeys = 1;
+  b->isLeaf = 0;
+  b->keys[0] = median;
+  b->kids[0] = b1;
+  b->kids[1] = b2;
+}
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeInsertInternalPartOne {%
+\begin{lstlisting}[style=codeinc]
+bTree btInsertInternal(bTree b, int key, int *median) {
+  int pos = searchKey(b->numKeys, b->keys, key);
+  int mid;
+  bTree b2;
+
+  if(pos < b->numKeys && b->keys[pos] == key)
+    return 0; /* nothing to do */
+
+  if(b->isLeaf) { 
+      memmove(&b->keys[pos+1], &b->keys[pos], sizeof(*(b->keys)) * (b->numKeys - pos));
+      b->keys[pos] = key;
+      b->numKeys++;
+  } else {
+    ...
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeInsertInternalPartTwo {%
+\begin{lstlisting}[style=codeinc,firstnumber=12]
+    ...
+  } else {
+    b2 = btInsertInternal(b->kids[pos], key, &mid);      
+    if(b2) {
+      memmove(&b->keys[pos+1], &b->keys[pos], sizeof(*(b->keys)) * (b->numKeys - pos));
+      memmove(&b->kids[pos+2], &b->kids[pos+1], sizeof(*(b->keys)) * (b->numKeys - pos));
+
+      b->keys[pos] = mid;
+      b->kids[pos+1] = b2;
+      b->numKeys++;
+    }
+  }
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeInsertInternalPartThree {%
+\begin{lstlisting}[style=codeinc,firstnumber=24]
+  ...
+  if(b->numKeys >= (2*alpha - 1)) {
+    mid = b->numKeys/2;
+
+    *median = b->keys[mid];
+
+    /* make a new node for keys > median */
+    b2 = malloc(sizeof(*b2));
+
+    b2->numKeys = b->numKeys - mid - 1;
+    b2->isLeaf = b->isLeaf;
+
+    memmove(b2->keys, &b->keys[mid+1], sizeof(*(b->keys)) * b2->numKeys);
+    if(!b->isLeaf) {
+        memmove(b2->kids, &b->kids[mid+1], sizeof(*(b->kids)) * (b2->numKeys + 1));
+    }
+
+    b->numKeys = mid;
+    return b2;  
+  } else {
+    return 0;
+  }
+}
+\end{lstlisting}
+}
