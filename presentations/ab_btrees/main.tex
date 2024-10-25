@@ -1,6 +1,5 @@
 \documentclass{beamer}
 
-
 \title{(a, b) and B-Trees}
 \author{%
     Martín Hernández\\%
@@ -10,13 +9,13 @@
 
 % Libraries / Packages
 \usepackage{graphicx} % Required for inserting images
-\usepackage{biblatex}
-    \addbibresource{resources/bibliography.bib}
-\usepackage{listings}
-\usepackage{csquotes}
-\usepackage{wrapfig}
+\usepackage{tcolorbox}
 \usepackage{mathtools}
 \usepackage{unicode-math}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{biblatex}
+    \addbibresource{resources/bibliography.bib}
 
 % Template
 \NewDocumentCommand{\shortauthors}{}{%
@@ -144,8 +143,8 @@
                     \item This constant will determine the interval of keys and sub-trees, in a balanced node. This is called the \emph{Branching factor} of the tree.
                     \item The tree is balanced if they have from \(\alpha + 1\) to \(2\alpha + 1\) sub-trees in a single node.
                     \item Also, each balanced node have from \(\alpha\) to \(2\alpha\) keys.
-                    \item The only node that can have less than \(\alpha + 1\) sub-trees and only 1 key is the root of the tree. 
-                    \item But, the root still have the upper bounds of sub-trees and keys.
+                    \item The only node that can have less than \(\alpha + 1\) sub-trees and only 1 key is the \emph{Root} of the tree. 
+                    \item But, the \emph{Root} still have the upper bounds of sub-trees and keys.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -201,12 +200,12 @@
                     \item We can prove the bounds of the number of sub-trees in a node, and define a function that let us get the number of sub-trees in a node.
                 \end{itemize}
                 \begin{proof}\renewcommand{\qedsymbol}{}
-                    Let \(N()\) be a function that takes a B-Tree as an argument and returns the number of nodes in it.
+                    Let \(T \in t\left(\alpha, h\right)\), and \(N(T)\) be a function that returns the number of nodes in \(T\).
                     \\
-                    Let \(N_{min}\) and \(N_{max}\) the minimum and maximal number of nodes in a B-Tree \(T \in t\left(\alpha, h\right)\). Then
+                    Let \(N_{\text{min}}\) and \(N_{\text{max}}\) the minimum and maximal number of nodes in \(T\). Then
                     \[
                         \begin{aligned}
-                            N_{min} &= 1 + 2\left(\left(\alpha + 1\right)^0 + \left(\alpha + 1\right)^1 + \cdots + \left(\alpha + 1\right)^{h-2} \right) \\
+                            N_{\text{min}} &= 1 + 2\left(\left(\alpha + 1\right)^0 + \left(\alpha + 1\right)^1 + \cdots + \left(\alpha + 1\right)^{h-2} \right) \\
                             & = 1 + 2\left(\sum^{h - 2}_{i = 0} \left(\alpha + 1\right)^i \right) \\
                             & = 1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right)^{h - 1} - 1\right)
                         \end{aligned}
@@ -227,14 +226,19 @@
                     For \(h \geq 1\), we also have that
                     \[
                         \begin{aligned}
-                            N_{max} &= 1 + 2\left(\sum^{h - 1}_{i = 0} \left(2\alpha + 1\right)^i \right) \\
-                            &= 1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
+                            N_{\text{max}} &= 1 + 2\left(\sum^{h - 1}_{i = 0} \left(2\alpha + 1\right)^i \right) \\
+                            &= 1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right) \\
                         \end{aligned}
                     \]
                     \\
                     Then, if \(h = 0\), we have that \(N\left(T\right) = 0\). Else, if \(h \geq 1\)
                     \[
-                        1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right)^{h - 1} - 1\right) \leq N\left(T\right) \leq 1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
+                        1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right)^{h - 1} - 1\right) 
+                        \leq 
+                        N\left(T\right) 
+                        \leq 
+                        1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
+                        \tag{Nodes Bounds}\label{btree-nodes-num}
                     \]
                 \end{proof}
             \end{block}
@@ -245,14 +249,15 @@
 \end{frame}
 \begin{frame}
     \subsubsection{Keys and Sub-trees}
-    \frametitle{B-Tree Properties - Keys and Sub-trees}
+    \frametitle{B-Tree Properties - Keys and Sub-trees I}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \vspace{-0.75cm}
                 \begin{itemize}
                     \item The keys and sub-trees are stored in a sequential increasing order.
-                    \item We can define \(\symit{l}\) as the number of keys in a node \(N\), which isn't a leaf or root.
+                    \item Each key has two sub-trees, one before and one after it. Like a mini-tree.
+                    \item We can define \(\symit{l}\) as the number of keys in a node \(N\), which isn't a leaf or \emph{Root}.
                     \item Such that for \(t\left(\alpha, h\right)\), we have \(\alpha \leq \symit{l} \leq 2\alpha\).
                     \item We can consider the sub-trees as \(p_0, p_1, \ldots, p_j\), where \(j\) is the number of sub-trees in \(N\).
                     \item Since there's a sub-tree before and after each key in \(N\).
@@ -266,34 +271,165 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=\linewidth]{resources/made/key_subtree_order.eps}
+        \includegraphics[width=0.85\linewidth]{resources/made/key_subtree_order.eps}
         \caption{Order of Keys and Sub-trees in a B-Tree Node}
     \end{figure}
 \end{frame}
 \begin{frame}
-    \subsubsection{Height and Number of Nodes}
-    \frametitle{B-Tree Properties - Height and Number of Nodes}
-    \begin{itemize}
-        \item The height of a B-Tree \(T\) with \(n \geq 1\) keys and a \(\alpha \geq 2\) is going to be:
-    \end{itemize}
-    \[
-        h \leq log_{\alpha} \frac{n + 1}{2}
-    \]
-    \begin{proof}\renewcommand{\qedsymbol}{}
-        By definition, the \emph{Root} of \(T\) has at least one key if the tree isn't empty. Then, the sub-trees contain at least \(\alpha - 1\) elements. Thus, from the \emph{Root} we have at least \(2\) nodes with a depth of \(1\), then in these nodes we have at least \(2\alpha^{1}\) nodes with a depth of \(2\). We can see that, in the sub-tree \(i\) we are going to have \(2\alpha^{i-1}\) nodes with a depth of \(i + 1\). 
-    \end{proof}
-    \begin{proof}[\unskip\nopunct]
-        We sum the number of nodes from the nodes with depth of 1 all the way to the nodes that have the same depth as the height of the tree, and compare them to the number of keys, which will be greater or equal by definition. Having that:
-        \[
-            \begin{aligned}
-                n &\geq 1 + \left(\alpha - 1\right) \sum_{i = 1}^{h} 2\alpha^{i - 1} \\
-                &= 1 + 2\left(\alpha - 1\right)\left(\frac{\alpha^{h} - 1}{\alpha - 1}\right) \\
-                &= 2\alpha^h - 1 \\
-                \frac{n + 1}{2} &\geq \alpha^h \\
-                h &\leq log_{\alpha} \frac{n + 1}{2}
-            \end{aligned}
-        \]
-    \end{proof}
+    \frametitle{B-Tree Properties - Keys and Sub-trees II}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item The order of the keys of \(p_i\), a subtree of \(N\); where \(0 \leq i \leq \symit{l}\), in comparison to the keys of \(N\) can be defined by 3 cases.
+                    \item But first, we need to define \(K\left(T\right)\), where \(T \in t\left(\alpha, h\right)\), which is the set of keys inside the Node \(T\).
+                    \item And, \(k_j \in K\left(N\right)\), where \(j\) is the index or position of the key in \(N\).
+                \end{itemize}
+                \vspace{0.5cm}
+                \begin{align}
+                    \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_0 \tag{Case 1}\label{case1-subt-t-comp} \\
+                    \forall y \in K\left(p_{i + 1}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \tag{Case 2}\label{case2-subt-t-comp} \\
+                    \forall y \in K\left(p_{\symit{l} + 1}\right);\mspace{20mu}& k_{\symit{l}} < y \tag{Case 3}\label{case3-subt-t-comp}
+                \end{align}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+            \begin{block}{}
+            \end{block}
+        \end{column}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \frametitle{B-Tree Properties - Keys and Sub-trees III}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.75\linewidth,keepaspectratio]{resources/made/keys_comp_case1.eps}
+                \caption{Sub-tree Keys \eqref{case1-subt-t-comp}}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.75\linewidth,keepaspectratio]{resources/made/keys_comp_case3.eps}
+                \caption{Sub-tree Keys \eqref{case3-subt-t-comp}}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.4\textwidth,keepaspectratio]{resources/made/keys_comp_case2.eps}
+        \caption{Sub-tree Keys \eqref{case2-subt-t-comp}}
+    \end{figure}
+\end{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
+    \subsubsection{Height}
+    \frametitle{B-Tree Properties - Height}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Before we can define and prove the height of a B-Tree we need to define some things.
+                    \item First, The set of the keys in \(T \in t\left(\alpha, h\right)\) will be defined as \(I\). 
+                    \item Now, The \(I_{\text{min}}\) and \(I_{\text{max}}\) of \(T\) can be easily defined by \eqref{btree-nodes-num}:
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{\textricolumn} % Inverse order of columns for better display
+        \end{column}
+        \begin{column}{\textlecolumn}
+            \vspace{-0.35cm}
+            \begin{tcolorbox}[boxsep=0mm,left=0mm,right=0mm,top=-2mm,halign=right]
+                \[
+                    1 + 2\frac{\left(\left(\alpha + 1\right)^{h - 1} - 1\right)}{\alpha} 
+                    \leq 
+                    N\left(T\right) 
+                    \leq 
+                    1 + \frac{\left(\left(2\alpha + 1\right)^{h} - 1\right)}{2\alpha}
+                \]
+            \end{tcolorbox}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \vspace{-0.5cm}
+            \begin{block}{}
+                \[
+                    \begin{aligned}
+                        I_{\text{min}} &= 1 + \alpha\left(2\frac{\left(\alpha + 1\right)^{h - 1} - 1}{\alpha}\right) \\
+                        &= 2\left(\alpha + 1\right)^{h - 1} - 1
+                    \end{aligned}
+                \]
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \vspace{-0.75cm}
+                \[
+                    \begin{aligned}
+                        I_{\text{max}} &= 2\alpha \left(\frac{\left(2\alpha + 1\right)^h - 1}{2\alpha}\right) \\
+                        &= \left(2\alpha + 1\right)^h - 1
+                    \end{aligned}
+                \]
+                \begin{itemize}
+                    \item Now, we can solve for \(h\) with each \(I\) and define an bound with them.
+                \end{itemize}
+                \[
+                    \begin{aligned}
+                        I_{\text{min}} &= 2\left(\alpha + 1\right)^{h - 1} - 1 \\
+                        \frac{I_{\text{min}}}{2} + 1 &= \left(\alpha + 1\right)^{h - 1} \\
+                        \log_{\alpha + 1} \frac{I_{\text{min}} + 1}{2} &= h
+                    \end{aligned}
+                \]
+                \[
+                    \begin{aligned}
+                        I_{\text{max}} &= \left(2\alpha + 1\right)^h - 1 \\
+                        I_{\text{max}} + 1 &= \left(2\alpha + 1\right)^h \\
+                        \log_{2\alpha + 1} I_{\text{max}} + 1 = h
+                    \end{aligned}
+                \]
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Since, \(2\alpha + 1 > \alpha + 1\), then \(log_{2\alpha + 1} x \leq log_{\alpha + 1}x\), both in \(\left[1, \infty\right)\).
+                    \item Hence, for \(I \geq 1\), we will have the bounds for \(h\) like:
+                \end{itemize}
+                \[
+                    \log_{2\alpha + 1} I + 1 
+                    \leq
+                    h
+                    \leq
+                    \log_{\alpha + 1} \frac{I + 1}{2}
+                \]
+                \begin{itemize}
+                    \item And if, \(I = 0\) then, \(h = 0\).
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
 \end{frame}
 \begin{frame}
     \subsection{Structure}
@@ -361,7 +497,7 @@
                     \item The changes of this operations are mainly focused on the search part, since we have to compare to an array of keys and not only the node key.
                     \item This operation returns \lstinline|true| if a given key exists in the B-Tree.
                     \item The operation is split between the search of the key in the B-Tree and the comparison.
-                    \item This first function compares recursively from the root to a leaf, using \lstinline|searchKey| to get the index of the comparison key.
+                    \item This first function compares recursively from the \emph{Root} to a leaf, using \lstinline|searchKey| to get the index of the comparison key.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -588,7 +724,7 @@
 %    \frametitle{(a,b)-Tree Properties - Operations}
 %\end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
     \section{Bibliography}
     \frametitle{Bibliography}   
     \nocite{*}

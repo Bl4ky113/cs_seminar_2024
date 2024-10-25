@@ -1,0 +1,16 @@
+\beamer@sectionintoc {1}{Similarities in (a,b)-Trees and B-Trees}{3}{0}{1}
+\beamer@sectionintoc {2}{B-Tree}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{History}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Definition}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Properties}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{The \(\mitalpha \) Constant}{7}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{2}{Keys and Sub-trees}{12}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{3}{Height}{15}{0}{2}
+\beamer@subsectionintoc {2}{4}{Structure}{20}{0}{2}
+\beamer@subsectionintoc {2}{5}{Operations}{21}{0}{2}
+\beamer@subsubsectionintoc {2}{5}{1}{Creating an empty B-Tree}{22}{0}{2}
+\beamer@subsubsectionintoc {2}{5}{2}{Search}{23}{0}{2}
+\beamer@subsubsectionintoc {2}{5}{3}{Insert node}{29}{0}{2}
+\beamer@subsubsectionintoc {2}{5}{4}{Destroying a B-Tree}{38}{0}{2}
+\beamer@subsectionintoc {2}{6}{Secondary Memory Access}{39}{0}{2}
+\beamer@sectionintoc {3}{Bibliography}{40}{0}{3}
