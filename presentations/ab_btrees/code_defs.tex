@@ -1,64 +1,54 @@
 \defverbatim[colored] \btreeStructure {%
 \begin{lstlisting}[style=codeinc]
 int alpha = 2 /* any int >= 2 */
-typedef struct btr_n_t { 
-    int isLeaf;
-    int numKeys;
-    int keys[2*alpha - 1];
-    struct btr_n_t *kids[2*alpha - 1];
+typedef struct tr_n_t {
+  int degree;
+  int height;
+  key_t key[2 * alpha];
+  struct tr_n_t * next[(2 * alpha) + 1];
+  /* possibly other information */
 } tree_node_t;
 \end{lstlisting}
 }
 
 \defverbatim[colored] \btreeCreateEmpty {%
 \begin{lstlisting}[style=codeinc]
-bTree btCreate(void) {
-    bTree b;
-
-    b = malloc(sizeof(*b));
-    b->isLeaf = 1;
-    b->numKeys = 0;
-
-    return b;
-}
-\end{lstlisting}
-}
-
-\defverbatim[colored] \btreeSearchKey {%
-\begin{lstlisting}[style=codeinc]
-int searchKey(int n, const int *a, int key) {
-  int lo = -1;
-  int hi = n;
-  int mid;
-  while(lo + 1 < hi) {
-    mid = (lo+hi)/2;
-    if(a[mid] == key) {
-      return mid;
-    } else if(a[mid] < key) {
-      lo = mid;
-    } else {
-      hi = mid;
-    }
-  }
-  
-  return hi;
+tree_node_t *create_tree(){ 
+  tree_node_t *tmp;
+  tmp = get_node();
+  tmp->height = 0;
+  tmp->degree = 0;
+  return( tmp );
 }
 \end{lstlisting}
 }
 
 \defverbatim[colored] \btreeSearch {%
 \begin{lstlisting}[style=codeinc]
-int btSearch(bTree b, int key) {
-  int pos;
-  /* have to check for empty tree */
-  if(b->numKeys == 0) {
-    return 0;
-  }
-  pos = searchKey(b->numKeys, b->keys, key);
-  if(pos < b->numKeys && b->keys[pos] == key) 
-    return 1;
-  else {
-    return(!b->isLeaf && btSearch(disk_read(b->kids[pos]), key));
+object_t *find(tree_node_t *tree, key_t query_key) { 
+  tree_node_t *current_node;
+  object_t *object;
+  current_node = tree;
+  while( current_node->height >= 0 ) { /* binary search among keys */
+    int lower, upper;
+    lower = 0;
+    upper = current_node->degree;
+    while( upper > lower +1 ) {
+      if( query_key < current_node->key[(upper+lower)/2 ] )
+        upper = (upper+lower)/2;
+      else
+        lower = (upper+lower)/2;
+    }
+    if( current_node->height > 0)
+      current_node = current_node->next[lower + 1]; /* Offset sub-tree ptrs def */
+    else { /* block of height 0, contains the object pointers */
+      if( current_node->key[lower] == query_key )
+        object = (object_t *)
+        current_node->next[lower];
+      else
+        object = NULL;
+      return( object );
+    }
   }
 }
 \end{lstlisting}
@@ -79,32 +69,100 @@ void btDestroy(bTree b) {
 
 \defverbatim[colored] \btreeSearchStepOne {%
 \begin{lstlisting}[style=codeinc,numbers=none]
-n = 2
-a = {3, 5}
-key = 4
+query_key = 16;
+tree = *(node 1);
 
-/* 
-  Start / First / Second / Third 
-*/
-lo = -1 ; 0 ; 1 ; 0 ;
-hi = 2 ; 2 ; 1 ; 1 ;
-mid = NULL ; 0 ; 1 ; 1 ;
+object = NULL;
+current_node = *(node 1);
+current_node->height = 1;
+current_node->degree = 2;
+
+lower = 0;
+upper = 2;
 \end{lstlisting}
 }
 
 \defverbatim[colored] \btreeSearchStepTwo {%
 \begin{lstlisting}[style=codeinc,numbers=none]
-key = 4 ; pos = 1
+query_key = 16;
+tree = *(node 1);
 
-n = 2
-a = {3, 4}
+object = NULL;
+current_node = *(node 1);
+current_node->height = 1;
+current_node->degree = 2;
 
-/* 
-  Start / First / Second
-*/
-lo = -1 ; 0 ; 1 ;
-hi = 2 ; 2 ; 1 ;
-mid = NULL ; 0 ; 1 ;
+lower = 2; 
+upper = 2;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepThree {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+query_key = 16;
+tree = *(node 1);
+
+object = NULL;
+current_node = *(node 5);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 0; 
+upper = 3;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepFour {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+query_key = 16;
+tree = *(node 1);
+
+object = NULL;
+current_node = *(node 5);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 0; 
+upper = 2;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepFive {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+query_key = 16;
+tree = *(node 1);
+
+object = NULL;
+current_node = *(node 5);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 0; 
+upper = 1;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepSix {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+query_key = 16;
+tree = *(node 1);
+
+object = *(16);
+current_node = *(node 5);
+current_node->height = 0;
+current_node->degree = 3;
+\end{lstlisting}
+}
+
+\defverbatim[colored] \btreeSearchStepSeven {%
+\begin{lstlisting}[style=codeinc,numbers=none]
+query_key = 16;
+tree = *(node 1);
+
+object = NULL;
+current_node = *(node 5);
+current_node->height = 0;
+current_node->degree = 3;
 \end{lstlisting}
 }
 

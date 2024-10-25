@@ -357,7 +357,7 @@
     \end{columns}
     \begin{columns}
         \begin{column}{\textlecolumn}
-            \vspace{-0.5cm}
+            \vspace{-0.75cm}
             \begin{block}{}
                 \[
                     \begin{aligned}
@@ -413,7 +413,7 @@
             \begin{block}{}
                 \begin{itemize}
                     \item Since, \(2\alpha + 1 > \alpha + 1\), then \(log_{2\alpha + 1} x \leq log_{\alpha + 1}x\), both in \(\left[1, \infty\right)\).
-                    \item Hence, for \(I \geq 1\), we will have the bounds for \(h\) like:
+                    \item Hence, for \(I \geq 1\), we will have the bounds for \(h\):
                 \end{itemize}
                 \[
                     \log_{2\alpha + 1} I + 1 
@@ -426,6 +426,24 @@
                     \item And if, \(I = 0\) then, \(h = 0\).
                 \end{itemize}
             \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+\end{frame}
+\begin{frame}
+    \subsection{Generic Example}
+    \frametitle{B Tree - Generic Example}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{figure}[h!]
+                \includegraphics[width=0.5\linewidth]{resources/made/generic_min_btree.eps}
+                \caption{B-Tree w/ the least number of elements}
+            \end{figure}
+            \begin{figure}[h!]
+                \includegraphics[width=0.5\linewidth]{resources/made/generic_max_btree.eps}
+                \caption{B-Tree w/ the most number of elements}
+            \end{figure}
         \end{column}
         \begin{column}{\textricolumn}
         \end{column}
@@ -456,11 +474,12 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item For this operations, we will assume that the whole B-Tree isn't loaded into main memory, since the main usage of the B-Tree is oriented to secondary storage. 
-                    \item But the \emph{Root} and node to operate, if available, will be always available in memory.
-                    \item In order to read the nodes that aren't loaded into main memory we will define the functions:
-                    \item \lstinline|disk\_read(n *tree\_node\_t)|: Reads a node \lstinline|n| from the secondary memory, and returns a pointer to it.
-                    \item \lstinline|disk\_write(n *tree\_node\_t)|: (Over)Writes into the node in the secondary memory, if no data was changed will skip the writing process, returns an error or finish code: \lstinline|(0, -1)|.
+                    \item For this operations, we will assume that the whole B-Tree is loaded into main memory.
+                    \item We have to asume this since the main usage of the B-Tree is oriented to secondary storage.
+                    \item Generally, only the \emph{Root} and node to operate, if available, will be always available in memory.
+                    \item But if we need any other node, we will have to read into our secondary memory and fetch it's data.
+                    \item This process takes more time than the general data fetch from main memory.
+                    \item So, the fewer times we do this process the better.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -475,7 +494,7 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item We use \lstinline|btCreate()| to create a empty B-Tree, and since we only need to use \lstinline|malloc()|, this operation takes \(O(1)\).
+                    \item We use \lstinline|create_tree()| to create a empty B-Tree, and since we only need to use \lstinline|get_node()|, this operation takes \(O(1)\).
                 \end{itemize}
             \end{block}
             \begin{block}
@@ -495,9 +514,7 @@
             \begin{block}{}
                 \begin{itemize}
                     \item The changes of this operations are mainly focused on the search part, since we have to compare to an array of keys and not only the node key.
-                    \item This operation returns \lstinline|true| if a given key exists in the B-Tree.
-                    \item The operation is split between the search of the key in the B-Tree and the comparison.
-                    \item This first function compares recursively from the \emph{Root} to a leaf, using \lstinline|searchKey| to get the index of the comparison key.
+                    \item This operation returns the object in the B-Tree if a given key exists.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -505,33 +522,19 @@
         \end{column}
     \end{columns}
     \btreeSearch
-    \vspace{-1cm}
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item The \lstinline|searchKey| function takes the length of the array of keys, the array itself and the key to search. Then, iters through the array of keys, searching the key by a bisection algorithm.
-                    \item Finally, if found, it returns the key, otherwise it returns the higher key in the last iteration of the bisection.
-                    \item Since it's only reading the keys in the current node, there's no need to use \lstinline|disk\_read()|
-                    \item The \lstinline|search| opertaion takes \(O\left(log_\alpha \frac{n + 1}/2\right)\), since we only have to access nodes all the way down to the needed, or close enough, leaf with the given key.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \btreeSearchKey
 \end{frame}
-\begin{frame}
+\begin{frame}[t,allowframebreaks]
     \frametitle{B-Tree Operations - Search (Example)}
     \begin{columns}
-        \begin{column}{.45\textwidth}
-            \vspace{-2cm}
+        \begin{column}{.4\textwidth}
+            \vspace{-1cm}
             \begin{block}{}
                 \begin{itemize}
-                    \item Enter into \lstinline|searchKey| searching for \(4\) between indexes \(\left(0, 2\right)\)
-                    \item Since \lstinline|a[mid] < key| for the next 2 iterations, then \lstinline|lo = mid = 1|. And because \lstinline|a[1] > key| then again \lstinline|hi = mid = 1|, meaning that we stop the loop because \lstinline|1 < 1| is \lstinline|false|.
-                    \item Then we exit \lstinline|searchKey| returning a position of \(1\).
+                    \item We are going to search the key: 16.
+                    \item First we will do a \emph{Binary Search} in the Keys of the node.
+                    \item We set the lower and upper as 0, 2.
+                    \item The median is 1, and the key[1] is lesser than the search key.
+                    \item Then, we update lower to 1.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -539,23 +542,24 @@
             \vspace{-1cm}
             \begin{block}{}
                 \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/a4_b_tree.eps}
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step1.eps}
                 \end{figure}    
                 \btreeSearchStepOne
             \end{block}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Operations - Search (Example)}
+
+    \framebreak
+
     \begin{columns}
-        \begin{column}{.45\textwidth}
+        \begin{column}{.4\textwidth}
             \vspace{-1cm}
             \begin{block}{}
                 \begin{itemize}
-                    \item Due to \lstinline|b->keys[pos] != key|, we have to search in the node with index \lstinline|pos|. Where we repeat almost the same search process.
-                    \item Since \lstinline|a[mid] < key| for the next 2 iterations, then \lstinline|lo = mid = 1|. But this time \lstinline|a[1] == key|, so we just return \lstinline|mid|.
-                    \item Also, we have that \lstinline|b->keys[pos] == key|, so we \textbf{finally return \(1\)}.
+                    \item We repeat the median process and get 2.
+                    \item The key[2] is greater than the search key so we update the upper.
+                    \item Now that lower is 2 and upper is 2, we had reached the key and sub-tree to keep searching.
+                    \item We move \lstinline|current_node| to \lstinline|*(node 5)|.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -563,12 +567,113 @@
             \vspace{-1cm}
             \begin{block}{}
                 \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/a4_b_tree_searchstep2.eps}
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step2.eps}
                 \end{figure}    
                 \btreeSearchStepTwo
             \end{block}
         \end{column}
     \end{columns}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{.4\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Now we repeat the \emph{Binary search} process in the new node.
+                    \item Lower is 0, Upper is 3.
+                    \item Median is 2.
+                    \item Key[1] is greater than the search key.
+                    \item Update Upper.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{.6\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{figure}[h!]
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step3.eps}
+                \end{figure}    
+                \btreeSearchStepThree
+            \end{block}
+        \end{column}
+    \end{columns}
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{.4\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Lower is 0 and Upper is 2.
+                    \item Median is 1.
+                    \item Key[1] is still greater than the search key.
+                    \item Update Upper.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{.6\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{figure}[h!]
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step4.eps}
+                \end{figure}    
+                \btreeSearchStepFour
+            \end{block}
+        \end{column}
+    \end{columns}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{.4\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Lower is 0 and Upper is 1.
+                    \item Median is 0.
+                    \item Key[0] is the key that we are searching, but we still need another step.
+                    \item Update Upper.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{.6\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{figure}[h!]
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step5.eps}
+                \end{figure}    
+                \btreeSearchStepFive
+            \end{block}
+        \end{column}
+    \end{columns}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{.4\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Lower is 0 and Upper is 0.
+                    \item We break from the \emph{Binary Search} loop.
+                    \item And since we are on a leaf, we can just check if key[lower] is the search key.
+                    \item In this case, it is, so we return \lstinline|*(16)|.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{.6\textwidth}
+            \vspace{-1cm}
+            \begin{block}{}
+                \begin{figure}[h!]
+                    \includegraphics[width=\linewidth]{resources/made/btree_search_step6.eps}
+                \end{figure}    
+                \btreeSearchStepSix
+            \end{block}
+        \end{column}
+    \end{columns}
+
 \end{frame}
 \begin{frame}[t,allowframebreaks]
     \subsubsection{Insert node}

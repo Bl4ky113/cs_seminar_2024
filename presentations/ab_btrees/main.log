@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.9.29)  25 OCT 2024 05:29
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.9.29)  25 OCT 2024 09:31
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1442,16 +1442,22 @@ File: lstlang1.sty 2024/02/21 1.10 listings language file
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 )
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
 \@verb\btreeCreateEmpty=\box92
-\@verb\btreeSearchKey=\box93
-\@verb\btreeSearch=\box94
-\@verb\btreeDestroy=\box95
-\@verb\btreeSearchStepOne=\box96
-\@verb\btreeSearchStepTwo=\box97
-\@verb\btreeInsert=\box98
-\@verb\btreeInsertInternalPartOne=\box99
-\@verb\btreeInsertInternalPartTwo=\box100
-\@verb\btreeInsertInternalPartThree=\box101
+\@verb\btreeSearch=\box93
+\@verb\btreeDestroy=\box94
+\@verb\btreeSearchStepOne=\box95
+\@verb\btreeSearchStepTwo=\box96
+\@verb\btreeSearchStepThree=\box97
+\@verb\btreeSearchStepFour=\box98
+\@verb\btreeSearchStepFive=\box99
+\@verb\btreeSearchStepSix=\box100
+\@verb\btreeSearchStepSeven=\box101
+\@verb\btreeInsert=\box102
+\@verb\btreeInsertInternalPartOne=\box103
+\@verb\btreeInsertInternalPartTwo=\box104
+\@verb\btreeInsertInternalPartThree=\box105
 )
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1467,7 +1473,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [2
 
 ]
-<resources/book/ab_tree.png, id=96, 1032.85875pt x 722.7pt>
+<resources/book/ab_tree.png, id=62, 1032.85875pt x 722.7pt>
 File: resources/book/ab_tree.png Graphic file (type png)
 <use resources/book/ab_tree.png>
 Package luatex.def Info: resources/book/ab_tree.png  used on input line 67.
@@ -1480,12 +1486,12 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [3
 
 <./resources/book/ab_tree.png>]
-<resources/made/ibm360_44.png, id=104, 187.1793pt x 240.9pt>
+<resources/made/ibm360_44.png, id=71, 187.1793pt x 240.9pt>
 File: resources/made/ibm360_44.png Graphic file (type png)
 <use resources/made/ibm360_44.png>
 Package luatex.def Info: resources/made/ibm360_44.png  used on input line 94.
 (luatex.def)             Requested size: 76.82397pt x 98.87256pt.
-<resources/made/ibmdisk_2311.png, id=105, 144.54pt x 207.4149pt>
+<resources/made/ibmdisk_2311.png, id=72, 144.54pt x 207.4149pt>
 File: resources/made/ibmdisk_2311.png Graphic file (type png)
 <use resources/made/ibmdisk_2311.png>
 Package luatex.def Info: resources/made/ibmdisk_2311.png  used on input line 94
@@ -1550,7 +1556,7 @@ df>
 s-converted-to.pdf resources/made/a2_btree.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/a2_btree-eps-converted-to.pdf, id=130, 201.75375pt x 75.28125pt
+<resources/made/a2_btree-eps-converted-to.pdf, id=101, 201.75375pt x 75.28125pt
 >
 File: resources/made/a2_btree-eps-converted-to.pdf Graphic file (type pdf)
 <use resources/made/a2_btree-eps-converted-to.pdf>
@@ -1568,7 +1574,7 @@ df>
 s-converted-to.pdf resources/made/a3_btree.eps>
 (epstopdf)             \includegraphics on input line 192.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/a3_btree-eps-converted-to.pdf, id=131, 309.155pt x 104.39pt>
+<resources/made/a3_btree-eps-converted-to.pdf, id=102, 309.155pt x 104.39pt>
 File: resources/made/a3_btree-eps-converted-to.pdf Graphic file (type pdf)
 <use resources/made/a3_btree-eps-converted-to.pdf>
 Package luatex.def Info: resources/made/a3_btree-eps-converted-to.pdf  used on 
@@ -1612,7 +1618,7 @@ rted-to.pdf>
 _order-eps-converted-to.pdf resources/made/key_subtree_order.eps>
 (epstopdf)             \includegraphics on input line 277.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/key_subtree_order-eps-converted-to.pdf, id=163, 186.6975pt x 23
+<resources/made/key_subtree_order-eps-converted-to.pdf, id=134, 186.6975pt x 23
 .08624pt>
 File: resources/made/key_subtree_order-eps-converted-to.pdf Graphic file (type 
 pdf)
@@ -1650,7 +1656,7 @@ ed-to.pdf>
 ase1-eps-converted-to.pdf resources/made/keys_comp_case1.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case1-eps-converted-to.pdf, id=193, 127.47626pt x 76.
+<resources/made/keys_comp_case1-eps-converted-to.pdf, id=164, 127.47626pt x 76.
 285pt>
 File: resources/made/keys_comp_case1-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1658,6 +1664,11 @@ f)
 Package luatex.def Info: resources/made/keys_comp_case1-eps-converted-to.pdf  u
 sed on input line 325.
 (luatex.def)             Requested size: 115.23369pt x 68.96199pt.
+
+
+LaTeX Warning: Reference `case1-subt-t-comp' on page 14 undefined on input line
+ 325.
+
 Package epstopdf Info: Source file: <resources/made/keys_comp_case3.eps>
 (epstopdf)                    date: 2024-10-23 10:49:59
 (epstopdf)                    size: 51927 bytes
@@ -1669,7 +1680,7 @@ ed-to.pdf>
 ase3-eps-converted-to.pdf resources/made/keys_comp_case3.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case3-eps-converted-to.pdf, id=195, 124.465pt x 76.28
+<resources/made/keys_comp_case3-eps-converted-to.pdf, id=166, 124.465pt x 76.28
 5pt>
 File: resources/made/keys_comp_case3-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1677,6 +1688,10 @@ f)
 Package luatex.def Info: resources/made/keys_comp_case3-eps-converted-to.pdf  u
 sed on input line 325.
 (luatex.def)             Requested size: 115.23369pt x 70.62886pt.
+
+LaTeX Warning: Reference `case3-subt-t-comp' on page 14 undefined on input line
+ 325.
+
 Package epstopdf Info: Source file: <resources/made/keys_comp_case2.eps>
 (epstopdf)                    date: 2024-10-23 10:48:26
 (epstopdf)                    size: 54505 bytes
@@ -1688,7 +1703,7 @@ ed-to.pdf>
 ase2-eps-converted-to.pdf resources/made/keys_comp_case2.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case2-eps-converted-to.pdf, id=197, 120.45pt x 80.3pt
+<resources/made/keys_comp_case2-eps-converted-to.pdf, id=168, 120.45pt x 80.3pt
 >
 File: resources/made/keys_comp_case2-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -1696,6 +1711,10 @@ f)
 Package luatex.def Info: resources/made/keys_comp_case2-eps-converted-to.pdf  u
 sed on input line 325.
 (luatex.def)             Requested size: 122.91406pt x 81.94533pt.
+
+LaTeX Warning: Reference `case2-subt-t-comp' on page 14 undefined on input line
+ 325.
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1706,8 +1725,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 <./resources/made/keys_comp_case1-eps-converted-to.pdf><./resources/made/keys_co
 mp_case3-eps-converted-to.pdf><./resources/made/keys_comp_case2-eps-converted-to
 .pdf>]
-Overfull \vbox (6.15427pt too high) detected at line 475
- []
+
+LaTeX Warning: Reference `btree-nodes-num' on page 15 undefined on input line 4
+33.
 
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -1717,7 +1737,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [15
 
 ]
-Overfull \vbox (4.9963pt too high) detected at line 475
+Overfull \vbox (4.9963pt too high) detected at line 433
  []
 
 
@@ -1737,9 +1757,44 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 ]
-Overfull \vbox (7.33218pt too high) detected at line 475
- []
-
+Package epstopdf Info: Source file: <resources/made/generic_min_btree.eps>
+(epstopdf)                    date: 2024-10-25 05:40:33
+(epstopdf)                    size: 78126 bytes
+(epstopdf)             Output file: <resources/made/generic_min_btree-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2024-10-25 05:42:50
+(epstopdf)                    size: 22882 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/generic_min
+_btree-eps-converted-to.pdf resources/made/generic_min_btree.eps>
+(epstopdf)             \includegraphics on input line 451.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/generic_min_btree-eps-converted-to.pdf, id=235, 331.2375pt x 14
+3.53625pt>
+File: resources/made/generic_min_btree-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use resources/made/generic_min_btree-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/generic_min_btree-eps-converted-to.pdf 
+ used on input line 451.
+(luatex.def)             Requested size: 138.2795pt x 59.92123pt.
+Package epstopdf Info: Source file: <resources/made/generic_max_btree.eps>
+(epstopdf)                    date: 2024-10-25 05:54:59
+(epstopdf)                    size: 107644 bytes
+(epstopdf)             Output file: <resources/made/generic_max_btree-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2024-10-25 05:56:38
+(epstopdf)                    size: 31209 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/generic_max
+_btree-eps-converted-to.pdf resources/made/generic_max_btree.eps>
+(epstopdf)             \includegraphics on input line 451.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/generic_max_btree-eps-converted-to.pdf, id=236, 293.095pt x 155
+.58125pt>
+File: resources/made/generic_max_btree-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use resources/made/generic_max_btree-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/generic_max_btree-eps-converted-to.pdf 
+ used on input line 451.
+(luatex.def)             Requested size: 138.2795pt x 73.40094pt.
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1747,14 +1802,13 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [18
 
-
-]
+<./resources/made/generic_min_btree-eps-converted-to.pdf><./resources/made/gener
+ic_max_btree-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [19
-
 
 ]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -1784,15 +1838,130 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [23
 
+
 ]
+Package epstopdf Info: Source file: <resources/made/btree_search_step1.eps>
+(epstopdf)                    date: 2024-10-25 09:13:33
+(epstopdf)                    size: 69980 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step1-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 09:13:44
+(epstopdf)                    size: 25210 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step1-eps-converted-to.pdf resources/made/btree_search_step1.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step1-eps-converted-to.pdf, id=290, 309.155pt x 11
+6.435pt>
+File: resources/made/btree_search_step1-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step1-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step1-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 69.44223pt.
+Package epstopdf Info: Source file: <resources/made/btree_search_step2.eps>
+(epstopdf)                    date: 2024-10-25 09:13:14
+(epstopdf)                    size: 69449 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step2-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 09:13:44
+(epstopdf)                    size: 25134 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step2-eps-converted-to.pdf resources/made/btree_search_step2.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step2-eps-converted-to.pdf, id=291, 309.155pt x 11
+6.435pt>
+File: resources/made/btree_search_step2-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step2-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step2-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 69.44223pt.
+Package epstopdf Info: Source file: <resources/made/btree_search_step3.eps>
+(epstopdf)                    date: 2024-10-25 08:48:07
+(epstopdf)                    size: 69997 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step3-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 08:59:46
+(epstopdf)                    size: 25321 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step3-eps-converted-to.pdf resources/made/btree_search_step3.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step3-eps-converted-to.pdf, id=292, 311.1625pt x 1
+15.43124pt>
+File: resources/made/btree_search_step3-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step3-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step3-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 68.39798pt.
+Package epstopdf Info: Source file: <resources/made/btree_search_step4.eps>
+(epstopdf)                    date: 2024-10-25 08:50:22
+(epstopdf)                    size: 69433 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step4-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 08:59:46
+(epstopdf)                    size: 25210 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step4-eps-converted-to.pdf resources/made/btree_search_step4.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step4-eps-converted-to.pdf, id=293, 311.1625pt x 1
+15.43124pt>
+File: resources/made/btree_search_step4-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step4-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step4-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 68.39798pt.
+Package epstopdf Info: Source file: <resources/made/btree_search_step5.eps>
+(epstopdf)                    date: 2024-10-25 08:53:27
+(epstopdf)                    size: 69415 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step5-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 08:59:47
+(epstopdf)                    size: 25210 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step5-eps-converted-to.pdf resources/made/btree_search_step5.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step5-eps-converted-to.pdf, id=294, 311.1625pt x 1
+15.43124pt>
+File: resources/made/btree_search_step5-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step5-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step5-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 68.39798pt.
+Package epstopdf Info: Source file: <resources/made/btree_search_step6.eps>
+(epstopdf)                    date: 2024-10-25 08:59:37
+(epstopdf)                    size: 67812 bytes
+(epstopdf)             Output file: <resources/made/btree_search_step6-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2024-10-25 08:59:47
+(epstopdf)                    size: 24948 bytes
+(epstopdf)             Command: <repstopdf --outfile=resources/made/btree_searc
+h_step6-eps-converted-to.pdf resources/made/btree_search_step6.eps>
+(epstopdf)             \includegraphics on input line 677.
+Package epstopdf Info: Output file is already uptodate.
+<resources/made/btree_search_step6-eps-converted-to.pdf, id=295, 309.155pt x 11
+5.43124pt>
+File: resources/made/btree_search_step6-eps-converted-to.pdf Graphic file (type
+ pdf)
+<use resources/made/btree_search_step6-eps-converted-to.pdf>
+Package luatex.def Info: resources/made/btree_search_step6-eps-converted-to.pdf
+  used on input line 677.
+(luatex.def)             Requested size: 184.3758pt x 68.8436pt.
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [24
 
-
-]
+<./resources/made/btree_search_step1-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1800,7 +1969,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [25
 
 
-]
+<./resources/made/btree_search_step2-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1808,72 +1977,36 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [26
 
 
-]
-Package epstopdf Info: Source file: <resources/made/a4_b_tree.eps>
-(epstopdf)                    date: 2024-10-10 17:51:59
-(epstopdf)                    size: 21195 bytes
-(epstopdf)             Output file: <resources/made/a4_b_tree-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2024-10-22 13:54:23
-(epstopdf)                    size: 6577 bytes
-(epstopdf)             Command: <repstopdf --outfile=resources/made/a4_b_tree-e
-ps-converted-to.pdf resources/made/a4_b_tree.eps>
-(epstopdf)             \includegraphics on input line 590.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/a4_b_tree-eps-converted-to.pdf, id=309, 280.04625pt x 96.36pt>
-File: resources/made/a4_b_tree-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/a4_b_tree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/a4_b_tree-eps-converted-to.pdf  used on
- input line 590.
-(luatex.def)             Requested size: 184.3758pt x 63.44339pt.
-
+<./resources/made/btree_search_step3-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [27
 
-<./resources/made/a4_b_tree-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <resources/made/a4_b_tree_searchstep2.eps>
-(epstopdf)                    date: 2024-10-11 05:31:44
-(epstopdf)                    size: 19675 bytes
-(epstopdf)             Output file: <resources/made/a4_b_tree_searchstep2-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2024-10-22 13:54:23
-(epstopdf)                    size: 6620 bytes
-(epstopdf)             Command: <repstopdf --outfile=resources/made/a4_b_tree_s
-earchstep2-eps-converted-to.pdf resources/made/a4_b_tree_searchstep2.eps>
-(epstopdf)             \includegraphics on input line 614.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/a4_b_tree_searchstep2-eps-converted-to.pdf, id=317, 280.04625pt
- x 95.35625pt>
-File: resources/made/a4_b_tree_searchstep2-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use resources/made/a4_b_tree_searchstep2-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/a4_b_tree_searchstep2-eps-converted-to.
-pdf  used on input line 614.
-(luatex.def)             Requested size: 184.3758pt x 62.78253pt.
 
+<./resources/made/btree_search_step4-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [28
 
-<./resources/made/a4_b_tree_searchstep2-eps-converted-to.pdf>]
+
+<./resources/made/btree_search_step5-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [29
 
-]
+
+<./resources/made/btree_search_step6-eps-converted-to.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [30
-
 
 ]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -1938,6 +2071,14 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [38
 
+
+]
+Overfull \hbox (1.593pt too wide) has occurred while \output is active
+[] 
+ []
+
+[39
+
 ]
 Package epstopdf Info: Source file: <resources/made/external_storage_wblocks.ep
 s>
@@ -1950,28 +2091,16 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=resources/made/external_st
 orage_wblocks-eps-converted-to.pdf resources/made/external_storage_wblocks.eps>
 
-(epstopdf)             \includegraphics on input line 745.
+(epstopdf)             \includegraphics on input line 808.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/external_storage_wblocks-eps-converted-to.pdf, id=376, 185.6937
+<resources/made/external_storage_wblocks-eps-converted-to.pdf, id=445, 185.6937
 6pt x 107.40125pt>
 File: resources/made/external_storage_wblocks-eps-converted-to.pdf Graphic file
  (type pdf)
 <use resources/made/external_storage_wblocks-eps-converted-to.pdf>
 Package luatex.def Info: resources/made/external_storage_wblocks-eps-converted-
-to.pdf  used on input line 745.
+to.pdf  used on input line 808.
 (luatex.def)             Requested size: 107.55333pt x 62.20753pt.
-
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
-[39
-
-<./resources/made/external_storage_wblocks-eps-converted-to.pdf>]
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 774.
-
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1979,12 +2108,24 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [40
 
-]
+<./resources/made/external_storage_wblocks-eps-converted-to.pdf>]
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 837.
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [41
+
+]
+Overfull \hbox (1.593pt too wide) has occurred while \output is active
+[] 
+ []
+
+[42
 
 
 ]
@@ -2002,39 +2143,57 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3054F43808F5A3F997FAB482F3A833FB;1128.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  4BB268D92044E1F9240853C6EBBDC89C;1265.
+
+Package biblatex Warning: Please rerun LaTeX.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 41278 strings out of 476447
- 745677,1977958 words of node,token memory allocated
- 413481 words of node memory still in use:
-   17322 hlist, 20 vlist, 6631 rule, 1192 disc, 166 local_par, 4 math, 11557 glu
-e, 12001 kern, 233 penalty, 2429 glyph, 5904 attribute, 79 glue_spec, 5904 attri
+ 41355 strings out of 476447
+ 932065,1977958 words of node,token memory allocated
+ 490174 words of node memory still in use:
+   20207 hlist, 24 vlist, 7759 rule, 1378 disc, 212 local_par, 4 math, 14104 glu
+e, 13954 kern, 293 penalty, 3329 glyph, 6914 attribute, 79 glue_spec, 6914 attri
 bute_list, 4 write, 2 pdf_start_link, 2 pdf_end_link, 1 pdf_dest, 2 pdf_action, 
-212 pdf_colorstack nodes
-   avail lists: 1:6,2:1883,3:759,4:332,5:8699,6:148,7:11981,8:48,9:17292,10:27,1
+238 pdf_colorstack nodes
+   avail lists: 1:6,2:1799,3:745,4:375,5:8699,6:184,7:11979,8:48,9:17291,10:27,1
 1:938
- 62272 multiletter control sequences out of 65536+600000
- 107 fonts using 33482007 bytes
+ 62328 multiletter control sequences out of 65536+600000
+ 109 fonts using 33734367 bytes
  128i,19n,116p,1189b,1311s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/
-share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texm
-f-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texmf-dist/font
-s/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/
-public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public
-/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lm
-sans9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans8-regula
-r.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr
-/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (41 pages, 1444806 bytes).
+share/texmf-dist/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf-
+dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf-dist/fonts/o
+pentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/pu
+blic/lm/lmsans10-oblique.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmm
+ono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmode
+rn-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-mat
+h.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/
+share/texmf-dist/fonts/opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-
+dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/
+opentype/public/lm/lmsans10-bold.otf>
+Output written on main.pdf (42 pages, 1632330 bytes).
 
-PDF statistics: 476 PDF objects out of 1000 (max. 8388607)
- 355 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 131072)
- 88 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 557 PDF objects out of 1000 (max. 8388607)
+ 393 compressed objects within 4 object streams
+ 112 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
