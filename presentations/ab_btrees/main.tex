@@ -131,10 +131,10 @@
         \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
     \subsection{Properties}
     \subsubsection{The \(\alpha\) Constant}
-    \frametitle{B-Tree Properties - The \(\alpha\) constant I}
+    \frametitle{B-Tree Properties - The \(\alpha\) constant}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -151,9 +151,9 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - The \(\alpha\) constant II}
+    
+    \framebreak
+
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -167,9 +167,9 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - The \(\alpha\) constant III}
+    
+    \framebreak
+
     \begin{columns}
         \begin{column}{\textwidth}
             \begin{block}{}
@@ -189,9 +189,9 @@
         \begin{column}{0pt}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - The \(\alpha\) constant IV}
+
+    \framebreak
+
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -216,9 +216,9 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - The \(\alpha\) constant V}
+
+    \framebreak
+
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -247,36 +247,54 @@
         \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
     \subsubsection{Keys and Sub-trees}
-    \frametitle{B-Tree Properties - Keys and Sub-trees I}
+    \frametitle{B-Tree Properties - Keys and Sub-trees}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
-                \vspace{-0.75cm}
+                \vspace{-0.8cm}
                 \begin{itemize}
-                    \item The keys and sub-trees are stored in a sequential increasing order.
-                    \item Each key has two sub-trees, one before and one after it. Like a mini-tree.
-                    \item We can define \(\symit{l}\) as the number of keys in a node \(N\), which isn't a leaf or \emph{Root}.
+                    \item Each key has two sub-trees, one before and one after it. Like a normal tree.
+                    \item First, let's define \(N\), a Node which isn't a leaf or \emph{Root}, from a B-Tree.
+                    \item Then, we can define the set of the keys on a B-Tree Node \(N\) as \(\left\{k_1, k_2, \ldots{}, k_j\right\}\).
+                    \item Also, defining \(\symit{l}\) as the number of keys in \(N\).
                     \item Such that for \(t\left(\alpha, h\right)\), we have \(\alpha \leq \symit{l} \leq 2\alpha\).
-                    \item We can consider the sub-trees as \(p_0, p_1, \ldots, p_j\), where \(j\) is the number of sub-trees in \(N\).
-                    \item Since there's a sub-tree before and after each key in \(N\).
-                    \item Then, \(j\) must be equal to \(\symit{l} + 1\).
                 \end{itemize}
             \end{block}
         \end{column}
         \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[height=0.175\linewidth]{resources/made/btree_2subtrees.eps}
+        \caption{Simple node of a Normal Binary Tree}
+    \end{figure}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{\textlecolumn}
             \begin{block}{}
+                \begin{itemize}
+                    \item Now, we also define the set of sub-trees of \(N\) as \(\left\{p_0, p_1, \ldots{}, p_j\right\}\).
+                    \item Where \(j\) is the number of sub-trees in \(N\).
+                    \item Since there's a sub-tree before and after each key in \(N\).
+                    \item Then, \(j\) must be equal to \(\symit{l} + 1\).
+                    \item The keys and sub-trees are stored in a sequential increasing order.
+                \end{itemize}
             \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
     \begin{figure}[h!]
         \includegraphics[width=0.85\linewidth]{resources/made/key_subtree_order.eps}
-        \caption{Order of Keys and Sub-trees in a B-Tree Node}
+        \caption{Order of the Subtree Pointers and Keys.}
     \end{figure}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - Keys and Sub-trees II}
+
+    \framebreak
+
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -298,9 +316,9 @@
             \end{block}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree Properties - Keys and Sub-trees III}
+    
+    \framebreak
+
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
