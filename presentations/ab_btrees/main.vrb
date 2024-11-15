@@ -1,0 +1,16 @@
+\subsection{Structure}
+    \frametitle{B-Tree Structure}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item The structure of the B-Tree's node adds two arrays where the keys and sub-trees' pointers will be stored:
+                \end{itemize}
+            \end{block}
+            \begin{block}
+                \btreeStructure
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}

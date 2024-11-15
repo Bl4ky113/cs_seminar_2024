@@ -1,6 +1,6 @@
 \documentclass{beamer}
 
-\title{(a, b) and B-Trees}
+\title{B-Trees}
 \author{%
     Martín Hernández\\%
     Juan Mendivelso%
@@ -9,13 +9,17 @@
 
 % Libraries / Packages
 \usepackage{graphicx} % Required for inserting images
+\usepackage{geometry}
+    \geometry{paperwidth=8in,paperheight=5in}
 \usepackage{tcolorbox}
 \usepackage{mathtools}
 \usepackage{unicode-math}
 \usepackage{listings}
+\usepackage{minted}
 \usepackage{csquotes}
 \usepackage{biblatex}
     \addbibresource{resources/bibliography.bib}
+    \AtNextBibliography{\small}
 
 % Template
 \NewDocumentCommand{\shortauthors}{}{%
@@ -36,39 +40,10 @@
     \frametitle{Contents}
     \tableofcontents
 \end{frame}
-
-\begin{frame}
-    \section{Similarities in (a,b)-Trees and B-Trees}
-    \frametitle{Similarities in (a,b)-Trees and B-Trees}
-    \begin{columns}[T]
-        \begin{column}{.55\textwidth}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Both types of trees have higher degree than the previous trees.
-                    \item Meaning that, both have more than 1 key and 2 sub-trees in each node.
-                    \item Each type has a lower and upper limit of keys and sub-trees, 
-                        which are defined by constants.
-                    \item Due to the higher degree, there's changes in the code of the
-                        \lstinline|find|, \lstinline|insert| and \lstinline|delete| operations.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{.6\textwidth}
-            \begin{block}{}
-                \begin{figure}
-                    \centering
-                    \includegraphics[width=\textwidth]{resources/book/ab_tree.png}
-                    \caption[]{(a,b)-Tree}
-                    \label{ab_tree}
-                \end{figure}
-            \end{block}
-        \end{column}
-    \end{columns}    
-\end{frame}
-\begin{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
     \section{B-Tree}
     \subsection{History}
-    \frametitle{B-Tree History I}
+    \frametitle{B-Tree History}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{block}{}
@@ -91,27 +66,36 @@
             \end{block}
         \end{column}
     \end{columns}
-\end{frame}
-\begin{frame}
-    \frametitle{B-Tree History II}
+
+    \framebreak
+
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.7\textwidth}
             \begin{block}{}
-                \blockquote[Bayer and McCreight]{(\ldots) actual experiments show that it is possible to maintain an index of size 15.000 with an average of 9 retrievals, insertions, and deletions per second in real time on an IBM 360/44 with a 2311 disc as backup store. (\ldots) it should be possible to main tain all index of size 1'500.000 with at least two transactions per second.}
+                \blockquote[Bayer and McCreight]{%
+                    (\ldots) actual experiments show that it is possible 
+                    to maintain an index of size 15.000 with an average of 9 retrievals, 
+                    insertions, and deletions per second in real time on an IBM 360/44 
+                    with a 2311 disc as backup store. (\ldots) it should be possible 
+                    to main tain all index of size 1'500.000 with at least two transactions 
+                    per second.}
             \end{block}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.3\textwidth}
             \begin{block}{}
                 \begin{figure}
-                    \centering
-                    \includegraphics[width=0.5\textwidth,height=\textheight,keepaspectratio]{resources/made/ibm360_44.png}
-                    \caption[]{IBM 360 / 44}
+                    \includegraphics[height=0.3\textheight]{resources/made/r_bayer.png}
+                    \caption[]{Rudolf Bayer}
+                \end{figure}
+                \begin{figure}
+                    \includegraphics[height=0.35\textheight]{resources/made/McCreight.png}
+                    \caption[]{Edward McCreight}
                 \end{figure}
             \end{block}
         \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
     \subsection{Definition}
     \frametitle{B-Tree Definition}
     \begin{columns}
@@ -124,12 +108,38 @@
                     \]
                     \item Where \(h\) is the height of the B-Tree.
                     \item And, \(\alpha\) is a predefined constant.
+                    \item This type of balanced tree have a higher degree than the previous trees.
+                    \item Or in simple words, they have more than 1 key and 2 sub-trees in each node.
+                    \item Keep in mind that in B-Trees, \textbf{leafs are not nodes}.
+                    \item This higher degree have a cuple of properties added to it, which we need to check and prove
+                    \item Also, due to the higher degree of the nodes, we will have to change the 
+                        \lstinline|find|, \lstinline|insert| and \lstinline|delete| operations of the B-Tree.
                 \end{itemize}
             \end{block}
         \end{column}
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
+    
+    \framebreak{}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+                \begin{figure}
+                    \includegraphics[width=\textwidth]{resources/made/single_node.eps}
+                    \caption[]{Node of a B-Tree}
+                \end{figure}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+                \begin{figure}
+                    \includegraphics[width=\textwidth]{resources/made/single_leaf.eps}
+                    \caption[]{Leaf of a B-Tree}
+                \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{figure}
+        \includegraphics[width=0.4\textwidth]{resources/made/single_node_generic.eps}
+        \caption[]{Generic Node of a B-Tree}
+    \end{figure}
 \end{frame}
 \begin{frame}[allowframebreaks,allowdisplaybreaks]
     \subsection{Properties}
@@ -140,6 +150,7 @@
             \begin{block}{}
                 \begin{itemize}
                     \item The main property of the B-Trees is the \(\alpha\), a predefined constant.
+                    \item The \(\alpha\) must be a Natural number, \(\alpha \in \mathbb{N}\) and \(\alpha \geq 2\).
                     \item This constant will determine the interval of keys and sub-trees, in a balanced node. This is called the \emph{Branching factor} of the tree.
                     \item The tree is balanced if they have from \(\alpha + 1\) to \(2\alpha + 1\) sub-trees in a single node.
                     \item Also, each balanced node have from \(\alpha\) to \(2\alpha\) keys.
@@ -151,44 +162,29 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
-    
-    \framebreak
-
     \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item The \(\alpha\) must be a Natural number, \(\alpha \in \mathbb{N}\).
-                    \item Since, there's other definitions of B-Trees that define the bounds for the keys and sub-trees in a node differently, generally we choose an \(\alpha \geq 2\).
-                    \item Also, the \(\alpha\) is often the greatest number possible that the primary memory can handle the mentioned intervals.
-                \end{itemize}
-            \end{block}
+        \begin{column}{0.5\textwidth}
+                \begin{figure}
+                    \includegraphics[width=0.45\textwidth]{resources/made/min_node.eps}
+                    \caption[]{Miminum Keys and Sub-Trees on a Node}
+                \end{figure}
         \end{column}
-        \begin{column}{\textricolumn}
+        \begin{column}{0.5\textwidth}
+
+                \begin{figure}
+                    \includegraphics[width=0.45\textwidth]{resources/made/max_node.eps}
+                    \caption[]{Maximun Keys and Sub-Trees on a Node}
+                \end{figure}
         \end{column}
     \end{columns}
     
     \framebreak
 
-    \begin{columns}
-        \begin{column}{\textwidth}
-            \begin{block}{}
-                \begin{figure}
-                    \centering
-                    \includegraphics[width=0.65\linewidth,keepaspectratio]{resources/made/a2_btree.eps}
-                    \caption[]{B-Tree, t(1, 2)}
-                \end{figure}
-                \vspace{-0.75cm}
-                \begin{figure}
-                    \centering
-                    \includegraphics[width=0.75\linewidth,keepaspectratio]{resources/made/a3_btree.eps}
-                    \caption[]{B-Tree, t(2, 2)}
-                \end{figure}
-            \end{block}    
-        \end{column}
-        \begin{column}{0pt}
-        \end{column}
-    \end{columns}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/mendivelso_a2_btree.eps}
+        \caption[]{B-Tree, t(2, 2)}
+    \end{figure}
 
     \framebreak
 
@@ -199,9 +195,16 @@
                 \begin{itemize}
                     \item We can prove the bounds of the number of sub-trees in a node, and define a function that let us get the number of sub-trees in a node.
                 \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{}
                 \begin{proof}\renewcommand{\qedsymbol}{}
                     Let \(T \in t\left(\alpha, h\right)\), and \(N(T)\) be a function that returns the number of nodes in \(T\).
-                    \\
                     Let \(N_{\text{min}}\) and \(N_{\text{max}}\) the minimum and maximal number of nodes in \(T\). Then
                     \[
                         \begin{aligned}
@@ -213,31 +216,48 @@
                 \end{proof}
             \end{block}
         \end{column}
-        \begin{column}{\textricolumn}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
+                \caption[]{B-Tree w/ the least number of nodes}
+            \end{figure}
         \end{column}
     \end{columns}
 
     \framebreak
 
     \begin{columns}
-        \begin{column}{\textlecolumn}
+        \begin{column}{0.5\textwidth}
             \begin{block}{}
-                \begin{proof}[\unskip\nopunct]
+                \begin{proof}[\unskip\nopunct]\renewcommand{\qedsymbol}{}
                     For \(h \geq 1\), we also have that
                     \[
                         \begin{aligned}
-                            N_{\text{max}} &= 1 + 2\left(\sum^{h - 1}_{i = 0} \left(2\alpha + 1\right)^i \right) \\
-                            &= 1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right) \\
+                            N_{\text{max}} &= 2\left(\sum^{h - 1}_{i = 0} \left(2\alpha + 1\right)^i \right) \\
+                            &= \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right) \\
                         \end{aligned}
                     \]
-                    \\
+                \end{proof}
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
+                \caption[]{B-Tree w/ the most number of nodes}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{proof}[\unskip\nopunct]
                     Then, if \(h = 0\), we have that \(N\left(T\right) = 0\). Else, if \(h \geq 1\)
                     \[
                         1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right)^{h - 1} - 1\right) 
                         \leq 
                         N\left(T\right) 
                         \leq 
-                        1 + \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
+                        \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
                         \tag{Nodes Bounds}\label{btree-nodes-num}
                     \]
                 \end{proof}
@@ -258,6 +278,7 @@
                     \item Each key has two sub-trees, one before and one after it. Like a normal tree.
                     \item First, let's define \(N\), a Node which isn't a leaf or \emph{Root}, from a B-Tree.
                     \item Then, we can define the set of the keys on a B-Tree Node \(N\) as \(\left\{k_1, k_2, \ldots{}, k_j\right\}\).
+                    \item Leaving the index 0 for a placeholder, which is going to be used later.
                     \item Also, defining \(\symit{l}\) as the number of keys in \(N\).
                     \item Such that for \(t\left(\alpha, h\right)\), we have \(\alpha \leq \symit{l} \leq 2\alpha\).
                 \end{itemize}
@@ -299,15 +320,43 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
+                    \item In the case that \(N\) is the \emph{Root} of the tree, the only change is the minimum number of keys and sub-trees.
+                    \item With \(\symit{l}\), already defined, \emph{Root} will have \(1 \leq \symit{l} \leq 2\alpha\) keys.
+                    \item And \(2 \leq \symit{l} + 1 \leq 2\alpha + 1\) sub-trees.
+                \end{itemize}
+                \begin{itemize}
+                    \item If \(N\) is a leaf of the tree, we are going to give the \(k_0\) a simple use.
+                    \item The \(k_0\) will store a key value for an object.
+                    \item This simple usage on a leaf is just one usage of the \(k_0\) on the nodes.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+            \begin{block}{}
+            \end{block}
+        \end{column}
+    \end{columns}
+    \begin{figure}
+        \includegraphics[width=0.55\textwidth]{resources/made/single_leaf.eps}
+        \caption[]{Leaf of a B-Tree}
+    \end{figure}
+
+    \framebreak
+
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item Going back where \(N\) is a node on the B-Tree, but now this time \(N\) can be the tree \emph{Root}.
                     \item The order of the keys of \(p_i\), a subtree of \(N\); where \(0 \leq i \leq \symit{l}\), in comparison to the keys of \(N\) can be defined by 3 cases.
                     \item But first, we need to define \(K\left(T\right)\), where \(T \in t\left(\alpha, h\right)\), which is the set of keys inside the Node \(T\).
                     \item And, \(k_j \in K\left(N\right)\), where \(j\) is the index or position of the key in \(N\).
                 \end{itemize}
                 \vspace{0.5cm}
                 \begin{align}
-                    \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_0 \tag{Case 1}\label{case1-subt-t-comp} \\
-                    \forall y \in K\left(p_{i + 1}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \tag{Case 2}\label{case2-subt-t-comp} \\
-                    \forall y \in K\left(p_{\symit{l} + 1}\right);\mspace{20mu}& k_{\symit{l}} < y \tag{Case 3}\label{case3-subt-t-comp}
+                    \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \tag{Case 1}\label{case1-subt-t-comp} \\
+                    \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \tag{Case 2}\label{case2-subt-t-comp} \\
+                    \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} < y \tag{Case 3}\label{case3-subt-t-comp}
                 \end{align}
             \end{block}
         \end{column}
@@ -323,21 +372,21 @@
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.75\linewidth,keepaspectratio]{resources/made/keys_comp_case1.eps}
+                \includegraphics[width=0.55\textwidth]{resources/made/keys_comp_case1.eps}
                 \caption{Sub-tree Keys \eqref{case1-subt-t-comp}}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
                 \centering
-                \includegraphics[width=0.75\linewidth,keepaspectratio]{resources/made/keys_comp_case3.eps}
+                \includegraphics[width=0.55\textwidth]{resources/made/keys_comp_case3.eps}
                 \caption{Sub-tree Keys \eqref{case3-subt-t-comp}}
             \end{figure}
         \end{column}
     \end{columns}
     \begin{figure}
         \centering
-        \includegraphics[width=0.4\textwidth,keepaspectratio]{resources/made/keys_comp_case2.eps}
+        \includegraphics[width=0.3\textwidth]{resources/made/keys_comp_case2.eps}
         \caption{Sub-tree Keys \eqref{case2-subt-t-comp}}
     \end{figure}
 \end{frame}
@@ -353,14 +402,6 @@
                     \item Now, The \(I_{\text{min}}\) and \(I_{\text{max}}\) of \(T\) can be easily defined by \eqref{btree-nodes-num}:
                 \end{itemize}
             \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \begin{columns}
-        \begin{column}{\textricolumn} % Inverse order of columns for better display
-        \end{column}
-        \begin{column}{\textlecolumn}
             \vspace{-0.35cm}
             \begin{tcolorbox}[boxsep=0mm,left=0mm,right=0mm,top=-2mm,halign=right]
                 \[
@@ -368,59 +409,79 @@
                     \leq 
                     N\left(T\right) 
                     \leq 
-                    1 + \frac{\left(\left(2\alpha + 1\right)^{h} - 1\right)}{2\alpha}
+                    \frac{\left(\left(2\alpha + 1\right)^{h} - 1\right)}{2\alpha}
                 \]
             \end{tcolorbox}
         \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
     \end{columns}
     \begin{columns}
-        \begin{column}{\textlecolumn}
+        \begin{column}{0.5\textwidth}
             \vspace{-0.75cm}
             \begin{block}{}
                 \[
                     \begin{aligned}
-                        I_{\text{min}} &= 1 + \alpha\left(2\frac{\left(\alpha + 1\right)^{h - 1} - 1}{\alpha}\right) \\
+                        I_{\text{min}} &= 1 + \alpha\left(N_{\text{min}}\left(T\right) - 1\right) \\
+                        &= 1 + \alpha\left(\frac{2\left(\alpha + 1\right)^{h - 1} - 2}{\alpha}\right) \\
                         &= 2\left(\alpha + 1\right)^{h - 1} - 1
                     \end{aligned}
                 \]
             \end{block}
         \end{column}
-        \begin{column}{\textricolumn}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
+                \caption[]{B-Tree w/ the least number of nodes}
+            \end{figure}
         \end{column}
     \end{columns}
 
     \framebreak
 
     \begin{columns}
-        \begin{column}{\textlecolumn}
+        \begin{column}{0.5\textwidth}
             \begin{block}{}
                 \vspace{-0.75cm}
                 \[
                     \begin{aligned}
-                        I_{\text{max}} &= 2\alpha \left(\frac{\left(2\alpha + 1\right)^h - 1}{2\alpha}\right) \\
+                        I_{\text{max}} &= 2\alpha\left(N_{\text{max}}\left(T\right)\right) \\
+                        &= 2\alpha \left(\frac{\left(2\alpha + 1\right)^h - 1}{2\alpha}\right) \\
                         &= \left(2\alpha + 1\right)^h - 1
-                    \end{aligned}
-                \]
-                \begin{itemize}
-                    \item Now, we can solve for \(h\) with each \(I\) and define an bound with them.
-                \end{itemize}
-                \[
-                    \begin{aligned}
-                        I_{\text{min}} &= 2\left(\alpha + 1\right)^{h - 1} - 1 \\
-                        \frac{I_{\text{min}}}{2} + 1 &= \left(\alpha + 1\right)^{h - 1} \\
-                        \log_{\alpha + 1} \frac{I_{\text{min}} + 1}{2} &= h
-                    \end{aligned}
-                \]
-                \[
-                    \begin{aligned}
-                        I_{\text{max}} &= \left(2\alpha + 1\right)^h - 1 \\
-                        I_{\text{max}} + 1 &= \left(2\alpha + 1\right)^h \\
-                        \log_{2\alpha + 1} I_{\text{max}} + 1 = h
                     \end{aligned}
                 \]
             \end{block}
         \end{column}
-        \begin{column}{\textricolumn}
+        \begin{column}{0.5\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
+                \caption[]{B-Tree w/ the most number of nodes}
+            \end{figure}
+        \end{column}
+    \end{columns}
+    \begin{itemize}
+        \item Now, we can solve for \(h\) with each bound of \(I\) and define an bound of h with them.
+    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{block}{}
+                \[
+                    \begin{aligned}
+                        I_{\text{min}} &= 2\left(\alpha + 1\right)^{h - 1} - 1 \\
+                        \frac{I_{\text{min} + 1}}{2} &= \left(\alpha + 1\right)^{h - 1} \\
+                        \log_{\alpha + 1}\left(\frac{I_{\text{min}} + 1}{2} + 1\right) &= h_{\text{min}}
+                    \end{aligned}
+                \]
+            \end{block}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \[
+                \begin{aligned}
+                    I_{\text{max}} &= \left(2\alpha + 1\right)^h - 1 \\
+                    I_{\text{max}} + 1 &= \left(2\alpha + 1\right)^h \\
+                    \log_{2\alpha + 1} \left(I_{\text{max}} + 1\right) = h_{\text{max}}
+                \end{aligned}
+            \]
         \end{column}
     \end{columns}
 
@@ -431,14 +492,15 @@
             \begin{block}{}
                 \begin{itemize}
                     \item Since, \(2\alpha + 1 > \alpha + 1\), then \(log_{2\alpha + 1} x \leq log_{\alpha + 1}x\), both in \(\left[1, \infty\right)\).
+                    \item Or also, if we have more nodes in a B-Tree, the height of the Tree will be less than if we have less nodes in the B-Tree.
                     \item Hence, for \(I \geq 1\), we will have the bounds for \(h\):
                 \end{itemize}
                 \[
-                    \log_{2\alpha + 1} I + 1 
+                    \log_{2\alpha + 1}\left(I + 1\right)
                     \leq
                     h
                     \leq
-                    \log_{\alpha + 1} \frac{I + 1}{2}
+                    \log_{\alpha + 1}\left(\frac{I + 1}{2} + 1\right)
                 \]
                 \begin{itemize}
                     \item And if, \(I = 0\) then, \(h = 0\).
@@ -450,18 +512,49 @@
     \end{columns}
 \end{frame}
 \begin{frame}
-    \subsection{Generic Example}
-    \frametitle{B Tree - Generic Example}
+    \frametitle{B-Tree Properties - Summary}
     \begin{columns}
         \begin{column}{\textlecolumn}
-            \begin{figure}[h!]
-                \includegraphics[width=0.5\linewidth]{resources/made/generic_min_btree.eps}
-                \caption{B-Tree w/ the least number of elements}
-            \end{figure}
-            \begin{figure}[h!]
-                \includegraphics[width=0.5\linewidth]{resources/made/generic_max_btree.eps}
-                \caption{B-Tree w/ the most number of elements}
-            \end{figure}
+            \begin{block}{}
+                \begin{itemize}
+                    \item A B-Tree is defined as: \(T \in t\left(\alpha, h\right)\)
+                    \item A B-Tree has a predefined constant \(\alpha\).
+                    \item Node can have \(\alpha \leq I \leq 2\alpha\) keys.
+                    \item Also, it has \(\alpha + 1 \leq I + 1 \leq 2\alpha + 1\) sub-trees.
+                    \item Except the \emph{Root} node, which can have at least 1 key and 2 sub-trees.
+                    \item The leafs use the \(k_0\) space to store object key information.
+                    \item For each key on sub-tree of a Node, there's 3 cases:
+                        \begin{align*}
+                            \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \\
+                            \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \\
+                            \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} < y
+                        \end{align*}
+                    \item The number of nodes of a B-Tree is bounded by:
+                        \(
+                            1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right)^{h - 1} - 1\right) 
+                            \leq 
+                            N\left(T\right) 
+                            \leq 
+                            \frac{1}{2\alpha}\left(\left(2\alpha + 1\right)^{h} - 1\right)
+                        \)
+                    \item The number of Keys in a B-Tree is bounded by:
+                        \(
+                            2\left(\alpha + 1\right)^{h - 1} - 1 
+                            \leq 
+                            I 
+                            \leq
+                            \left(2\alpha + 1\right)^h - 1
+                        \)
+                    \item The height of a B-Tree is bounded by:
+                        \[
+                            \log_{2\alpha + 1}\left(I + 1\right)
+                            \leq
+                            h
+                            \leq
+                            \log_{\alpha + 1}\left(\frac{I + 1}{2} + 1\right)
+                        \]
+                \end{itemize}
+            \end{block}
         \end{column}
         \begin{column}{\textricolumn}
         \end{column}
@@ -477,9 +570,11 @@
                     \item The structure of the B-Tree's node adds two arrays where the keys and sub-trees' pointers will be stored:
                 \end{itemize}
             \end{block}
-            \begin{block}
-                \btreeStructure
-            \end{block}
+            \inputminted[%
+                linenos,%
+                breakbytoken,%
+                highlightlines={1,5,6}%
+                ]{c}{resources/code/b_tree_struct.c}
         \end{column}
         \begin{column}{\textricolumn}
         \end{column}
@@ -504,6 +599,10 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.5\textwidth]{resources/made/external_storage_wblocks.eps}
+        \caption{External storage with the sectors to access highlighted}
+    \end{figure}
 \end{frame}
 \begin{frame}
     \subsubsection{Creating an empty B-Tree}
@@ -512,18 +611,20 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item We use \lstinline|create_tree()| to create a empty B-Tree, and since we only need to use \lstinline|get_node()|, this operation takes \(O(1)\).
+                    \item We use \lstinline|create_tree()| to create a empty B-Tree, and since we only need to use \lstinline|get_node()|, this operation takes \(\Theta(1)\).
                 \end{itemize}
-            \end{block}
-            \begin{block}
-                \btreeCreateEmpty
             \end{block}
         \end{column}
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
+    \inputminted[%
+        linenos,%
+        breakbytoken,%
+        highlightlines={3,6}%
+        ]{c}{resources/code/b_tree_create.c}
 \end{frame}
-\begin{frame}[t,allowframebreaks]
+\begin{frame}[t,allowframebreaks,allowdisplaybreaks]
     \subsubsection{Search}
     \frametitle{B-Tree Operations - Search}
     \vspace{-1cm}
@@ -539,242 +640,299 @@
         \begin{column}{\textricolumn}
         \end{column}
     \end{columns}
-    \btreeSearch
+    \inputminted[
+        highlightlines={6,12,19,22,27},
+        lastline=21
+    ]{c}{resources/code/b_tree_find.c}
+
+    \framebreak
+
+    \inputminted[
+        highlightlines={6,12,19,22,27},
+        firstline=21
+    ]{c}{resources/code/b_tree_find.c}
+    \begin{figure}[h!]
+        \includegraphics[width=0.5\linewidth]{resources/made/mendivelso_a2_btree.eps}
+    \end{figure}
 \end{frame}
-\begin{frame}[t,allowframebreaks]
+
+\begin{frame}[t,allowframebreaks,allowdisplaybreaks]
     \frametitle{B-Tree Operations - Search (Example)}
+    % Step 0
     \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item We are going to search the key: 16.
-                    \item First we will do a \emph{Binary Search} in the Keys of the node.
-                    \item We set the lower and upper as 0, 2.
-                    \item The median is 1, and the key[1] is lesser than the search key.
-                    \item Then, we update lower to 1.
-                \end{itemize}
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={},%
+                firstline=2,%
+                lastline=10,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
         \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step1.eps}
-                \end{figure}    
-                \btreeSearchStepOne
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={2, 3, 5, 6, 7},%
+                firstline=1,%
+                lastline=10,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
         \end{column}
     \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step0.eps}
+    \end{figure}
 
     \framebreak
 
+    % Step 1
     \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item We repeat the median process and get 2.
-                    \item The key[2] is greater than the search key so we update the upper.
-                    \item Now that lower is 2 and upper is 2, we had reached the key and sub-tree to keep searching.
-                    \item We move \lstinline|current_node| to \lstinline|*(node 5)|.
-                \end{itemize}
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 14, 15},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
         \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step2.eps}
-                \end{figure}    
-                \btreeSearchStepTwo
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={22, 21},%
+                firstline=12,%
+                lastline=22,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
         \end{column}
     \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step1.eps}
+    \end{figure}
 
     \framebreak
 
+    % Step 2
     \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Now we repeat the \emph{Binary search} process in the new node.
-                    \item Lower is 0, Upper is 3.
-                    \item Median is 2.
-                    \item Key[1] is greater than the search key.
-                    \item Update Upper.
-                \end{itemize}
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={12, 19, 20},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
         \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step3.eps}
-                \end{figure}    
-                \btreeSearchStepThree
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={32, 33},%
+                firstline=24,%
+                lastline=34,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
         \end{column}
     \end{columns}
-    \framebreak
-
-    \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Lower is 0 and Upper is 2.
-                    \item Median is 1.
-                    \item Key[1] is still greater than the search key.
-                    \item Update Upper.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step4.eps}
-                \end{figure}    
-                \btreeSearchStepFour
-            \end{block}
-        \end{column}
-    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step2.eps}
+    \end{figure}
 
     \framebreak
 
+    % Step 3
     \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Lower is 0 and Upper is 1.
-                    \item Median is 0.
-                    \item Key[0] is the key that we are searching, but we still need another step.
-                    \item Update Upper.
-                \end{itemize}
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={6, 9, 10},%
+                firstline=6,%
+                lastline=12,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
         \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step5.eps}
-                \end{figure}    
-                \btreeSearchStepFive
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={40, 41, 42, 44, 45},%
+                firstline=36,%
+                lastline=46,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
         \end{column}
     \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step3.eps}
+    \end{figure}
 
     \framebreak
 
+    % Step 4
     \begin{columns}
-        \begin{column}{.4\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Lower is 0 and Upper is 0.
-                    \item We break from the \emph{Binary Search} loop.
-                    \item And since we are on a leaf, we can just check if key[lower] is the search key.
-                    \item In this case, it is, so we return \lstinline|*(16)|.
-                \end{itemize}
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 16, 17},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
         \end{column}
-        \begin{column}{.6\textwidth}
-            \vspace{-1cm}
-            \begin{block}{}
-                \begin{figure}[h!]
-                    \includegraphics[width=\linewidth]{resources/made/btree_search_step6.eps}
-                \end{figure}    
-                \btreeSearchStepSix
-            \end{block}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={56, 58},%
+                firstline=48,%
+                lastline=58,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
         \end{column}
     \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step4.eps}
+    \end{figure}
+    
+    \framebreak
+
+    % Step 5
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={12, 19, 20},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={68, 69},%
+                firstline=60,%
+                lastline=70,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step5.eps}
+    \end{figure}
+
+    \framebreak
+
+    % Step 6
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={6, 9, 10},%
+                firstline=6,%
+                lastline=12,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={76, 77, 78, 80, 81},%
+                firstline=72,%
+                lastline=82,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step6.eps}
+    \end{figure}
+    
+    \framebreak
+
+    % Step 7
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 16, 17},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={92, 94},%
+                firstline=84,%
+                lastline=94,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step7.eps}
+    \end{figure}
+
+    \framebreak
+
+    % Step 8
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 16, 17},%
+                firstline=12,%
+                lastline=21,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={104, 106},%
+                firstline=96,%
+                lastline=106,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step8.eps}
+    \end{figure}
+
+    \framebreak
+
+    % Step 9
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={12},%
+                firstline=12,%
+                lastline=12,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+            \inputminted[%
+                highlightlines={22, 23, 24, 27},%
+                firstline=18,%
+                lastline=28,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_find.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={114, 115},%
+                firstline=108,%
+                lastline=116,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_search.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\linewidth]{resources/made/btree_search_step9.eps}
+    \end{figure}
 
 \end{frame}
-\begin{frame}[t,allowframebreaks]
-    \subsubsection{Insert node}
-    \frametitle{B-Tree Operation - Insert Node}
+
+\restoregeometry{}
+
+\begin{frame}[t,allowframebreaks, allowdisplaybreaks]
+    \subsubsection{Insert Value}
+    \frametitle{B-Tree Operation - Insert Value}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item Unlike all the types of trees that we've seen, in order to insert an element with it's key and value, we can't create a leaf node and insert it besides the other leaves of the tree, and if needed do some rotations in order to keep balance.
-                    \item We can only insert the key into a existing Node, and keeping in mind the \emph{Branching factor} of the tree at all times by avoiding filling up the node elements to the upper bound.
-                    \item Keeping the \emph{Branching factor} right is made by splitting of the nodes and then rotating around their \textbf{median key}.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item The \lstinline|insert| operation mainly depends on the function \lstinline|insertInternal| which takes handles almost all of the important logic when we are inserting a new key in the tree.
-                    \item The only case handled in the \lstinline|insert| operation if when we have split a node and need to create a new root to it points to the old and new nodes.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \btreeInsert
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item The \lstinline|insertInternal| function starts by getting the position of the key in the node by using \lstinline|searchKey|, the same function that in the \lstinline|search| operation.
-                    \item This to first check if the key is already in the node. 
-                    \item And since the \lstinline|searchKey| function gives us the smaller index \(i\) such that for a node \(n\) and key \(k\) to insert: \(k \leq n.keys\left[i\right]\).
-                    \item If we are in a leaf we can insert the key directly by moving the memory of the keys in the array of the node by 1 position:
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \btreeInsertInternalPartOne
-    \vspace{-1cm}
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Otherwise we will call recursively \lstinline|insertInternal| until we reach a leaf that we can insert the key.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \btreeInsertInternalPartTwo
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item Then, we will check if the number of keys in the node doesn't overflow the \(2\alpha - 1\) upper limit.
-                    \item In case of overflow, we will calculate the median key of the node, and pass it to \lstinline|insert| via an argument by reference.
-                    \item Then, it'll create a new node with the elements, keys and sub-trees to the right of the median key.
-                    \item Also setting node information like the number of keys, and is it's a leaf.
-                    \item Otherwise, if there's no overflow, just return 0.
-                \end{itemize}
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
-    \btreeInsertInternalPartThree
-    \vspace{-1cm}
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item And thus, completing the \lstinline|insert| operation.
-                    \item Since we had to access nodes all the way until a leaf, and re-balance a bunch of the nodes in the worst scenario.
-                    \item The operation will take only \(O\left(log_\alpha \frac{n + 1}{2}\right)\) of CPU processing and  \(O\left(h\right)\) of disk accesses.
-                    \item Which is fast, but there's tree that are faster in this process, mainly in the disk access.
                 \end{itemize}
             \end{block}
         \end{column}
@@ -782,21 +940,9 @@
         \end{column}
     \end{columns}
 \end{frame}
-\begin{frame}
-    \subsubsection{Destroying a B-Tree}
-    \frametitle{B-Tree Operation - Destroying a B-Tree}
-    \begin{columns}
-        \begin{column}{\textlecolumn}
-            \begin{block}{}
-                \begin{itemize}
-                    \item We just iter through each node recursively, freeing the leaves first and then the inner nodes all the way to the \emph{Root} of the tree.
-                \end{itemize}
-                \btreeDestroy
-            \end{block}
-        \end{column}
-        \begin{column}{\textricolumn}
-        \end{column}
-    \end{columns}
+\begin{frame}[allowframebreaks, allowdisplaybreaks]
+    \subsubsection{Delete Value}
+    \frametitle{B-Tree Operation - Delete Value}
 \end{frame}
 \begin{frame}
     \subsection{Secondary Memory Access}
@@ -818,7 +964,6 @@
                 \begin{figure}[h!]
                     \includegraphics[width=\linewidth]{resources/made/external_storage_wblocks.eps}
                     \caption{External storage with the sectors to access highlighted}
-                    \label{external_storage_wblocks}
                 \end{figure}
             \end{block}
         \end{column}
@@ -847,7 +992,7 @@
 %    \frametitle{(a,b)-Tree Properties - Operations}
 %\end{frame}
 
-\begin{frame}[allowframebreaks,allowdisplaybreaks]
+\begin{frame}[allowframebreaks,squeeze,allowdisplaybreaks]
     \section{Bibliography}
     \frametitle{Bibliography}   
     \nocite{*}

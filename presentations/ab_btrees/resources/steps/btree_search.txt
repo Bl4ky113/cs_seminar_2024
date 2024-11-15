@@ -1,0 +1,116 @@
+// Step 0
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 1);
+current_node->height = 2;
+current_node->degree = 2;
+
+lower = 0;
+upper = 2;
+
+// Step 1
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 1);
+current_node->height = 2;
+current_node->degree = 2;
+
+lower = 0;
+upper = 1;
+med = 1;
+
+// Step 2
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 1);
+current_node->height = 2;
+current_node->degree = 2;
+
+lower = 0;
+upper = 1;
+med = 1;
+
+// Step 3
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 2);
+current_node->height = 1;
+current_node->degree = 2;
+
+lower = 0;
+upper = 2;
+med = 1; // Not changed yet
+
+// Step 4
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 2);
+current_node->height = 1;
+current_node->degree = 2;
+
+lower = 1;
+upper = 2;
+med = 1;
+
+// Step 5
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 2);
+current_node->height = 1;
+current_node->degree = 2;
+
+lower = 1;
+upper = 2;
+med = 1;
+
+// Step 6
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 6);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 0;
+upper = 3;
+med = 1; // Not changed yet
+
+// Step 7
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 6);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 1;
+upper = 3;
+med = 1;
+
+// Step 8
+query_key = 19;
+tree = *(node 1);
+
+current_node = *(node 6);
+current_node->height = 0;
+current_node->degree = 3;
+
+lower = 2;
+upper = 3;
+med = 2;
+
+// Step 9
+query_key = 19;
+tree = *(node 1);
+
+object = *(19)
+
+lower = 2;
+upper = 3;
+med = 2;

@@ -14,6 +14,20 @@ basicstyle=\ttfamily%
     language=C%
 }
 
+% Minted Style
+\setminted{%
+    fontsize=\footnotesize,%
+    linenos=true,%
+    autogobble,%
+    tabsize=1,%
+    breaklines,%
+    frame=single,%
+    samepage=false,%
+}
+
+% Minted multipage setup
+\newenvironment{codepage}{\captionsetup{type=listing}}{}
+
 % Text
 \setbeamercolor{titlelike}{fg=black}
 \setbeamerfont{titlelike}{size=\Large,series=\bfseries}
@@ -28,8 +42,8 @@ basicstyle=\ttfamily%
 
 % Frame columns sizes
 
-\newcommand{\textlecolumn}{0.9\textwidth}
-\newcommand{\textricolumn}{0.1\textwidth}
+\newcommand{\textlecolumn}{1\textwidth}
+\newcommand{\textricolumn}{0\textwidth}
 
 % Footline
 \setbeamertemplate{navigation symbols}{}

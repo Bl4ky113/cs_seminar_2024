@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{tree\PYGZus{}node\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n+nf}{create\PYGZus{}tree}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n}{tree\PYGZus{}node\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{tmp}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{tmp}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{get\PYGZus{}node}\PYG{p}{();}
+\PYG{+w}{  }\PYG{n}{tmp}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{tmp}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{return}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{tmp}\PYG{+w}{ }\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
