@@ -1,0 +1,518 @@
+// Step 0
+tree = (*p 1);
+new_key = 10; new_object = (*10);
+
+current_node = tree;
+current_node->height = 0;
+current_node->degree = 0;
+
+insert_pt = NULL;
+insert_key = NULL;
+finishied = NULL;
+
+// Step 1
+tree = (*p 1);
+new_key = 10; new_object = (*10);
+
+current_node = tree;
+current_node->height = 0;
+current_node->degree = 1;
+
+insert_pt = NULL;
+insert_key = NULL;
+finishied = NULL;
+
+// Step 2 - 1 
+tree = (*p 1);
+new_key = 20; new_object = (*20);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 1;
+
+insert_pt = (*20); insert_key = 20;
+finishied = 0;
+
+stack = [];
+start = 0; i = NULL;
+
+// Step 2 - 2
+tree = (*p 1);
+new_key = 20; new_object = (*20);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 2;
+
+insert_pt = (*20); insert_key = 20;
+finishied = 1;
+
+stack = [];
+start = 0; i = 1;
+
+// Step 3 - 1
+tree = (*p 1);
+new_key = 15; new_object = (*15);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 2;
+
+insert_pt = (*15); insert_key = 15;
+finishied = 0;
+
+stack = [];
+start = 0; i = 2;
+
+// Step 3 - 2
+tree = (*p 1);
+new_key = 15; new_object = (*15);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 2;
+
+insert_pt = (*15); insert_key = 15;
+finishied = 0;
+
+stack = [];
+start = 0; i = 1;
+
+// Step 3 - 3
+tree = (*p 1);
+new_key = 15; new_object = (*15);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 3;
+
+insert_pt = (*15); insert_key = 15;
+finishied = 1;
+
+stack = [];
+start = 0; i = 1;
+
+// Step 4 - 1
+tree = (*p 1);
+new_key = 17; new_object = (*17);
+
+current_node = tree;
+current_node->height = 0; current_node->degree = 3;
+new_node = NULL;
+
+insert_pt = (*17); insert_key = 17;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 0; i = 2; j = 1;
+
+// Step 4 - 2
+tree = (*p 1);
+new_key = 17; new_object = (*17);
+
+current_node = tree; ->height = 0; ->degree = 3;
+new_node = (*p 2); ->height = 0; ->degree = 0;
+
+insert_pt = (*17); insert_key = 17;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 0; i = 1; j = 0;
+
+// Step 4 - 3
+tree = (*p 1);
+new_key = 17; new_object = (*17);
+
+current_node = tree; ->height = 0; ->degree = 3;
+new_node = (*p 2); ->height = 0; ->degree = 0;
+
+insert_pt = (*17); insert_key = 17;
+finishied = 0; insert_done = 1;
+
+stack = [];
+start = 0; i = 0; j = -1;
+
+// Step 4 - 5
+tree = (*p 1);
+new_key = 17; new_object = (*17);
+
+current_node = tree; ->height = 0; ->degree = 2;
+new_node = (*p 2); ->height = 0; ->degree = 2;
+insert_pt = (*p 2); 
+
+insert_key = 17;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 0; i = 0; j = -1;
+
+// Step 4 - 6
+tree = (*p 1);
+new_key = 17; new_object = (*17);
+
+current_node = tree; ->height = 1; ->degree = 2;
+new_node = (*p 3); ->height = 0; ->degree = 2;
+insert_pt = (*p 2); ->height = 0; ->degree = 2;
+
+insert_key = 17;
+finishied = 1; insert_done = 0;
+
+stack = [];
+start = 0; i = 0; j = -1;
+
+// Step 5 - 1
+tree = (*p 1);
+new_key = 25; new_object = (*25);
+
+current_node = tree; ->height = 1; ->degree = 2;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = [(*p 1)];
+lower = 0; upper = 2;
+
+// Step 5 - 2
+tree = (*p 1);
+new_key = 25; new_object = (*25);
+
+current_node = (*p 2); ->height = 0; ->degree = 2;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = [(*p 1)];
+lowwer = 1; upper = 2;
+
+// Step 5 - 3
+tree = (*p 1);
+new_key = 25; new_object = (*25);
+
+current_node = (*p 2); ->height = 0; ->degree = 2;
+
+insert_pt = (* 25); insert_key = 25;
+finishied = 0;
+
+stack = [(*p 1)];
+start = 0; i = NULL;
+
+// Step 5 - 4
+tree = (*p 1);
+new_key = 25; new_object = (*25);
+
+current_node = (*p 2); ->height = 0; ->degree = 3;
+
+insert_pt = (* 25); insert_key = 25;
+finishied = 1;
+
+stack = [(*p 1)];
+start = 0; i = 2;
+
+// Step 6 - 1 - ... - 5 
+tree = (*p 1);
+new_key = 14; new_object = (*14);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+
+insert_pt = (* 14); insert_key = 14;
+finishied = 1;
+
+stack = [(*p 1)];
+start = 0; i = 1;
+
+// Step 7 - 1
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = tree; ->height = 1; ->degree = 2;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = [(*p 1)];
+lowwer = 0; upper = 2;
+
+// Step 7 - 2
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 2); ->height = 0; ->degree = 3;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = [(*p 1)];
+lower = 1; upper = 2;
+
+// Step 7 - 3
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 2); ->height = 0; ->degree = 3;
+new_node = (*p 4); -> height = 0; ->degree 0;
+
+insert_pt = (*30); insert_key = 30;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)];
+start = 0; i = 2; j = 1;
+
+// Step 7 - 4
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 2); ->height = 0; ->degree = 3;
+new_node = (*p 4); -> height = 0; ->degree 0;
+
+insert_pt = (*30); insert_key = 30;
+finishied = 0; insert_done = 1;
+
+stack = [(*p 1)];
+start = 0; i = 2; j = 0;
+
+// Step 7 - 5
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 2); ->height = 0; ->degree = 3;
+new_node = (*p 4); -> height = 0; ->degree 0;
+
+insert_pt = (*30); insert_key = 30;
+finishied = 0; insert_done = 1;
+
+stack = [(*p 1)];
+start = 0; i = 1; j = -1;
+
+// Step 7 - 6
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+//current_node = (*p 2); ->height = 0; ->degree = 2;
+current_node = (*p 1); ->height = 1; ->degree = 2;
+new_node = (*p 4); -> height = 0; ->degree 2;
+
+insert_pt = (*p 4); insert_key = 30;
+finishied = 0; insert_done = 1;
+
+stack = [];
+start = 0; i = 2; j = -1;
+
+// Step 7 - 7
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 1); ->height = 1; ->degree = 2;
+new_node = (*p 4); -> height = 0; ->degree 2;
+
+insert_pt = (*p 4); insert_key = 30;
+finishied = 0; insert_done = 1;
+
+stack = [];
+start = 1; i = NULL;
+
+// Step 7 - 8
+tree = (*p 1);
+new_key = 30; new_object = (*30);
+
+current_node = (*p 1); ->height = 1; ->degree = 3;
+new_node = (*p 4); -> height = 0; ->degree 2;
+
+insert_pt = (*p 4); insert_key = 30;
+finishied = 1; insert_done = 1;
+
+stack = [];
+start = 1; i = 2;
+
+// Step 8 - 1
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = tree; ->height = 1; ->degree = 3;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = []
+lower = 0; upper = 3;
+
+// Step 8 - 2
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+
+insert_pt = NULL; insert_key = NULL;
+finishied = NULL;
+
+stack = [(*p 1)]
+lower = 0; upper = 1;
+
+// Step 8 - 3
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)]
+start = 0; i = 2; j = 1;
+
+// Step 8 - 3
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)]
+start = 0; i = 2; j = 1;
+
+// Step 8 - 4
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)]
+start = 0; i = 1; j = 0;
+
+// Step 8 - 5
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)]
+start = 0; i = 0; j = -1;
+
+// Step 8 - 6
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 0;
+
+stack = [(*p 1)]
+start = 0; i = -1; j = -1;
+
+// Step 8 - 7
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 3); ->height = 0; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 0;
+
+insert_pt = (* 9); insert_key = 9;
+finishied = 0; insert_done = 1;
+
+stack = [(*p 1)]
+start = 0; i = -1; j = -1;
+
+// Step 8 - 8
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+//current_node = (*p 3); ->height = 0; ->degree = 2;
+current_node = (*p 1); ->height = 1; ->degree = 3;
+new_node = (*p 5); ->height = 0; -> degree = 2;
+
+insert_pt = (*p 5); insert_key = 14;
+finishied = 0;
+
+// Step 8 - 9
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 3;
+//new_node = (*p 5); ->height = 0; -> degree = 2;
+new_node = (*p 6); ->height = 0; -> degree = 2;
+
+insert_pt = (*p 5); insert_key = 14;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 1; i = 2; j = 1;
+
+// Step 8 - 10
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 3;
+new_node = (*p 6); ->height = 0; -> degree = 2;
+
+insert_pt = (*p 5); insert_key = 14;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 1; i = 1; j = 0;
+
+// Step 8 - 11
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 3;
+new_node = (*p 6); ->height = 0; -> degree = 2;
+
+insert_pt = (*p 5); insert_key = 14;
+finishied = 0; insert_done = 0;
+
+stack = [];
+start = 1; i = 0; j = -1;
+
+// Step 8 - 12
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 3;
+new_node = (*p 6); ->height = 0; -> degree = 2;
+
+insert_pt = (*p 5); insert_key = 14;
+finishied = 0; insert_done = 1;
+
+stack = [];
+start = 1; i = 0; j = -1;
+
+// Step 8 - 13
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 2;
+new_node = (*p 6); ->height = 1; -> degree = 2;
+
+insert_pt = (*p 6); insert_key = 17;
+finishied = 0; insert_done = 1;
+
+stack = [];
+start = 1; i = 0; j = -1;
+
+// Step 8 - 14
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 1; ->degree = 2;
+new_node = (*p 7); ->height = 0; -> degree = 0;
+insert_pt = (*p 6); insert_key = 17;
+
+finishied = 0;
+
+// Step 8 - 15
+tree = (*p 1);
+new_key = 5; new_object = (*5);
+
+current_node = (*p 1); ->height = 2; ->degree = 2;
+new_node = (*p 7); ->height = 1; -> degree = 2;
+insert_pt = (*p 6); insert_key = 17;
+
+finishied = 1;

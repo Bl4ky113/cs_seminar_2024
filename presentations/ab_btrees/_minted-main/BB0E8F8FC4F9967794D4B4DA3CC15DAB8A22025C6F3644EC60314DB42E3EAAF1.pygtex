@@ -1,0 +1,209 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{object\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n+nf}{delete}\PYG{p}{(}\PYG{n}{tree\PYGZus{}node\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{tree}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{key\PYGZus{}t}\PYG{+w}{ }\PYG{n}{delete\PYGZus{}key}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{tree\PYGZus{}node\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{current}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{tmp\PYGZus{}node}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{finished}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{i}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{j}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{current}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tree}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{create\PYGZus{}node\PYGZus{}stack}\PYG{p}{();}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{n}{create\PYGZus{}index\PYGZus{}stack}\PYG{p}{();}
+\PYG{+w}{    }\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{c+cm}{/* not at leaf level */}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{lower}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{upper}\PYG{p}{;}
+\PYG{+w}{        }\PYG{c+cm}{/* binary search among keys */}
+\PYG{+w}{        }\PYG{n}{lower}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{upper}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{upper}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{lower}\PYG{+w}{ }\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{delete\PYGZus{}key}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{upper}\PYG{o}{+}\PYG{n}{lower}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{p}{]}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }
+\PYG{+w}{                }\PYG{n}{upper}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{upper}\PYG{o}{+}\PYG{n}{lower}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{+w}{            }\PYG{k}{else}
+\PYG{+w}{                }\PYG{n}{lower}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{upper}\PYG{o}{+}\PYG{n}{lower}\PYG{p}{)}\PYG{o}{/}\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{        }\PYG{n}{push\PYGZus{}index\PYGZus{}stack}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{lower}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{push\PYGZus{}node\PYGZus{}stack}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{        }\PYG{n}{current}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{lower}\PYG{p}{];}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{c+cm}{/* now current is leaf node from which we delete */}
+\PYG{+w}{    }\PYG{k}{for}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{delete\PYGZus{}key}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{            }\PYG{k}{break}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{c+cm}{/* delete failed; key does not exist */}
+\PYG{+w}{        }\PYG{k}{return}\PYG{p}{(}\PYG{+w}{ }\PYG{n+nb}{NULL}\PYG{+w}{ }\PYG{p}{);}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{c+cm}{/* key exists, now delete from leaf node */}
+\PYG{+w}{        }\PYG{n}{object\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{del\PYGZus{}object}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{del\PYGZus{}object}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{object\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{)}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+\PYG{+w}{        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZhy{}=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{            }\PYG{n}{i}\PYG{o}{+=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{c+cm}{/* deleted from node, now rebalance */}
+\PYG{+w}{        }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{o}{!}\PYG{+w}{ }\PYG{n}{finished}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{            }\PYG{k}{if}\PYG{p}{(}\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{n}{ALPHA}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }
+\PYG{+w}{                }\PYG{c+cm}{/* node still full enough, can stop */}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                }\PYG{c+cm}{/* node became underfull */}
+\PYG{+w}{                }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{stack\PYGZus{}empty}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                    }\PYG{c+cm}{/* current is root */}
+\PYG{+w}{                    }\PYG{k}{if}\PYG{p}{(}\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{                        }\PYG{c+cm}{/* root still necessary */}
+\PYG{+w}{                        }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }
+\PYG{+w}{                    }\PYG{k}{else}\PYG{+w}{ }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{                        }\PYG{c+cm}{/* deleting last keys from root */}
+\PYG{+w}{                        }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }
+\PYG{+w}{                    }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                        }\PYG{c+cm}{/* delete root, copy to keep address */}
+\PYG{+w}{                        }\PYG{n}{tmp\PYGZus{}node}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                        }\PYG{k}{for}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{tmp\PYGZus{}node}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tmp\PYGZus{}node}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{tmp\PYGZus{}node}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                            }\PYG{n}{tmp\PYGZus{}node}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                            }\PYG{n}{tmp\PYGZus{}node}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{n}{return\PYGZus{}node}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{tmp\PYGZus{}node}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{                        }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                    }\PYG{c+cm}{/* done with root */}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                    }\PYG{c+cm}{/* delete from non\PYGZhy{}root node */}
+\PYG{+w}{                    }\PYG{n}{tree\PYGZus{}node\PYGZus{}t}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{upper}\PYG{p}{,}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{neighbor}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{curr}\PYG{p}{;}
+\PYG{+w}{                    }\PYG{n}{upper}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pop\PYGZus{}node\PYGZus{}stack}\PYG{p}{();}
+\PYG{+w}{                    }\PYG{n}{curr}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{pop\PYGZus{}index\PYGZus{}stack}\PYG{p}{();}
+\PYG{+w}{                    }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{curr}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}1}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                        }\PYG{c+cm}{/* not last*/}
+\PYG{+w}{                        }\PYG{n}{neighbor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{curr}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                        }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{ALPHA}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{c+cm}{/* sharing possible */}
+\PYG{+w}{                            }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{c+cm}{/* on leaf level, take leaf key */}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{k}{for}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                            }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZhy{}=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{o}{+=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* sharing complete */}
+\PYG{+w}{                        }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{c+cm}{/* must join */}
+\PYG{+w}{                            }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{k}{else}\PYG{+w}{ }\PYG{c+cm}{/* on leaf level, take leaf key */}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{k}{for}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{o}{++}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{return\PYGZus{}node}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{                            }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZhy{}=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{curr}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{k}{while}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{+=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }
+\PYG{+w}{                            }\PYG{c+cm}{/* deleted from upper, now propagate up */}
+\PYG{+w}{                            }\PYG{n}{current}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{upper}\PYG{p}{;}
+\PYG{+w}{                        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of share/joining if\PYGZhy{}else*/}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                    }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                        }\PYG{c+cm}{/* current is last entry in upper */}
+\PYG{+w}{                        }\PYG{n}{neighbor}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{curr}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{]}
+\PYG{+w}{                            }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{ALPHA}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{c+cm}{/* sharing possible */}
+\PYG{+w}{                                }\PYG{k}{for}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{];}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                                }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                                    }\PYG{c+cm}{/* on leaf level, take leaf key */}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                                }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{l+m+mi}{\PYGZhy{}1}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZhy{}=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{o}{+=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{n}{finished}\PYG{+w}{ }\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* sharing complete */}
+\PYG{+w}{                            }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                }\PYG{c+cm}{/* must join */}
+\PYG{+w}{                                }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{k}{if}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{height}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{+w}{ }\PYG{p}{)}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{curr}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{k}{else}\PYG{+w}{ }\PYG{c+cm}{/* on leaf level, take leaf key */}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                    }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{k}{for}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{+w}{ }
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{o}{++}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{next}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                                    }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}
+\PYG{+w}{                                        }\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{key}\PYG{p}{[}\PYG{n}{j}\PYG{p}{];}
+\PYG{+w}{                                }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{                                }\PYG{n}{neighbor}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{n}{return\PYGZus{}node}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{current}\PYG{+w}{ }\PYG{p}{);}
+\PYG{+w}{                                }\PYG{n}{upper}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{degree}\PYG{+w}{ }\PYG{o}{\PYGZhy{}=}\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{                                }\PYG{c+cm}{/* deleted from upper, now propagate up */}
+\PYG{+w}{                                }\PYG{n}{current}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{upper}\PYG{p}{;}
+\PYG{+w}{                            }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of share/joining if\PYGZhy{}else */}
+\PYG{+w}{                    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of current is (not) last in upper if\PYGZhy{}else*/}
+\PYG{+w}{                }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of delete root/non\PYGZhy{}root if\PYGZhy{}else */}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of full/underfull if\PYGZhy{}else */}
+\PYG{+w}{        }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of while not finished */}
+
+\PYG{+w}{        }\PYG{k}{return}\PYG{p}{(}\PYG{+w}{ }\PYG{n}{del\PYGZus{}object}\PYG{+w}{ }\PYG{p}{);}
+
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{c+cm}{/* end of delete object exists if\PYGZhy{}else */}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

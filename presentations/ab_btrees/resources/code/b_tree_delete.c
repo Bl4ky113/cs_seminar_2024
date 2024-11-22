@@ -41,7 +41,7 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
         /* deleted from node, now rebalance */
         finished = 0;
         while( ! finished ) {
-            if(current->degree >= A ) { 
+            if(current->degree >= ALPHA ) { 
                 finished = 1; 
                 /* node still full enough, can stop */
             }
@@ -79,7 +79,7 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
                     if( curr < upper->degree -1 ) { 
                         /* not last*/
                         neighbor = upper->next[curr+1];
-                        if( neighbor->degree >A ) { 
+                        if( neighbor->degree > ALPHA ) { 
                             /* sharing possible */
                             i = current->degree;
                             if( current->height > 0 )
@@ -143,7 +143,7 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
                     else { 
                         /* current is last entry in upper */
                         neighbor = upper->next[curr-1]
-                            if( neighbor->degree >A ) { 
+                            if( neighbor->degree > ALPHA ) { 
                                 /* sharing possible */
                                 for( j = current->degree; j > 1; j--) { 
                                     current->next[j] =

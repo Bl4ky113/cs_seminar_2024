@@ -39,7 +39,7 @@ int insert(tree_node_t *tree, key_t new_key, object_t *new_object) {
             start = 0;
             /* insertion in non-leaf starts at 0 */
         /* node still has room */
-        if( current_node->degree < 2 * ALPHA ) { 
+        if( current_node->degree < (2 * ALPHA) - 1) { 
             /* move everything up to create the insertion gap */
             i = current_node->degree;
             while( (i > start) && (current_node->key[i-1] > insert_key)) {
@@ -62,8 +62,8 @@ int insert(tree_node_t *tree, key_t new_key, object_t *new_object) {
             tree_node_t *new_node;
             int j, insert_done = 0;
             new_node = get_node();
-            i = B-1; 
-            j = (B-1)/2;
+            i = ((2 * ALPHA) - 1)-1; 
+            j = (((2 * ALPHA) - 1)-1)/2;
             while( j >= 0 ) { 
                 /* copy upper half to new node */
                 if( insert_done || insert_key < current_node->key[i] ) {
@@ -95,8 +95,8 @@ int insert(tree_node_t *tree, key_t new_key, object_t *new_object) {
             } 
             /*finished insertion */
 
-            current_node->degree = B+1 - ((B+1)/2);
-            new_node->degree = (B+1)/2;
+            current_node->degree = ((2 * ALPHA) - 1)+1 - ((((2 * ALPHA) - 1)+1)/2);
+            new_node->degree = (((2 * ALPHA) - 1)+1)/2;
             new_node->height = current_node->height;
             /* split nodes complete, now insert the new node above */
             insert_pt = new_node;

@@ -123,13 +123,13 @@
     
     \framebreak{}
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.35\textwidth}
                 \begin{figure}
                     \includegraphics[width=\textwidth]{resources/made/single_node.eps}
                     \caption[]{Node of a B-Tree}
                 \end{figure}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.35\textwidth}
                 \begin{figure}
                     \includegraphics[width=\textwidth]{resources/made/single_leaf.eps}
                     \caption[]{Leaf of a B-Tree}
@@ -137,7 +137,7 @@
         \end{column}
     \end{columns}
     \begin{figure}
-        \includegraphics[width=0.4\textwidth]{resources/made/single_node_generic.eps}
+        \includegraphics[width=0.25\textwidth]{resources/made/single_node_generic.eps}
         \caption[]{Generic Node of a B-Tree}
     \end{figure}
 \end{frame}
@@ -201,7 +201,7 @@
         \end{column}
     \end{columns}
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.45\textwidth}
             \begin{block}{}
                 \begin{proof}\renewcommand{\qedsymbol}{}
                     Let \(T \in t\left(\alpha, h\right)\), and \(N(T)\) be a function that returns the number of nodes in \(T\).
@@ -216,9 +216,9 @@
                 \end{proof}
             \end{block}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{figure}
-                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
+                \includegraphics[width=\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
                 \caption[]{B-Tree w/ the least number of nodes}
             \end{figure}
         \end{column}
@@ -227,7 +227,7 @@
     \framebreak
 
     \begin{columns}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.4\textwidth}
             \begin{block}{}
                 \begin{proof}[\unskip\nopunct]\renewcommand{\qedsymbol}{}
                     For \(h \geq 1\), we also have that
@@ -240,9 +240,9 @@
                 \end{proof}
             \end{block}
         \end{column}
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.6\textwidth}
             \begin{figure}
-                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
+                \includegraphics[width=1\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
                 \caption[]{B-Tree w/ the most number of nodes}
             \end{figure}
         \end{column}
@@ -337,7 +337,7 @@
         \end{column}
     \end{columns}
     \begin{figure}
-        \includegraphics[width=0.55\textwidth]{resources/made/single_leaf.eps}
+        \includegraphics[width=0.45\textwidth]{resources/made/single_leaf.eps}
         \caption[]{Leaf of a B-Tree}
     \end{figure}
 
@@ -355,8 +355,8 @@
                 \vspace{0.5cm}
                 \begin{align}
                     \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \tag{Case 1}\label{case1-subt-t-comp} \\
-                    \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \tag{Case 2}\label{case2-subt-t-comp} \\
-                    \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} < y \tag{Case 3}\label{case3-subt-t-comp}
+                    \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i \leq y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \tag{Case 2}\label{case2-subt-t-comp} \\
+                    \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} \leq y \tag{Case 3}\label{case3-subt-t-comp}
                 \end{align}
             \end{block}
         \end{column}
@@ -526,8 +526,8 @@
                     \item For each key on sub-tree of a Node, there's 3 cases:
                         \begin{align*}
                             \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \\
-                            \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i < y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \\
-                            \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} < y
+                            \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i \leq y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \\
+                            \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} \leq y
                         \end{align*}
                     \item The number of nodes of a B-Tree is bounded by:
                         \(
@@ -587,7 +587,7 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item For this operations, we will assume that the whole B-Tree is loaded into main memory.
+                    \item For these operations, we will assume that the whole B-Tree is loaded into main memory.
                     \item We have to asume this since the main usage of the B-Tree is oriented to secondary storage.
                     \item Generally, only the \emph{Root} and node to operate, if available, will be always available in memory.
                     \item But if we need any other node, we will have to read into our secondary memory and fetch it's data.
@@ -652,8 +652,11 @@
         firstline=21
     ]{c}{resources/code/b_tree_find.c}
     \begin{figure}[h!]
-        \includegraphics[width=0.5\linewidth]{resources/made/mendivelso_a2_btree.eps}
+        \includegraphics[width=0.6\linewidth]{resources/made/mendivelso_a2_btree.eps}
     \end{figure}
+    \begin{itemize}
+        \item Let's search for \(19\) in this \(t\left(2,2\right)\) B-Tree.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[t,allowframebreaks,allowdisplaybreaks]
@@ -679,7 +682,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step0.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step0.eps}
     \end{figure}
 
     \framebreak
@@ -705,7 +708,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step1.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step1.eps}
     \end{figure}
 
     \framebreak
@@ -731,7 +734,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step2.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step2.eps}
     \end{figure}
 
     \framebreak
@@ -757,7 +760,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step3.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step3.eps}
     \end{figure}
 
     \framebreak
@@ -783,12 +786,12 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step4.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step4.eps}
     \end{figure}
     
     \framebreak
 
-    % Step 5
+    % Step 4
     \begin{columns}
         \begin{column}{.5\textwidth}
             \inputminted[%
@@ -809,7 +812,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step5.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step4.eps}
     \end{figure}
 
     \framebreak
@@ -835,7 +838,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step6.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step6.eps}
     \end{figure}
     
     \framebreak
@@ -861,7 +864,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step7.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step7.eps}
     \end{figure}
 
     \framebreak
@@ -887,7 +890,7 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.55\linewidth]{resources/made/btree_search_step8.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step8.eps}
     \end{figure}
 
     \framebreak
@@ -919,11 +922,9 @@
         \end{column}
     \end{columns}
     \begin{figure}[h!]
-        \includegraphics[width=0.45\linewidth]{resources/made/btree_search_step9.eps}
+        \includegraphics[width=0.65\textwidth]{resources/made/search/btree_search_step9.eps}
     \end{figure}
 \end{frame}
-
-\restoregeometry{}
 
 \begin{frame}[t,allowframebreaks, allowdisplaybreaks]
     \subsubsection{Insert value}
@@ -965,6 +966,1041 @@
         highlightlines={13, 14, 17, 20, 26, 30, 31, 33, 35, 38, 42, 45, 56, 64, 65, 66, 67, 81, 98, 99, 100, 102, 103, 104, 108, 110, 111, 117, 119, 121, 122, 123, 124, 125, 126, 130, 131},
         firstline=96
     ]{c}{resources/code/b_tree_insert.c}
+
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step0.eps}
+    \end{figure}
+
+    \begin{itemize}
+        \item Now, lets create a new empty tree and insert a lot of elements in a \(t\left(2, 0\right)\) B-Tree.
+    \end{itemize}
+\end{frame}
+\begin{frame}[allowframebreaks, allowdisplaybreaks]
+    \frametitle{B-Tree Operations - Search (Example)}
+    % Step 0
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={},%
+                firstline=1,%
+                lastline=11,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={2, 3, 5, 9, 10, 11},%
+                firstline=1,%
+                lastline=11,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step0.eps}
+    \end{figure}   
+    \framebreak
+    % Step 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={6,7,8,9,10},%
+                firstline=1,%
+                lastline=11,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={15,17,18,19},%
+                firstline=13,%
+                lastline=23,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step1.eps}
+    \end{figure}
+    \framebreak
+    % Step 2 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 14},%
+                firstline=13,%
+                lastline=14,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={33, 35, 39},%
+                firstline=30,%
+                lastline=40,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={27, 32, 33, 35, 36},%
+                firstline=25,%
+                lastline=36,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step2-1.eps}
+    \end{figure}
+    \framebreak
+    % Step 2 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42, 44, 45},%
+                firstline=41,%
+                lastline=45,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={53, 54, 55, 56},%
+                firstline=53,%
+                lastline=57,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={49, 40, 43, 45},%
+                firstline=38,%
+                lastline=49,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step2-2.eps}
+    \end{figure}
+    \framebreak
+    % Step 3 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42, 44, 45, 46,49},%
+                firstline=41,%
+                lastline=51,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={62, 53, 58},%
+                firstline=51,%
+                lastline=62,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step3-1.eps}
+    \end{figure}
+    \framebreak
+    % Step 3 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42, 44, 45, 46, 47, 48, 49},%
+                firstline=41,%
+                lastline=51,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={75},%
+                firstline=64,%
+                lastline=75,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step3-2.eps}
+    \end{figure}
+    \framebreak
+    % Step 3 - 3
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={53, 54, 55, 56},%
+                firstline=53,%
+                lastline=57,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={88, 85, 82},%
+                firstline=77,%
+                lastline=88,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step3-3.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42},%
+                firstline=42,%
+                lastline=42,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={62, 63, 64, 65, 66},%
+                firstline=59,%
+                lastline=66,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={95, 96, 99, 102},%
+                firstline=90,%
+                lastline=102,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.6\textwidth]{resources/made/insert/btree_insert_step4-1.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={67, 69, 70, 72, 71, 73},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={115},%
+                firstline=104,%
+                lastline=115,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.6\textwidth]{resources/made/insert/btree_insert_step4-2.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 3
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={67, 69, 75, 76, 77},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={128},%
+                firstline=117,%
+                lastline=128,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.6\textwidth]{resources/made/insert/btree_insert_step4-3.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 4
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={98, 99, 100, 102, 103},%
+                firstline=96,%
+                lastline=104,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={},%
+                firstline=107,%
+                lastline=107,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={134, 135, 136},%
+                firstline=130,%
+                lastline=142,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.6\textwidth]{resources/made/insert/btree_insert_step4-4.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 5
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={110, 112, 114, 117, 119},%
+                firstline=108,%
+                lastline=120,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={125},%
+                firstline=130,%
+                lastline=141,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step4-5.eps}
+    \end{figure}
+    \framebreak
+    % Step 4 - 6
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={121, 122, 123, 124, 125, 126, 130, 131},%
+                firstline=121,%
+                lastline=132,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={148, 153, 149, 150},%
+                firstline=144,%
+                lastline=156,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.35\textwidth]{resources/made/insert/btree_insert_step4-6.eps}
+    \end{figure}
+    \framebreak
+    % Step 5 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={15, 17, 20, 21, 24},%
+                firstline=13,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={167, 168},%
+                firstline=158,%
+                lastline=168,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step5-1.eps}
+    \end{figure}
+    % Step 5 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={20, 26},%
+                firstline=13,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={180, 174},%
+                firstline=170,%
+                lastline=180,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step5-2.eps}
+    \end{figure}
+    % Step 5 - 3
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={35, 39},%
+                firstline=33,%
+                lastline=42,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={192, 189, 188},%
+                firstline=182,%
+                lastline=192,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step5-3.eps}
+    \end{figure}
+    % Step 5 - 4
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={35, 39},%
+                firstline=42,%
+                lastline=45,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={35, 39},%
+                firstline=51,%
+                lastline=57,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={198, 201},%
+                firstline=194,%
+                lastline=204,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step5-4.eps}
+    \end{figure}
+    % Step 6 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={35, 39},%
+                firstline=53,%
+                lastline=57,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={210, 213},%
+                firstline=206,%
+                lastline=216,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step6-1.eps}
+    \end{figure}
+    % Step 7 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={15, 17, 20, 21, 24},%
+                firstline=13,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={228, 222},%
+                firstline=218,%
+                lastline=228,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step7-1.eps}
+    \end{figure}
+    % Step 7 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={20, 26},%
+                firstline=13,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={240, 234},%
+                firstline=230,%
+                lastline=240,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.3\textwidth]{resources/made/insert/btree_insert_step7-2.eps}
+    \end{figure}
+    % Step 7 - 3
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42},%
+                firstline=42,%
+                lastline=42,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={60},%
+                firstline=60,%
+                lastline=66,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={250, 253},%
+                firstline=242,%
+                lastline=253,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-3.eps}
+    \end{figure}
+    % Step 7 - 4
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={69, 75, 76},%
+                firstline=69,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={266, 263},%
+                firstline=255,%
+                lastline=266,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-4.eps}
+    \end{figure}
+    % Step 7 - 5
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={69, 70, 72},%
+                firstline=69,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={279},%
+                firstline=268,%
+                lastline=279,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-5.eps}
+    \end{figure}
+    % Step 7 - 6
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={98, 99, 100, 102, 103, 104, 106},%
+                firstline=98,%
+                lastline=107,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={292, 290, 289, 287, 286, 285, 282},%
+                firstline=281,%
+                lastline=292,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-6.eps}
+    \end{figure}
+    % Step 7 - 7
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={33, 35},%
+                firstline=33,%
+                lastline=40,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={306, 299, 300, 302},%
+                firstline=295,%
+                lastline=306,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-7.eps}
+    \end{figure}
+    % Step 7 - 8
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={42, 44, 45},%
+                firstline=42,%
+                lastline=45,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={53, 54, 55, 56},%
+                firstline=51,%
+                lastline=57,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={319, 316},%
+                firstline=308,%
+                lastline=319,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step7-8.eps}
+    \end{figure}
+    % Step 8 - 1
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={13, 15, 17, 18, 19, 20, 21, 22},%
+                firstline=13,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={323, 325, 330, 331},%
+                firstline=321,%
+                lastline=331,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step8-1.eps}
+    \end{figure}
+    % Step 8 - 2
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={20, 21, 22, 26, 14},%
+                firstline=14,%
+                lastline=27,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={342, 343},%
+                firstline=333,%
+                lastline=343,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.45\textwidth]{resources/made/insert/btree_insert_step8-2.eps}
+    \end{figure}
+    % Step 8 - 3
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={33},%
+                firstline=33,%
+                lastline=33,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={42},%
+                firstline=42,%
+                lastline=42,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={62, 64, 65, 66},%
+                firstline=60,%
+                lastline=66,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={350, 352, 353, 356},%
+                firstline=345,%
+                lastline=356,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-3.eps}
+    \end{figure}
+    % Step 8 - 4
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={69, 70, 72},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={382, 379},%
+                firstline=371,%
+                lastline=382,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-4.eps}
+    \end{figure}
+    % Step 8 - 5
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={69, 70, 72},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={395},%
+                firstline=384,%
+                lastline=395,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-5.eps}
+    \end{figure}
+    % Step 8 - 6
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={81, 82, 83, 85, 87},%
+                firstline=81,%
+                lastline=95,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={395},%
+                firstline=384,%
+                lastline=395,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-6.eps}
+    \end{figure}
+    % Step 8 - 7
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={81, 82, 89, 91, 93},%
+                firstline=81,%
+                lastline=95,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={418},%
+                firstline=410,%
+                lastline=421,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-7.eps}
+    \end{figure}
+    % Step 8 - 8
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={98, 99, 100, 102, 103, 104, 106},%
+                firstline=98,%
+                lastline=107,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={427, 428, 429, 431, 432},%
+                firstline=423,%
+                lastline=436,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-8.eps}
+    \end{figure}
+    % Step 8 - 9
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={33},%
+                firstline=33,%
+                lastline=33,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={42},%
+                firstline=42,%
+                lastline=42,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={62, 64, 65, 66},%
+                firstline=60,%
+                lastline=66,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={439, 440, 446},%
+                firstline=434,%
+                lastline=446,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-9.eps}
+    \end{figure}
+    % Step 8 - 10
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={67, 69, 70, 72},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={459},%
+                firstline=448,%
+                lastline=459,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-10.eps}
+    \end{figure}
+    % Step 8 - 11
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={67, 69, 70, 72},%
+                firstline=67,%
+                lastline=79,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={472, 469},%
+                firstline=461,%
+                lastline=472,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-11.eps}
+    \end{figure}
+    % Step 8 - 12
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={81, 82, 89, 91, 93},%
+                firstline=81,%
+                lastline=95,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={482},%
+                firstline=474,%
+                lastline=485,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-12.eps}
+    \end{figure}
+    % Step 8 - 13
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={98,99,100,102,103,104},%
+                firstline=98,%
+                lastline=107,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={491, 492, 497},%
+                firstline=487,%
+                lastline=498,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-13.eps}
+    \end{figure}
+    % Step 8 - 14
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={110, 112, 114},%
+                firstline=108,%
+                lastline=116,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={505},%
+                firstline=500,%
+                lastline=508,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[width=0.68\textwidth]{resources/made/insert/btree_insert_step8-14.eps}
+    \end{figure}
+    \framebreak
+    % Step 8 - 15
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+            \inputminted[%
+                highlightlines={121, 122, 123, 124, 125, 126},%
+                firstline=117,%
+                lastline=126,%
+                tabsize=1,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \renewcommand{\theFancyVerbLine}{}
+            \inputminted[%
+                highlightlines={514, 515},%
+                firstline=510,%
+                lastline=518,%
+                tabsize=0,%
+            ]{c}{resources/steps/btree_insert.txt}
+        \end{column}
+    \end{columns}
+    \framebreak
+    \begin{figure}[h!]
+        \includegraphics[width=\textwidth]{resources/made/btree_a2h2.eps}
+    \end{figure}
 \end{frame}
 \begin{frame}[allowframebreaks,allowdisplaybreaks]
     \subsubsection{Delete value}
@@ -973,9 +2009,9 @@
         \begin{column}{\textlecolumn}
             \begin{block}{}
                 \begin{itemize}
-                    \item The delition algorithm, just like the insert or even find, in the B-Tree almost has nothing to share with any tree deletion algorithm.
-                    \item Just like the insertion, the first part is a \lstinline|find| algorithm where we are going to search if the key to delete exists and if it does
-                        where is it, and we store the nodes that we access and their pointer index on separated stacks.
+                    \item The deletion algorithm, just like the insert or find, in the B-Tree almost has nothing to share with any tree deletion algorithm.
+                    \item Also, the first part is a \lstinline|find| algorithm where we are going to search if the key to delete exists and if it does
+                        and it's position, and we store the nodes that we access and their pointer index on separated stacks.
                     \item Then, when reached a leaf with the value to delete, we just delete it. But now, we have to check 
                         for all the rebalancing cases.
                     \item If the current balancing node has a degree greater than \(\alpha\) we can stop the rebalancing process.
