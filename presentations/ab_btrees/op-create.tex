@@ -1,0 +1,20 @@
+\begin{frame}
+    \subsubsection{Creating an empty B-Tree}
+    \frametitle{B-Tree Operations---Creating an empty B-Tree}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item We use \lstinline|create_tree()| to create a empty B-Tree, and since we only need to use \lstinline|get_node()|, this operation takes \(\Theta(1)\).
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+    \inputminted[%
+        linenos,%
+        breakbytoken,%
+        highlightlines={3,6}%
+        ]{c}{resources/code/b_tree_create.c}
+\end{frame}

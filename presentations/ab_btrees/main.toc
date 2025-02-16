@@ -3,13 +3,13 @@
 \beamer@subsectionintoc {1}{2}{Definition}{5}{0}{1}
 \beamer@subsectionintoc {1}{3}{Properties}{7}{0}{1}
 \beamer@subsubsectionintoc {1}{3}{1}{The \(\mitalpha \) Constant}{7}{0}{1}
-\beamer@subsubsectionintoc {1}{3}{2}{Keys and Sub-trees}{11}{0}{1}
-\beamer@subsubsectionintoc {1}{3}{3}{Height}{16}{0}{1}
-\beamer@subsectionintoc {1}{4}{Structure}{20}{0}{1}
-\beamer@subsectionintoc {1}{5}{Operations}{21}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{1}{Creating an empty B-Tree}{22}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{2}{Search value}{23}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{3}{Insert value}{35}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{4}{Delete value}{84}{0}{1}
-\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{93}{0}{1}
-\beamer@sectionintoc {2}{Bibliography}{95}{0}{2}
+\beamer@subsubsectionintoc {1}{3}{2}{Keys and Sub-trees}{12}{0}{1}
+\beamer@subsubsectionintoc {1}{3}{3}{Height}{17}{0}{1}
+\beamer@subsectionintoc {1}{4}{Structure}{21}{0}{1}
+\beamer@subsectionintoc {1}{5}{Operations}{22}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{1}{Creating an empty B-Tree}{23}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{2}{Search value}{24}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{3}{Insert}{27}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{4}{Delete}{95}{0}{1}
+\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{105}{0}{1}
+\beamer@sectionintoc {2}{Bibliography}{107}{0}{2}

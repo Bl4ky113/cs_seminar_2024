@@ -1,0 +1,33 @@
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
+    \subsubsection{Delete}
+    \frametitle{B-Tree Operations---Delete}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item The deletion algorithm, just like the insert or find, in the B-Tree almost has nothing to share with any tree deletion algorithm.
+                    \item Also, the first part is a \lstinline|find| algorithm where we are going to search if the key to delete exists and if it does
+                        and it's position, and we store the nodes that we access and their pointer index on separated stacks.
+                    \item Then, when reached a leaf with the value to delete, we just delete it. But now, we have to check 
+                        for all the rebalancing cases.
+                    \item If the current balancing node has a degree greater than \(\alpha\) we can stop the rebalancing process.
+                    \item Then, if we are not on the root, we will check if our current node is not the last sub-tree on the parent node.
+                    \item If the node isn't, we will check if the next neighbor node can share a key, or if it has more than \(\alpha\) keys.
+                    \item In the case that the neighbor doesn't have \(\alpha\) elements we are going to join both nodes.
+                    \item Then, we are going to check if the parent node needs some rebalancing and restart the rebalancing process.
+                    \item Now, in the case that we are the the last sub-tree of the parent node we can't just chare elements with the next neighbor.
+                    \item So we are just going to do the same thing but with the previous neighbor. Both process, the sharing or the join.
+                    \item Also, if we reach the root on the rebalancing process, we check if the root has at least one key, and isn't a leaft at the same time.
+                    \item But if the root doesn't have any element, we just return the root memory.
+                    \item When we finally exit the rebalancing loop, we just return the object that we deleted.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+
+    \inputminted[
+        highlightlines={5, 6, 7, 11, 12, 13, 20, 21, 22, 25, 28, 34, 35, 36, 43, 44, 50, 52, 55, 69, 73, 77, 78, 79, 81, 82, 85, 88, 95, 97, 99, 101, 107, 108, 109, 111, 114, 117, 120, 122, 128, 129, 130, 132, 140, 143, 145, 146, 172, 173, 174, 177, 193, 194, 195, 197, 204}
+    ]{c}{resources/code/b_tree_delete.c}
+\end{frame}

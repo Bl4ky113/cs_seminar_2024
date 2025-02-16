@@ -1,0 +1,50 @@
+\begin{frame}
+    \frametitle{B-Tree Properties---Summary}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item A B-Tree is defined as: \(T \in t\left(\alpha, h\right)\)
+                    \item A B-Tree has a predefined constant \(\alpha\).
+                    \item Node can have \(\alpha \leq I \leq 2\alpha\) keys.
+                    \item Also, it has \(\alpha + 1 \leq I + 1 \leq 2\alpha + 1\) sub-trees.
+                    \item Except the \emph{Root} node, which can have at least 1 key and 2 sub-trees.
+                    \item The leafs use the \(k_0\) space to store object key information.
+                    \item For each key on sub-tree of a Node, there's 3 cases:
+                        \begin{align*}
+                            \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \\
+                            \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i \leq y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \\
+                            \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} \leq y
+                        \end{align*}
+                    \item The number of nodes of a B-Tree is bounded by:
+                        \(
+                            1 + \frac{2}{\alpha}\left(\left(\alpha + 1\right){}^{h - 1} - 1\right) 
+                            \leq 
+                            N\left(T\right) 
+                            \leq 
+                            \frac{1}{2\alpha}\left(\left(2\alpha + 1\right){}^{h} - 1\right)
+                        \)
+                    \item The number of Keys in a B-Tree is bounded by:
+                        \(
+                            2\left(\alpha + 1\right){}^{h - 1} - 1 
+                            \leq 
+                            I 
+                            \leq
+                            \left(2\alpha + 1\right){}^h - 1
+                        \)
+                    \item The height of a B-Tree is bounded by:
+                        \[
+                            \log_{2\alpha + 1}\left(I + 1\right)
+                            \leq
+                            h
+                            \leq
+                            \log_{\alpha + 1}\left(\frac{I + 1}{2} + 1\right)
+                        \]
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+\end{frame}
+
