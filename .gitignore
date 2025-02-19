@@ -1,3 +1,19 @@
 
 # c compilations
 *.out
+
+# Latex stuff
+_minted_main/
+*.log
+*.nav
+*.bbl 
+*.bcf
+*.blg
+*.nav
+*.out
+*.run.xml
+*.snm
+*.toc
+*.vrb
+
+*.pygtex
