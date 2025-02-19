@@ -1,4 +1,4 @@
-int ALPHA = 2; /* any int >= 2 */
+#define ALPHA 2 /* any int >= 2 */
 typedef struct tr_n_t {
   int degree;
   int height;
