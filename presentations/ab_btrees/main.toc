@@ -10,6 +10,6 @@
 \beamer@subsubsectionintoc {1}{5}{1}{Creating an empty B-Tree}{23}{0}{1}
 \beamer@subsubsectionintoc {1}{5}{2}{Search value}{24}{0}{1}
 \beamer@subsubsectionintoc {1}{5}{3}{Insert}{27}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{4}{Delete}{95}{0}{1}
-\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{105}{0}{1}
-\beamer@sectionintoc {2}{Bibliography}{107}{0}{2}
+\beamer@subsubsectionintoc {1}{5}{4}{Delete}{96}{0}{1}
+\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{106}{0}{1}
+\beamer@sectionintoc {2}{Bibliography}{108}{0}{2}

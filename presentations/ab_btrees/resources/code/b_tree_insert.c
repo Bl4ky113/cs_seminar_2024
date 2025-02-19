@@ -52,8 +52,8 @@ int insert(tree_node_t *tree, key_t new_key, object_t *new_object) {
       current_node->next[i] = insert_pt;
       current_node->degree +=1;
       finished = 1;
-    } 
-    else { /* end insert in non-full node */
+    } /* end insert in non-full node */
+    else { 
       /* node is full, have to split the node*/
       tree_node_t *new_node;
       int j, insert_done = 0;

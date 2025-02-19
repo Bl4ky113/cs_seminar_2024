@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2025.1.26)  16 FEB 2025 17:49
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2025.1.26)  19 FEB 2025 12:11
  system commands enabled.
 **main.tex
 (./main.tex
@@ -2210,10 +2210,18 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [26
 
 ]) (./op-insert.tex
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EF9B9F2AC3A89011E50F17365B8A09
+(./_minted-main/0B7358BDA537208AC61370016B155D202EF9B9F2AC3A89011E50F17365B8A09
 6.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4027B241A078E00AEFFC3DB801933918
+(./_minted-main/0B7358BDA537208AC61370016B155D20027B241A078E00AEFFC3DB801933918
 7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=405, page=1, 1445.4pt x 813.0374
+9pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 1>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page1 used
+ on input line 52.
+(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2268,316 +2276,691 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [33
 
 
-]) (./op-insert_example.tex
+<./resources/made/B-Trees_insert_example.pdf>]) (./op-insert_example.tex
 \c@insert-example=\count544
 \c@insert-img-example=\count545
 \c@insert-step-example=\count546
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC47F3720CDE2F5C4D455D3560E332989A
+(./_minted-main/0B7358BDA537208AC61370016B155D207F3720CDE2F5C4D455D3560E332989A
 A.pygtex
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <7.5> not available
 (Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
 )
 Lua-only attribute luaul1 = 5
-<resources/made/B-Trees_insert_example.pdf, id=441, page=1, 1445.4pt x 813.0374
-9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 1>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page1 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC47F3720CDE2F5C4D455D3560E332989A
+(./_minted-main/0B7358BDA537208AC61370016B155D207F3720CDE2F5C4D455D3560E332989A
 A.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=442, page=3, 1445.4pt x 813.0374
+<resources/made/B-Trees_insert_example.pdf, id=454, page=2, 1445.4pt x 813.0374
+9pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 2>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page2 used
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D209B500262E81F9CB475B2FC528AFC058
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D2017E180EEEC0DBB470E6936DE6D511CF
+7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=455, page=3, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 3>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page3 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC49B500262E81F9CB475B2FC528AFC058
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC417E180EEEC0DBB470E6936DE6D511CF
-7.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=443, page=4, 1445.4pt x 813.0374
+(./_minted-main/0B7358BDA537208AC61370016B155D20983DF9E6081644484B86B5686BF8C14
+F.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=456, page=4, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 4>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page4 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4983DF9E6081644484B86B5686BF8C14
-F.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=444, page=5, 1445.4pt x 813.0374
+(./_minted-main/0B7358BDA537208AC61370016B155D206A80D732717AE55C1E54628092CE872
+3.pygtex)
+LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 2184.
+<resources/made/B-Trees_insert_example.pdf, id=457, page=5, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 5>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page5 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC46A80D732717AE55C1E54628092CE872
+(./_minted-main/0B7358BDA537208AC61370016B155D20D6993802DF18767A1CD6965647E210E
+7.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 1856.
-<resources/made/B-Trees_insert_example.pdf, id=445, page=6, 1445.4pt x 813.0374
+<resources/made/B-Trees_insert_example.pdf, id=458, page=6, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 6>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page6 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D6993802DF18767A1CD6965647E210E
-7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
-3.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=446, page=7, 1445.4pt x 813.0374
+(./_minted-main/0B7358BDA537208AC61370016B155D209B500262E81F9CB475B2FC528AFC058
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20D069344204E620AA86356476182AFA5
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20983DF9E6081644484B86B5686BF8C14
+F.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=459, page=7, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 7>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page7 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC49B500262E81F9CB475B2FC528AFC058
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D069344204E620AA86356476182AFA5
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4983DF9E6081644484B86B5686BF8C14
-F.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=447, page=8, 1445.4pt x 813.0374
+(./_minted-main/0B7358BDA537208AC61370016B155D206A80D732717AE55C1E54628092CE872
+3.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=460, page=8, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 8>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page8 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC46A80D732717AE55C1E54628092CE872
+(./_minted-main/0B7358BDA537208AC61370016B155D20D6993802DF18767A1CD6965647E210E
+7.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=448, page=9, 1445.4pt x 813.0374
+<resources/made/B-Trees_insert_example.pdf, id=461, page=9, 1445.4pt x 813.0374
 9pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 9>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page9 used
- on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+ on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D6993802DF18767A1CD6965647E210E
-7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
-3.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=449, page=10, 1445.4pt x 813.037
+(./_minted-main/0B7358BDA537208AC61370016B155D209B500262E81F9CB475B2FC528AFC058
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20D069344204E620AA86356476182AFA5
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20983DF9E6081644484B86B5686BF8C14
+F.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=462, page=10, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 10>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page10 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC49B500262E81F9CB475B2FC528AFC058
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D069344204E620AA86356476182AFA5
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4983DF9E6081644484B86B5686BF8C14
-F.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=450, page=11, 1445.4pt x 813.037
+(./_minted-main/0B7358BDA537208AC61370016B155D20B87174765DCD000EBBCEE9110469244
+2.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20B4173820F61FBBCB01FD74CC8A26ADA
+1.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=463, page=11, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 11>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page11 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B87174765DCD000EBBCEE9110469244
-2.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B4173820F61FBBCB01FD74CC8A26ADA
-1.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=451, page=12, 1445.4pt x 813.037
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
+7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=464, page=12, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 12>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page12 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
 7.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=452, page=13, 1445.4pt x 813.037
+<resources/made/B-Trees_insert_example.pdf, id=465, page=13, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 13>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page13 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
-7.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=453, page=14, 1445.4pt x 813.037
+(./_minted-main/0B7358BDA537208AC61370016B155D20D1FD5BFBD2B8EFBCC4AB79E6566AE0D
+6.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D202EA0744F7376949D0F3AD8DEB5744A4
+0.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D2074F06D69A4ED0E052278DC1D0C658AC
+8.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=466, page=14, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 14>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page14 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D1FD5BFBD2B8EFBCC4AB79E6566AE0D
-6.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EA0744F7376949D0F3AD8DEB5744A4
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC474F06D69A4ED0E052278DC1D0C658AC
-8.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=454, page=15, 1445.4pt x 813.037
+(./_minted-main/0B7358BDA537208AC61370016B155D204096709A273FA04BFEE89A8F9CD160B
+7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=467, page=15, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 15>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page15 use
-d on input line 1856.
-(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
 
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC44096709A273FA04BFEE89A8F9CD160B
-7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4A1C475286D4D9FE4E27210234F18FE2
+(./_minted-main/0B7358BDA537208AC61370016B155D20A1C475286D4D9FE4E27210234F18FE2
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4926F2CCD668322BE989023B89BD60AB
+(./_minted-main/0B7358BDA537208AC61370016B155D20926F2CCD668322BE989023B89BD60AB
 2.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4926F2CCD668322BE989023B89BD60AB
+<resources/made/B-Trees_insert_example.pdf, id=468, page=16, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 16>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page16 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20926F2CCD668322BE989023B89BD60AB
 2.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC43C847CAD2D842CF0F708643E6E3D23C
+<resources/made/B-Trees_insert_example.pdf, id=469, page=17, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 17>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page17 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D203C847CAD2D842CF0F708643E6E3D23C
 E.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC43412883172347DA2AFE4AD7F79E2372
+<resources/made/B-Trees_insert_example.pdf, id=470, page=18, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 18>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page18 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D203412883172347DA2AFE4AD7F79E2372
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+<resources/made/B-Trees_insert_example.pdf, id=471, page=19, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 19>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page19 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EE7D9560528293A4520BD44CF4AE53
+<resources/made/B-Trees_insert_example.pdf, id=472, page=20, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 20>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page20 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D202EE7D9560528293A4520BD44CF4AE53
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4983DF9E6081644484B86B5686BF8C14
+<resources/made/B-Trees_insert_example.pdf, id=473, page=21, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 21>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page21 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20983DF9E6081644484B86B5686BF8C14
 F.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC496F9B5B5C3E1B4323AF0A58E3EB457E
+<resources/made/B-Trees_insert_example.pdf, id=474, page=22, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 22>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page22 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D2096F9B5B5C3E1B4323AF0A58E3EB457E
 5.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D6993802DF18767A1CD6965647E210E
+(./_minted-main/0B7358BDA537208AC61370016B155D20D6993802DF18767A1CD6965647E210E
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC43412883172347DA2AFE4AD7F79E2372
+<resources/made/B-Trees_insert_example.pdf, id=475, page=23, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 23>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page23 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D203412883172347DA2AFE4AD7F79E2372
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+<resources/made/B-Trees_insert_example.pdf, id=476, page=24, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 24>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page24 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EE7D9560528293A4520BD44CF4AE53
+<resources/made/B-Trees_insert_example.pdf, id=477, page=25, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 25>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page25 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D202EE7D9560528293A4520BD44CF4AE53
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B338A85B2268CF45D72D3D7F5F91E40
+<resources/made/B-Trees_insert_example.pdf, id=478, page=26, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 26>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page26 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B338A85B2268CF45D72D3D7F5F91E40
 A.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC45AF06593779A97F61DC7421A5B77AE4
+<resources/made/B-Trees_insert_example.pdf, id=479, page=27, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 27>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page27 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D205AF06593779A97F61DC7421A5B77AE4
 9.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC45AF06593779A97F61DC7421A5B77AE4
+<resources/made/B-Trees_insert_example.pdf, id=480, page=28, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 28>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page28 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D205AF06593779A97F61DC7421A5B77AE4
 9.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4DB426C9049C6D5391A94C17E304DCFC
+<resources/made/B-Trees_insert_example.pdf, id=481, page=29, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 29>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page29 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20DB426C9049C6D5391A94C17E304DCFC
 E.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC43412883172347DA2AFE4AD7F79E2372
+<resources/made/B-Trees_insert_example.pdf, id=482, page=30, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 30>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page30 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D203412883172347DA2AFE4AD7F79E2372
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+<resources/made/B-Trees_insert_example.pdf, id=483, page=31, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 31>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page31 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EE7D9560528293A4520BD44CF4AE53
+<resources/made/B-Trees_insert_example.pdf, id=484, page=32, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 32>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page32 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D202EE7D9560528293A4520BD44CF4AE53
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B338A85B2268CF45D72D3D7F5F91E40
+<resources/made/B-Trees_insert_example.pdf, id=485, page=33, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 33>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page33 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B338A85B2268CF45D72D3D7F5F91E40
 A.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B87174765DCD000EBBCEE9110469244
+<resources/made/B-Trees_insert_example.pdf, id=486, page=34, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 34>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page34 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B87174765DCD000EBBCEE9110469244
 2.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B4173820F61FBBCB01FD74CC8A26ADA
+(./_minted-main/0B7358BDA537208AC61370016B155D20B4173820F61FBBCB01FD74CC8A26ADA
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
+<resources/made/B-Trees_insert_example.pdf, id=487, page=35, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 35>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page35 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
+<resources/made/B-Trees_insert_example.pdf, id=488, page=36, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 36>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page36 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D1FD5BFBD2B8EFBCC4AB79E6566AE0D
+<resources/made/B-Trees_insert_example.pdf, id=489, page=37, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 37>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page37 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20D1FD5BFBD2B8EFBCC4AB79E6566AE0D
 6.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4222A045B2466344C2D2FF30B129B5E4
+(./_minted-main/0B7358BDA537208AC61370016B155D20222A045B2466344C2D2FF30B129B5E4
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC44096709A273FA04BFEE89A8F9CD160B
+(./_minted-main/0B7358BDA537208AC61370016B155D204096709A273FA04BFEE89A8F9CD160B
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC482887B178A8ADD821AC481F1A48BE10
+<resources/made/B-Trees_insert_example.pdf, id=490, page=38, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 38>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page38 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D2082887B178A8ADD821AC481F1A48BE10
 A.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F53CCE6BFC55D6D53C8B090A414C679
+(./_minted-main/0B7358BDA537208AC61370016B155D20F53CCE6BFC55D6D53C8B090A414C679
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B2B425B048C0174D36E6DE2EFECE939
+<resources/made/B-Trees_insert_example.pdf, id=491, page=39, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 39>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page39 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B2B425B048C0174D36E6DE2EFECE939
 D.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC45AF06593779A97F61DC7421A5B77AE4
+<resources/made/B-Trees_insert_example.pdf, id=492, page=40, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 40>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page40 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D205AF06593779A97F61DC7421A5B77AE4
 9.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4400D405BFFFD2EDACE11E06585A44EC
+<resources/made/B-Trees_insert_example.pdf, id=493, page=41, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 41>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page41 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20400D405BFFFD2EDACE11E06585A44EC
 3.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4DB426C9049C6D5391A94C17E304DCFC
+(./_minted-main/0B7358BDA537208AC61370016B155D20DB426C9049C6D5391A94C17E304DCFC
 E.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
 3.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC43412883172347DA2AFE4AD7F79E2372
+<resources/made/B-Trees_insert_example.pdf, id=494, page=42, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 42>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page42 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D203412883172347DA2AFE4AD7F79E2372
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+<resources/made/B-Trees_insert_example.pdf, id=495, page=43, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 43>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page43 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+<resources/made/B-Trees_insert_example.pdf, id=496, page=44, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 44>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page44 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42EE7D9560528293A4520BD44CF4AE53
+<resources/made/B-Trees_insert_example.pdf, id=497, page=45, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 45>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page45 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D202EE7D9560528293A4520BD44CF4AE53
 8.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B3DF3ADA4C04BDC2A54ED505AD562B2
+(./_minted-main/0B7358BDA537208AC61370016B155D20B3DF3ADA4C04BDC2A54ED505AD562B2
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B338A85B2268CF45D72D3D7F5F91E40
+<resources/made/B-Trees_insert_example.pdf, id=498, page=46, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 46>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page46 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B338A85B2268CF45D72D3D7F5F91E40
 A.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B87174765DCD000EBBCEE9110469244
+<resources/made/B-Trees_insert_example.pdf, id=499, page=47, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 47>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page47 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B87174765DCD000EBBCEE9110469244
 2.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B4173820F61FBBCB01FD74CC8A26ADA
+(./_minted-main/0B7358BDA537208AC61370016B155D20B4173820F61FBBCB01FD74CC8A26ADA
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
+<resources/made/B-Trees_insert_example.pdf, id=500, page=48, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 48>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page48 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
+<resources/made/B-Trees_insert_example.pdf, id=501, page=49, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 49>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page49 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
 7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D1FD5BFBD2B8EFBCC4AB79E6566AE0D
+<resources/made/B-Trees_insert_example.pdf, id=502, page=50, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 50>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page50 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20D1FD5BFBD2B8EFBCC4AB79E6566AE0D
 6.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B460E11109D8EA49FCB9D72D171C8B6
+(./_minted-main/0B7358BDA537208AC61370016B155D20B460E11109D8EA49FCB9D72D171C8B6
 C.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B460E11109D8EA49FCB9D72D171C8B6
+<resources/made/B-Trees_insert_example.pdf, id=503, page=51, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 51>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page51 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B460E11109D8EA49FCB9D72D171C8B6
 C.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4222A045B2466344C2D2FF30B129B5E4
+<resources/made/B-Trees_insert_example.pdf, id=504, page=52, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 52>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page52 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20222A045B2466344C2D2FF30B129B5E4
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC408A0552791998260F44C61AF7C2DFC6
+(./_minted-main/0B7358BDA537208AC61370016B155D2008A0552791998260F44C61AF7C2DFC6
 0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4B2B425B048C0174D36E6DE2EFECE939
+<resources/made/B-Trees_insert_example.pdf, id=505, page=53, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 53>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page53 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B2B425B048C0174D36E6DE2EFECE939
 D.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
-7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4F8DE1272965E03F05CA71D830F18217
-7.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D1FD5BFBD2B8EFBCC4AB79E6566AE0D
-6.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4222A045B2466344C2D2FF30B129B5E4
+<resources/made/B-Trees_insert_example.pdf, id=506, page=54, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 54>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page54 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20B4173820F61FBBCB01FD74CC8A26ADA
 1.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4A39235783B3339A5731D91A43FDCABD
-0.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D486796926AB90D25C0679B3C6E0023
-9.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4D486796926AB90D25C0679B3C6E0023
-9.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC4A00E0DF8C9FF332C5115E76EA503AB0
-5.pygtex)
-(./_minted-main/6422BFD49F4F24545FCC9DF5D5326AC42D6D7A9B20CE0B5BF256F7CE49005B7
-3.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=455, page=55, 1445.4pt x 813.037
+<resources/made/B-Trees_insert_example.pdf, id=507, page=55, 1445.4pt x 813.037
 49pt>
 File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
 <use resources/made/B-Trees_insert_example.pdf, page 55>
 Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page55 use
-d on input line 1856.
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
+7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=508, page=56, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 56>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page56 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20F8DE1272965E03F05CA71D830F18217
+7.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=509, page=57, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 57>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page57 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20D1FD5BFBD2B8EFBCC4AB79E6566AE0D
+6.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20222A045B2466344C2D2FF30B129B5E4
+1.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D20A39235783B3339A5731D91A43FDCABD
+0.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=510, page=58, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 58>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page58 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20D486796926AB90D25C0679B3C6E0023
+9.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=511, page=59, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 59>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page59 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20D486796926AB90D25C0679B3C6E0023
+9.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=512, page=60, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 60>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page60 use
+d on input line 2184.
+(luatex.def)             Requested size: 257.38184pt x 144.78004pt.
+
+(./_minted-main/0B7358BDA537208AC61370016B155D20A00E0DF8C9FF332C5115E76EA503AB0
+5.pygtex)
+(./_minted-main/0B7358BDA537208AC61370016B155D202D6D7A9B20CE0B5BF256F7CE49005B7
+3.pygtex)
+<resources/made/B-Trees_insert_example.pdf, id=513, page=61, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 61>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page61 use
+d on input line 2184.
+(luatex.def)             Requested size: 306.41011pt x 172.35794pt.
+<resources/made/B-Trees_insert_example.pdf, id=514, page=62, 1445.4pt x 813.037
+49pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 62>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page62 use
+d on input line 2184.
 (luatex.def)             Requested size: 521.2545pt x 293.20192pt.
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -2586,7 +2969,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [34
 
-<./resources/made/B-Trees_insert_example.pdf>]
+]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2698,7 +3081,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [48
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2706,7 +3089,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [49
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2714,7 +3097,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [50
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2722,7 +3105,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [51
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2730,7 +3113,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [52
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2738,7 +3121,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [53
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2746,7 +3129,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [54
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2754,7 +3137,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [55
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2762,7 +3145,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [56
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2770,7 +3153,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [57
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2778,7 +3161,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [58
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2786,7 +3169,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [59
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2794,7 +3177,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [60
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2802,7 +3185,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [61
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2810,7 +3193,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [62
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2818,7 +3201,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [63
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2826,7 +3209,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [64
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2834,7 +3217,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [65
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2842,7 +3225,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [66
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2850,7 +3233,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [67
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2858,7 +3241,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [68
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2866,7 +3249,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [69
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2874,7 +3257,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [70
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2882,7 +3265,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [71
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2890,7 +3273,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [72
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2898,7 +3281,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [73
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2906,7 +3289,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [74
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2914,7 +3297,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [75
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2922,7 +3305,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [76
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2930,7 +3313,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [77
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2938,7 +3321,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [78
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2946,7 +3329,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [79
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2954,7 +3337,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [80
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2962,7 +3345,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [81
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2970,7 +3353,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [82
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2978,7 +3361,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [83
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2986,7 +3369,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [84
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2994,7 +3377,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [85
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3002,7 +3385,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [86
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3010,7 +3393,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [87
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3018,7 +3401,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [88
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3026,7 +3409,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [89
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3034,7 +3417,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [90
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3042,7 +3425,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [91
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3050,7 +3433,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [92
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -3058,12 +3441,20 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [93
 
 
-]
+<./resources/made/B-Trees_insert_example.pdf>]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [94
+
+
+<./resources/made/B-Trees_insert_example.pdf>]
+Overfull \hbox (1.593pt too wide) has occurred while \output is active
+[] 
+ []
+
+[95
 
 
 <./resources/made/B-Trees_insert_example.pdf>]) (./op-delete.tex
@@ -3077,15 +3468,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
-[95
-
-]
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
 [96
-
 
 ]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -3143,12 +3526,20 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [103
 
 
-]) (./op-delete_example.tex
+]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [104
+
+
+]) (./op-delete_example.tex
+Overfull \hbox (1.593pt too wide) has occurred while \output is active
+[] 
+ []
+
+[105
 
 ]) (./memoryaccess.tex
 Package epstopdf Info: Source file: <resources/made/external_storage_wblocks.ep
@@ -3174,14 +3565,14 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
-[105
+[106
 
 ]
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
-[106
+[107
 
 
 ])
@@ -3194,7 +3585,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
-[107
+[108
 
 ]
 \tf@nav=\write9
@@ -3212,24 +3603,24 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30EFBB5C4BF8A4E818C02A922B3E9EB3;873.
+(rerunfilecheck)             Checksum: 2C9C1A60BB3B7B0257CCE55919CF76B9;873.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 46368 strings out of 476447
- 1456375,2373549 words of node,token memory allocated
- 375342 words of node memory still in use:
+ 46663 strings out of 476447
+ 1456377,2373549 words of node,token memory allocated
+ 375720 words of node memory still in use:
    14221 hlist, 17 vlist, 5431 rule, 1028 disc, 130 local_par, 8 math, 9879 glue
-, 9915 kern, 217 penalty, 2904 glyph, 15635 attribute, 79 glue_spec, 7296 attrib
+, 9915 kern, 217 penalty, 2904 glyph, 15761 attribute, 79 glue_spec, 7359 attrib
 ute_list, 10 write, 4 pdf_start_link, 4 pdf_end_link, 5 pdf_dest, 4 pdf_action n
 odes
-   avail lists: 1:5,2:218479,3:5291,4:40,5:4354,6:1116,7:39905,8:48,9:12066,10:3
-8,11:402
- 66361 multiletter control sequences out of 65536+600000
- 124 fonts using 37384423 bytes
+   avail lists: 1:8,2:227392,3:5884,4:40,5:4455,6:1178,7:41126,8:48,9:12688,10:3
+8,11:408
+ 66504 multiletter control sequences out of 65536+600000
+ 124 fonts using 37384571 bytes
  128i,20n,116p,1189b,1927s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/
 share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/
@@ -3245,10 +3636,10 @@ opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/openty
 pe/public/lm/lmsans9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm
 /lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-re
 gular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (107 pages, 2633928 bytes).
+Output written on main.pdf (108 pages, 3116117 bytes).
 
-PDF statistics: 1240 PDF objects out of 1440 (max. 8388607)
- 924 compressed objects within 10 object streams
- 238 named destinations out of 1000 (max. 131072)
+PDF statistics: 1568 PDF objects out of 1728 (max. 8388607)
+ 1144 compressed objects within 12 object streams
+ 240 named destinations out of 1000 (max. 131072)
  80 words of extra memory for PDF output out of 10000 (max. 100000000)
 
