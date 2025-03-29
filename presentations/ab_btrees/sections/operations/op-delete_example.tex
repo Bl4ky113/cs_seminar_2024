@@ -1,0 +1,32 @@
+\begin{frame}[allowframebreaks, allowdisplaybreaks]
+    \frametitle{B-Tree Operations---Delete (Example)}
+    \newcounter{delete-example}
+    \newcounter{delete-img-example}
+    \newcounter{delete-step-example}[delete-example]
+    \setcounter{delete-example}{0}
+    \setcounter{delete-img-example}{0}
+    \setcounter{delete-step-example}{0}
+    % insert 1
+    \stepcounter{delete-example}
+    \stepcounter{delete-img-example}
+	\stepcounter{delete-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={1,2,3,4,5},%
+                firstline=1,%
+                lastline=11,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_delete.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item 
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \framebreak{}
+\end{frame}

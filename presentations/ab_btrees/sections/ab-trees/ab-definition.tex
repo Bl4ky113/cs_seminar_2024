@@ -1,0 +1,31 @@
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
+    \section{AB-Tree}
+    \subsection{AB-Tree Definition}
+    \frametitle{AB-Tree Definition}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item We will define that \(T\), an object, is a AB-Tree if they are an instance of the class.
+                        \[
+                            T \in \tau\left(\alpha, \beta, h\right)
+                        \]
+                    \item Where \(h\) is the height of the AB-Tree.
+                    \item And, \(\alpha\) and \(\beta\) are predefined constants.
+                    \item This is a tree based on B-Trees, which modifies the bounds of the B-Tree's \(\alpha\) constant.
+                    \item The AB-Trees shares the height, keys and sub-trees properties with the B-Tree.
+                    \item It mostly shares the operations with the B-Tree, such as 
+                        \lstinline|find|, \lstinline|insert| and \lstinline|delete|, only having slight changes in some implementations.
+                    \item With this we can say that, \textbf{every B-Tree is a AB-Tree but not every AB-Tree is a B-Tree}.
+                    \item Also, an AB-Tree can be defined as
+                        \[
+                            T \text{ is a } \left(\alpha, \beta\right)\text{--Tree}
+                        \] which is the most popular notation.
+                    \item And we will keep using the same notation for a leaf, node and generic page from the B-Trees.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+\end{frame}

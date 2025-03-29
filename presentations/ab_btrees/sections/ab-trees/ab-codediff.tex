@@ -1,0 +1,48 @@
+\begin{frame}[allowframebreaks,allowdisplaybreaks]
+    \subsubsection{Code Implementation}
+    \frametitle{AB-Tree differences with B-Trees---Code implementation}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item In the implementation of a AB-Tree we will only replace the upper bound of the \emph{Branching factor}
+                        by a \lstinline|BETA| constant. For example, in the AB-Tree structure.
+                    \item It's important to define that this change of the upper bound won't change the rebalancing algorithms in a great way.
+                \end{itemize}
+                \inputminted[%
+                    linenos,%
+                    breakbytoken,%
+                    highlightlines={1,2,6,7}%
+                    ]{c}{resources/code/ab_tree_struct.c}
+                \begin{itemize}
+                    \item In the \lstinline|insert| operation, we can have some changes in some implementations.
+                    \item Theese changes happen mainly on the \emph{Splitting}, of non-root pages, process in the rebalancing of the B-Tree.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+    \framebreak{}
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{itemize}
+                    \item In the \emph{Splitting} process on a B-Tree, since we overflow the node, we will have \(2\alpha\) elements in 
+                        the node, which we will split on the current node and a new node, resulting in two nodes with the minimun bound of \(\alpha\) elements.
+                    \item But in AB-Trees, since for a node to overflow we could have the same or more elements, \(2\alpha\), in the overflowing node 
+                        we have to decide which node will have to take the extra elements after each node gets the minimun elements.
+                    \item In the current implementation, the balancing algorithm is just spliting the elements in half for each node, 
+                        ending with two nodes with \(\frac{\beta}{2}\) elements.
+                \end{itemize}
+                \hspace{2cm}
+                \begin{itemize}
+                    \item In the current implementation there isn't any simple change to the \lstinline|delete| operation.
+                    \item Since it depends mainly on the lower bound of the \emph{Branching factor}, \(\alpha\), which is the same for both types of tree.
+                \end{itemize}
+            \end{block}
+        \end{column}
+        \begin{column}{\textricolumn}
+        \end{column}
+    \end{columns}
+\end{frame}

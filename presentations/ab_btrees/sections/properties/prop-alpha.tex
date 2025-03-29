@@ -1,4 +1,4 @@
-\begin{frame}[allowframebreaks,allowdisplaybreaks]
+\begin{frame}[allowframebreaks]
     \subsection{Properties}
     \subsubsection{The \(\alpha\) Constant}
     \frametitle{B-Tree Properties---The \(\alpha\) constant}
@@ -22,29 +22,40 @@
     \begin{columns}
         \begin{column}{0.5\textwidth}
                 \begin{figure}
-                    \includegraphics[width=0.45\textwidth]{resources/made/min_node.eps}
+                    \includegraphics[%
+                        width=0.45\textwidth,%
+                        page=3,%
+                        ]{resources/made/B-Trees_general.pdf}
                     \caption[]{Miminum Keys and Sub-Trees on a Node}
                 \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
-
                 \begin{figure}
-                    \includegraphics[width=0.45\textwidth]{resources/made/max_node.eps}
+                    \includegraphics[%
+                        width=0.45\textwidth,%
+                        page=4,%
+                        ]{resources/made/B-Trees_general.pdf}
                     \caption[]{Maximun Keys and Sub-Trees on a Node}
                 \end{figure}
         \end{column}
     \end{columns}
-    
     \framebreak{}
-
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/mendivelso_a2_btree.eps}
-        \caption[]{B-Tree, t (2, 2)}
-    \end{figure}
-
+    \begin{columns}
+        \begin{column}{\textlecolumn}
+            \begin{block}{}
+                \begin{figure}
+                    \centering
+                    \includegraphics[
+                        width=0.9\linewidth,%
+                        keepaspectratio,%
+                        page=10,
+                    ]{resources/made/B-Trees_general.pdf}
+                    \caption[]{B-Tree, \(t\left(2,2\right)\)}
+                \end{figure}
+            \end{block}
+        \end{column}
+    \end{columns}
     \framebreak{}
-
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -75,7 +86,11 @@
         \end{column}
         \begin{column}{0.6\textwidth}
             \begin{figure}
-                \includegraphics[width=\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
+                \includegraphics[%
+                    width=\linewidth,%
+                    keepaspectratio,%
+                    page=5,%
+                    ]{resources/made/B-Trees_general.pdf}
                 \caption[]{B-Tree w/ the least number of nodes}
             \end{figure}
         \end{column}
@@ -99,7 +114,11 @@
         \end{column}
         \begin{column}{0.6\textwidth}
             \begin{figure}
-                \includegraphics[width=1\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
+                \includegraphics[%
+                    width=\linewidth,%
+                    keepaspectratio,%
+                    page=6,%
+                    ]{resources/made/B-Trees_general.pdf}
                 \caption[]{B-Tree w/ the most number of nodes}
             \end{figure}
         \end{column}

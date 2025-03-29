@@ -26,22 +26,30 @@
     \end{columns}
 
     \framebreak{}
+
+    \begin{itemize}
+        \item In summary we can see the minimun, average and maximun time and write cost of each operation in a large B-Tree, using Big-O notation.
+    \end{itemize}
     \begin{center}
-    \begin{tabular}{c@{|}ccccccc}
-        \toprule
-                       & Retrival & Insertion w/ overflow & Deletion w/ underfull \\
-            \midrule
-            \(\Omega\) & \(t = 1\) \(w = 0\) & \(t = h\) \(w = 1\) & \(t = h\) \(w = 1\) \\
-            \midrule
-            \(\Theta\) & \(t \leq h\) \(w = 0\) & \(t \leq h + 2 + \frac{2}{\alpha}\) \(w \leq 3 + \frac{2}{\alpha}\) & \(t \leq 3h - 2\) \(w \leq 2h +1\) \\
-            \midrule
-            \(O\) & \(t = h\) \(w = 0\) & \(t = 3h - 2\) \(w = 2h + 1\) & \(t = 3h - 2\) \(w = 2h + 1\) \\
-        \toprule
-    \end{tabular}
+        \begin{tabular}{@{}ccccccc}
+            \toprule
+                           & Retrival & \specialcell{Insertion without \\ overflow} & \specialcell{Insertion with \\ overflow} & \specialcell{Deletion \\ with or without \\ underfull} \\
+                \midrule
+                \multirow[c]{2}{*}{\(\Omega\)} 
+                    & \(t = 1\) & \(t = h \) & \(t = h\) & \(t = h\) \\
+                    & \(w = 0\) & \(w = 1\) & \(w = 1\) & \(w = 1\) \\
+                \midrule
+                \multirow[c]{2}{*}{\(\Theta\)} 
+                    & \(t \leq h\) & \(t = h\) & \(t \leq h + 2 + \frac{2}{\alpha}\) & \(t \leq 3h - 2\) \\
+                    & \(w = 0\) & \(w < 1 + \frac{2}{\alpha}\) & \(w \leq 3 + \frac{2}{\alpha}\) & \(w \leq 2h +1\) \\
+                \midrule
+                \multirow[c]{2}{*}{\(O\)}
+                    & \(t = h\) & \(t = h\) & \(t = 3h - 2\) & \(t = 3h - 2\) \\
+                    & \(w = 0\) & \(w = 2h + 1\) & \(w = 2h + 1\) & \(w = 2h + 1\) \\
+            \toprule
+        \end{tabular}
+    \end{center}
     \begin{itemize}
         \item Where \(t\) is the number of fetch and readings of nodes on the secondary memory.
-        \item And \(w\) is the number of writings of nodes on the secondary memory.
-    \end{itemize}
-        \cite{bayer_organization_1972}
-    \end{center}
-\end{frame}
+        \item And \(w\) is the number of writings of nodes on the secondary memory.~\parencite{bayer_organization_1972}.
+    \end{itemize}\end{frame}

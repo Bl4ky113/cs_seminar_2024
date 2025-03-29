@@ -1,6 +1,6 @@
 \documentclass{beamer}
 
-\title{B-Trees}
+\title{B-Trees \& AB-Trees}
 \author{%
     Martín Hernández\\%
     Juan Mendivelso%
@@ -21,8 +21,9 @@
 \usepackage{enumitem}
 \usepackage{csquotes}
 \usepackage{booktabs}
+\usepackage{multirow}
 \usepackage{biblatex}
-    \addbibresource{resources/bibliography.bib}
+    \addbibresource{./resources/bibliography.bib}
 
 \setlist[itemize]{label=>}
 
@@ -43,9 +44,6 @@
 \input{beamer_template}
 
 \begin{document}
-% Code elemenst definitions
-\input{code_defs}
-
 \begin{frame}
     \titlepage
 \end{frame}
@@ -55,53 +53,36 @@
     \tableofcontents
 \end{frame}
 
-\input{./history.tex}
+\input{./sections/history.tex}
 
-\input{./definition.tex}
+\input{./sections/definition.tex}
 
-\input{./prop-alpha.tex}
-\input{./prop-keys.tex}
-\input{./prop-height.tex}
-\input{./prop-summary.tex}
+\input{./sections/properties/prop-alpha.tex}
+\input{./sections/properties/prop-keys.tex}
+\input{./sections/properties/prop-height.tex}
+\input{./sections/properties/prop-summary.tex}
 
-\input{./structure.tex}
+%\input{./sections/structure.tex}
 
-\input{./operations.tex}
+%\input{./sections/operations/operations.tex}
 
-\input{./op-create.tex}
+%\input{./sections/operations/op-create.tex}
 
-%\input{./op-search.tex}
-%\input{./op-search_example.tex}
+%\input{./sections/operations/op-search.tex}
+%\input{./sections/operations/op-search_example.tex}
 
-%\input{./op-insert.tex}
-%\input{./op-insert_example.tex}
+\input{./sections/operations/op-insert.tex}
+%\input{./sections/operations/op-insert_example.tex}
 
-\input{./op-delete.tex}
-\input{./op-delete_example.tex}
+\input{./sections/operations/op-delete.tex}
+%\input{./sections/operations/op-delete_example.tex}
 
-\input{./memoryaccess.tex}
+%\input{./sections/memoryaccess.tex}
 
-%\begin{frame}
-%    \section{(a,b)-Tree}
-%    \frametitle{(a,b)-Tree}
-%\end{frame}
-%\begin{frame}
-%    \subsection{Properties}
-%    \subsubsection{Keys and Sub-trees}
-%    \frametitle{(a,b)-Tree Properties - Keys and Sub-trees}
-%\end{frame}
-%\begin{frame}
-%    \subsubsection{Height}
-%    \frametitle{(a,b)-Tree Properties - Height}
-%\end{frame}
-%\begin{frame}
-%    \subsection{Structure}
-%    \frametitle{(a,b)-Tree Properties - Structure}
-%\end{frame}
-%\begin{frame}
-%    \subsection{Operations}
-%    \frametitle{(a,b)-Tree Properties - Operations}
-%\end{frame}
+\input{./sections/ab-trees/ab-definition.tex}
+\input{./sections/ab-trees/ab-constants.tex}
+\input{./sections/ab-trees/ab-comparison.tex}
+\input{./sections/ab-trees/ab-codediff.tex}
 
 \begin{frame}[allowframebreaks,squeeze,allowdisplaybreaks]
     \section{Bibliography}

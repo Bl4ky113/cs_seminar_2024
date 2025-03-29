@@ -39,14 +39,16 @@
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_min_btree.eps}
+                \includegraphics[%
+                    width=0.95\linewidth,%
+                    keepaspectratio,
+                    page=5,%
+                    ]{resources/made/B-Trees_general.pdf}
                 \caption[]{B-Tree w/ the least number of nodes}
             \end{figure}
         \end{column}
     \end{columns}
-
-    \framebreak
-
+    \framebreak{}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{block}{}
@@ -62,7 +64,11 @@
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \includegraphics[width=0.95\linewidth,keepaspectratio]{resources/made/generic_max_btree.eps}
+                \includegraphics[%
+                    width=0.95\linewidth,%
+                    keepaspectratio,
+                    page=6,%
+                    ]{resources/made/B-Trees_general.pdf}
                 \caption[]{B-Tree w/ the most number of nodes}
             \end{figure}
         \end{column}
@@ -87,14 +93,12 @@
                 \begin{aligned}
                     I_{\text{max}} &= \left(2\alpha + 1\right)^h - 1 \\
                     I_{\text{max}} + 1 &= \left(2\alpha + 1\right)^h \\
-                    \log_{2\alpha + 1} \left(I_{\text{max}} + 1\right) = h_{\text{max}}
+                    \log_{2\alpha + 1} \left(I_{\text{max}} + 1\right) &= h_{\text{max}}
                 \end{aligned}
             \]
         \end{column}
     \end{columns}
-
-    \framebreak
-
+    \framebreak{}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}

@@ -1,13 +1,13 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2025.1.26)  19 FEB 2025 15:10
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025/Arch Linux)  (format=lualatex 2025.3.13)  28 MAR 2025 21:27
  system commands enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
-Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
-Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
-ollection.
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended 
+collection.
 luaotfload | conf : Root cache directory is "/home/bl4ky/.texlive/texmf-var/luat
 ex-cache/generic/names".
 luaotfload | init : Loading fontloader "fontloader-2023-12-28.lua" from kpse-res
@@ -41,78 +41,78 @@ Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
 Inserting `tracingstacklevels' in `input_level_string'. (/usr/share/texmf-dist/
 tex/latex/beamer/beamer.cls
-Document Class: beamer 2024/01/06 v3.71 A class for typesetting presentations
+Document Class: beamer 2025/02/04 v3.72 A class for typesetting presentations
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count186
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count194
 )
-\beamer@tempbox=\box51
-\beamer@tempcount=\count187
-\c@beamerpauses=\count188
+\beamer@tempbox=\box52
+\beamer@tempcount=\count195
+\c@beamerpauses=\count196
 
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
-\beamer@slideinframe=\count189
-\beamer@minimum=\count190
-\beamer@decode@box=\box52
+\beamer@slideinframe=\count197
+\beamer@minimum=\count198
+\beamer@decode@box=\box53
 )
-\beamer@commentbox=\box53
-\beamer@modecount=\count191
+\beamer@commentbox=\box54
+\beamer@modecount=\count199
 )
 (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-\headdp=\dimen139
-\footheight=\dimen140
-\sidebarheight=\dimen141
-\beamer@tempdim=\dimen142
-\beamer@finalheight=\dimen143
-\beamer@animht=\dimen144
-\beamer@animdp=\dimen145
-\beamer@animwd=\dimen146
-\beamer@leftmargin=\dimen147
-\beamer@rightmargin=\dimen148
-\beamer@leftsidebar=\dimen149
-\beamer@rightsidebar=\dimen150
-\beamer@boxsize=\dimen151
-\beamer@vboxoffset=\dimen152
-\beamer@descdefault=\dimen153
-\beamer@descriptionwidth=\dimen154
-\beamer@lastskip=\skip48
-\beamer@areabox=\box54
-\beamer@animcurrent=\box55
-\beamer@animshowbox=\box56
-\beamer@sectionbox=\box57
-\beamer@logobox=\box58
-\beamer@linebox=\box59
-\beamer@sectioncount=\count192
-\beamer@subsubsectionmax=\count193
-\beamer@subsectionmax=\count194
-\beamer@sectionmax=\count195
-\beamer@totalheads=\count196
-\beamer@headcounter=\count197
-\beamer@partstartpage=\count198
-\beamer@sectionstartpage=\count199
-\beamer@subsectionstartpage=\count266
-\beamer@animationtempa=\count267
-\beamer@animationtempb=\count268
-\beamer@xpos=\count269
-\beamer@ypos=\count270
-\beamer@ypos@offset=\count271
-\beamer@showpartnumber=\count272
-\beamer@currentsubsection=\count273
-\beamer@coveringdepth=\count274
-\beamer@sectionadjust=\count275
-\beamer@toclastsection=\count276
-\beamer@tocsectionnumber=\count277
+\headdp=\dimen140
+\footheight=\dimen141
+\sidebarheight=\dimen142
+\beamer@tempdim=\dimen143
+\beamer@finalheight=\dimen144
+\beamer@animht=\dimen145
+\beamer@animdp=\dimen146
+\beamer@animwd=\dimen147
+\beamer@leftmargin=\dimen148
+\beamer@rightmargin=\dimen149
+\beamer@leftsidebar=\dimen150
+\beamer@rightsidebar=\dimen151
+\beamer@boxsize=\dimen152
+\beamer@vboxoffset=\dimen153
+\beamer@descdefault=\dimen154
+\beamer@descriptionwidth=\dimen155
+\beamer@lastskip=\skip49
+\beamer@areabox=\box55
+\beamer@animcurrent=\box56
+\beamer@animshowbox=\box57
+\beamer@sectionbox=\box58
+\beamer@logobox=\box59
+\beamer@linebox=\box60
+\beamer@sectioncount=\count266
+\beamer@subsubsectionmax=\count267
+\beamer@subsectionmax=\count268
+\beamer@sectionmax=\count269
+\beamer@totalheads=\count270
+\beamer@headcounter=\count271
+\beamer@partstartpage=\count272
+\beamer@sectionstartpage=\count273
+\beamer@subsectionstartpage=\count274
+\beamer@animationtempa=\count275
+\beamer@animationtempb=\count276
+\beamer@xpos=\count277
+\beamer@ypos=\count278
+\beamer@ypos@offset=\count279
+\beamer@showpartnumber=\count280
+\beamer@currentsubsection=\count281
+\beamer@coveringdepth=\count282
+\beamer@sectionadjust=\count283
+\beamer@toclastsection=\count284
+\beamer@tocsectionnumber=\count285
 
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 ))
-\beamer@paperwidth=\skip49
-\beamer@paperheight=\skip50
+\beamer@paperwidth=\skip50
+\beamer@paperheight=\skip51
 
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -120,28 +120,28 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count278
-\Gm@cntv=\count279
-\c@Gm@tempcnt=\count280
-\Gm@bindingoffset=\dimen155
-\Gm@wd@mp=\dimen156
-\Gm@odd@mp=\dimen157
-\Gm@even@mp=\dimen158
-\Gm@layoutwidth=\dimen159
-\Gm@layoutheight=\dimen160
-\Gm@layouthoffset=\dimen161
-\Gm@layoutvoffset=\dimen162
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
+\Gm@bindingoffset=\dimen156
+\Gm@wd@mp=\dimen157
+\Gm@odd@mp=\dimen158
+\Gm@even@mp=\dimen159
+\Gm@layoutwidth=\dimen160
+\Gm@layoutheight=\dimen161
+\Gm@layouthoffset=\dimen162
+\Gm@layoutvoffset=\dimen163
 \Gm@dimlist=\toks18
 )
 (/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks19
-\pgfutil@tempdima=\dimen163
-\pgfutil@tempdimb=\dimen164
+\pgfutil@tempdima=\dimen164
+\pgfutil@tempdimb=\dimen165
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box60
+\pgfutil@abb=\box61
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -157,23 +157,23 @@ x
 \pgfkeys@tmptoks=\toks22
 ))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgf@x=\dimen165
-\pgf@xa=\dimen166
-\pgf@xb=\dimen167
-\pgf@xc=\dimen168
-\pgf@y=\dimen169
-\pgf@ya=\dimen170
-\pgf@yb=\dimen171
-\pgf@yc=\dimen172
-\c@pgf@counta=\count281
-\c@pgf@countb=\count282
-\c@pgf@countc=\count283
-\c@pgf@countd=\count284
+\pgf@x=\dimen166
+\pgf@xa=\dimen167
+\pgf@xb=\dimen168
+\pgf@xc=\dimen169
+\pgf@y=\dimen170
+\pgf@ya=\dimen171
+\pgf@yb=\dimen172
+\pgf@yc=\dimen173
+\c@pgf@counta=\count289
+\c@pgf@countb=\count290
+\c@pgf@countc=\count291
+\c@pgf@countd=\count292
 )
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen173
-\pgfmath@count=\count285
-\pgfmath@box=\box61
+\pgfmath@dimen=\dimen174
+\pgfmath@count=\count293
+\pgfmath@box=\box62
 \pgfmath@toks=\toks23
 \pgfmath@stack@operand=\toks24
 \pgfmath@stack@operation=\toks25
@@ -190,10 +190,10 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count286
+\c@pgfmathroundto@lastzeros=\count294
 )))
 (/usr/share/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+File: size11.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 luaotfload | db : Font names database loaded from /home/bl4ky/.texlive/texmf-var
 /luatex-cache/generic/names/luaotfload-names.luc.gz)
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
@@ -201,45 +201,45 @@ luaotfload | db : Font names database loaded from /home/bl4ky/.texlive/texmf-var
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: luatex.def on input line 107.
+Package graphics Info: Driver file: luatex.def on input line 106.
 
 (/usr/share/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen174
-\Gin@req@width=\dimen175
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
 )
 (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
-\pgf@x=\dimen176
-\pgf@y=\dimen177
-\pgf@xa=\dimen178
-\pgf@ya=\dimen179
-\pgf@xb=\dimen180
-\pgf@yb=\dimen181
-\pgf@xc=\dimen182
-\pgf@yc=\dimen183
-\pgf@xd=\dimen184
-\pgf@yd=\dimen185
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count287
-\c@pgf@countb=\count288
-\c@pgf@countc=\count289
-\c@pgf@countd=\count290
+\c@pgf@counta=\count295
+\c@pgf@countb=\count296
+\c@pgf@countc=\count297
+\c@pgf@countd=\count298
 \t@pgf@toka=\toks26
 \t@pgf@tokb=\toks27
 \t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count291
+\pgf@sys@id@count=\count299
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
@@ -254,14 +254,14 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count292
-\pgfsyssoftpath@bigbuffer@items=\count293
+\pgfsyssoftpath@smallbuffer@items=\count300
+\pgfsyssoftpath@bigbuffer@items=\count301
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ))
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
 (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -269,15 +269,15 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Driver file: luatex.def on input line 274.
 
 (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
@@ -285,47 +285,47 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen186
-\pgf@picmaxx=\dimen187
-\pgf@picminy=\dimen188
-\pgf@picmaxy=\dimen189
-\pgf@pathminx=\dimen190
-\pgf@pathmaxx=\dimen191
-\pgf@pathminy=\dimen192
-\pgf@pathmaxy=\dimen193
-\pgf@xx=\dimen194
-\pgf@xy=\dimen195
-\pgf@yx=\dimen196
-\pgf@yy=\dimen197
-\pgf@zx=\dimen198
-\pgf@zy=\dimen199
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen256
-\pgf@path@lasty=\dimen257
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen258
-\pgf@shorten@start@additional=\dimen259
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfpic=\box62
-\pgf@hbox=\box63
-\pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count294
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count302
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen260
+\pgflinewidth=\dimen261
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
 File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen261
-\pgf@pt@y=\dimen262
-\pgf@pt@temp=\dimen263
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -337,20 +337,20 @@ x
 File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen264
+\pgfarrowsep=\dimen265
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count295
-\pgf@shadingcount=\count296
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count303
+\pgf@shadingcount=\count304
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfexternal@startupbox=\box65
+\pgfexternal@startupbox=\box66
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
@@ -365,15 +365,15 @@ File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
-\XC@nummixins=\count297
-\XC@countmixins=\count298
+\XC@nummixins=\count305
+\XC@countmixins=\count306
 )
 (/usr/share/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
 
 (/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -402,9 +402,6 @@ Package pdftexcmds Info: \pdfdraftmode found.
 (/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(/usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
@@ -417,41 +414,45 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count299
+\c@section@level=\count307
 )
-\@linkdim=\dimen266
-\Hy@linkcounter=\count300
-\Hy@pagecounter=\count301
+(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen267
+\Hy@linkcounter=\count308
+\Hy@pagecounter=\count309
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 )
 (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count302
+\Hy@SavedSpaceFactor=\count310
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 4062.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 4062.
-Package hyperref Info: Option `implicit' set `false' on input line 4062.
-Package hyperref Info: Hyper figures OFF on input line 4179.
-Package hyperref Info: Link nesting OFF on input line 4184.
-Package hyperref Info: Hyper index ON on input line 4187.
-Package hyperref Info: Plain pages OFF on input line 4194.
-Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4040.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 4040.
+Package hyperref Info: Option `implicit' set `false' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode OFF; no redefinition of LaTeX internals.
-Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count303
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count311
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
+\Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen267
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen268
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -460,17 +461,17 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count304
-\Field@Width=\dimen268
-\Fld@charsize=\dimen269
-Package hyperref Info: Hyper figures OFF on input line 6063.
-Package hyperref Info: Link nesting OFF on input line 6068.
-Package hyperref Info: Hyper index ON on input line 6071.
-Package hyperref Info: backreferencing OFF on input line 6078.
-Package hyperref Info: Link coloring OFF on input line 6083.
-Package hyperref Info: Link coloring with OCG OFF on input line 6088.
-Package hyperref Info: PDF/A mode OFF on input line 6093.
-\Hy@abspage=\count305
+\Fld@menulength=\count312
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Hy@abspage=\count313
 
 
 Package hyperref Message: Stopped early.
@@ -478,19 +479,15 @@ Package hyperref Message: Stopped early.
 )
 Package hyperref Info: Driver (autodetected): hluatex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hluatex.def
-File: hluatex.def 2024-01-20 v7.01h Hyperref driver for luaTeX
+File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
 
-(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
 (/usr/share/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count306
-\c@bookmark@seq@number=\count307
+\Fld@listcount=\count314
+\c@bookmark@seq@number=\count315
 
 (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -520,14 +517,14 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: sansmathaccent 2020/01/31
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
 
 
 (/usr/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
 )))))
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
 (/usr/share/texmf-dist/tex/latex/translator/translator.sty
@@ -536,50 +533,50 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasemisc.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
-\beamer@argscount=\count308
-\beamer@lastskipcover=\skip51
-\beamer@trivlistdepth=\count309
+\beamer@argscount=\count316
+\beamer@lastskipcover=\skip52
+\beamer@trivlistdepth=\count317
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetitle.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasesection.sty
-\c@lecture=\count310
-\c@part=\count311
-\c@section=\count312
-\c@subsection=\count313
-\c@subsubsection=\count314
+\c@lecture=\count318
+\c@part=\count319
+\c@section=\count320
+\c@subsection=\count321
+\c@subsubsection=\count322
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
-\beamer@framebox=\box66
-\beamer@frametitlebox=\box67
-\beamer@zoombox=\box68
-\beamer@zoomcount=\count315
-\beamer@zoomframecount=\count316
-\beamer@frametextheight=\dimen270
-\c@subsectionslide=\count317
-\beamer@frametopskip=\skip52
-\beamer@framebottomskip=\skip53
-\beamer@frametopskipautobreak=\skip54
-\beamer@framebottomskipautobreak=\skip55
+\beamer@framebox=\box67
+\beamer@frametitlebox=\box68
+\beamer@zoombox=\box69
+\beamer@zoomcount=\count323
+\beamer@zoomframecount=\count324
+\beamer@frametextheight=\dimen271
+\c@subsectionslide=\count325
+\beamer@frametopskip=\skip53
+\beamer@framebottomskip=\skip54
+\beamer@frametopskipautobreak=\skip55
+\beamer@framebottomskipautobreak=\skip56
 \beamer@envbody=\toks31
-\framewidth=\dimen271
-\c@framenumber=\count318
+\framewidth=\dimen272
+\c@framenumber=\count326
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
 \beamer@verbatimfileout=\write4
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
-\beamer@splitbox=\box69
-\beamer@autobreakcount=\count319
-\beamer@autobreaklastheight=\dimen272
+\beamer@splitbox=\box70
+\beamer@autobreakcount=\count327
+\beamer@autobreaklastheight=\dimen273
 \beamer@frametitletoks=\toks32
 \beamer@framesubtitletoks=\toks33
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
-\beamer@footins=\box70
+\beamer@footins=\box71
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasecolor.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
-\beamer@frameboxcopy=\box71
+\beamer@frameboxcopy=\box72
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetoc.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
@@ -587,37 +584,37 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
-\bmb@box=\box72
-\bmb@colorbox=\box73
-\bmb@boxwidth=\dimen273
-\bmb@boxheight=\dimen274
-\bmb@prevheight=\dimen275
-\bmb@temp=\dimen276
-\bmb@dima=\dimen277
-\bmb@dimb=\dimen278
-\bmb@prevheight=\dimen279
+\bmb@box=\box73
+\bmb@colorbox=\box74
+\bmb@boxwidth=\dimen274
+\bmb@boxheight=\dimen275
+\bmb@prevheight=\dimen276
+\bmb@temp=\dimen277
+\bmb@dima=\dimen278
+\bmb@dimb=\dimen279
+\bmb@prevheight=\dimen280
 )
-\beamer@blockheadheight=\dimen280
+\beamer@blockheadheight=\dimen281
 ))
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
 (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
 \@enLab=\toks35
 )
-\beamer@bibiconwidth=\skip56
-\c@figure=\count320
-\c@table=\count321
-\abovecaptionskip=\skip57
-\belowcaptionskip=\skip58
+\beamer@bibiconwidth=\skip57
+\c@figure=\count328
+\c@table=\count329
+\abovecaptionskip=\skip58
+\belowcaptionskip=\skip59
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasenavigationsymbols.tex)
-\beamer@section@min@dim=\dimen281
+\beamer@section@min@dim=\dimen282
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip59
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip60
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -626,59 +623,59 @@ Package: amstext 2021/08/26 v2.01 AMS text
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks36
-\ex@=\dimen282
+\ex@=\dimen283
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen283
+\pmbraise@=\dimen284
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count322
-LaTeX Info: Redefining \frac on input line 236.
-\uproot@=\count323
-\leftroot@=\count324
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count325
-\DOTSCASE@=\count326
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box74
-\strutbox@=\box75
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen284
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count327
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count328
-\dotsspace@=\muskip17
-\c@parentequation=\count329
-\dspbrk@lvl=\count330
+\inf@bad=\count330
+LaTeX Info: Redefining \frac on input line 235.
+\uproot@=\count331
+\leftroot@=\count332
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count333
+\DOTSCASE@=\count334
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box75
+\strutbox@=\box76
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen285
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count335
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count336
+\dotsspace@=\muskip18
+\c@parentequation=\count337
+\dspbrk@lvl=\count338
 \tag@help=\toks37
-\row@=\count331
-\column@=\count332
-\maxfields@=\count333
+\row@=\count339
+\column@=\count340
+\maxfields@=\count341
 \andhelp@=\toks38
-\eqnshift@=\dimen285
-\alignsep@=\dimen286
-\tagshift@=\dimen287
-\tagwidth@=\dimen288
-\totwidth@=\dimen289
-\lineht@=\dimen290
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
 \@envbody=\toks39
-\multlinegap=\skip60
-\multlinetaggap=\skip61
+\multlinegap=\skip61
+\multlinetaggap=\skip62
 \mathdisplay@stack=\toks40
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
@@ -690,20 +687,20 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@headfont=\toks43
 \thm@notefont=\toks44
 \thm@headpunct=\toks45
-\thm@preskip=\skip62
-\thm@postskip=\skip63
-\thm@headsep=\skip64
+\thm@preskip=\skip63
+\thm@postskip=\skip64
+\thm@headsep=\skip65
 \dth@everypar=\toks46
 )
-\c@theorem=\count334
+\c@theorem=\count342
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerbasethemes.sty))
 (/usr/share/texmf-dist/tex/latex/beamer/beamerthemedefault.sty
 (/usr/share/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty)
 (/usr/share/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
-\beamer@dima=\dimen291
-\beamer@dimb=\dimen292
+\beamer@dima=\dimen292
+\beamer@dimb=\dimen293
 )
 (/usr/share/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty)))
 
@@ -711,30 +708,75 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 7.
 
 (/usr/share/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+Package: tcolorbox 2024/10/22 version 6.4.1 text color boxes
 
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box76
+\pgfnodeparttextbox=\box77
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen293
-\pgf@nodesepend=\dimen294
+\pgf@nodesepstart=\dimen294
+\pgf@nodesepend=\dimen295
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 ))
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks47
-\verbatim@line=\toks48
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen296
+\pgffor@skip=\dimen297
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count343
+\pgfplotmarksize=\dimen298
+)
+\tikz@lastx=\dimen299
+\tikz@lasty=\dimen300
+\tikz@lastxsaved=\dimen301
+\tikz@lastysaved=\dimen302
+\tikz@lastmovetox=\dimen303
+\tikz@lastmovetoy=\dimen304
+\tikzleveldistance=\dimen305
+\tikzsiblingdistance=\dimen306
+\tikz@figbox=\box78
+\tikz@figbox@bg=\box79
+\tikz@tempbox=\box80
+\tikz@tempbox@bg=\box81
+\tikztreelevel=\count344
+\tikznumberofchildren=\count345
+\tikznumberofcurrentchild=\count346
+\tikz@fig@count=\count347
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count348
+\pgfmatrixcurrentcolumn=\count349
+\pgf@matrix@numberofcolumns=\count350
+)
+\tikz@expandcount=\count351
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks49
+\verbatim@line=\toks50
 \verbatim@in@stream=\read3
 )
 (/usr/share/texmf-dist/tex/latex/environ/environ.sty
@@ -743,60 +785,60 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/share/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box77
-\tcb@upperbox=\box78
-\tcb@lowerbox=\box79
-\tcb@phantombox=\box80
-\c@tcbbreakpart=\count335
-\c@tcblayer=\count336
-\c@tcolorbox@number=\count337
-\l__tcobox_tmpa_box=\box81
-\l__tcobox_tmpa_dim=\dimen295
-\tcb@temp=\box82
-\tcb@temp=\box83
-\tcb@temp=\box84
-\tcb@temp=\box85
+\tcb@titlebox=\box82
+\tcb@upperbox=\box83
+\tcb@lowerbox=\box84
+\tcb@phantombox=\box85
+\c@tcbbreakpart=\count352
+\c@tcblayer=\count353
+\c@tcolorbox@number=\count354
+\l__tcobox_tmpa_box=\box86
+\l__tcobox_tmpa_dim=\dimen307
+\tcb@temp=\box87
+\tcb@temp=\box88
+\tcb@temp=\box89
+\tcb@temp=\box90
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count338
-\calc@Bcount=\count339
-\calc@Adimen=\dimen296
-\calc@Bdimen=\dimen297
-\calc@Askip=\skip65
-\calc@Bskip=\skip66
+\calc@Acount=\count355
+\calc@Bcount=\count356
+\calc@Adimen=\dimen308
+\calc@Bdimen=\dimen309
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count340
-\calc@Cskip=\skip67
+\calc@Ccount=\count357
+\calc@Cskip=\skip68
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count341
-\l_MT_multwidth_dim=\dimen298
-\origjot=\skip68
-\l_MT_shortvdotswithinadjustabove_dim=\dimen299
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen300
-\l_MT_above_intertext_sep=\dimen301
-\l_MT_below_intertext_sep=\dimen302
-\l_MT_above_shortintertext_sep=\dimen303
-\l_MT_below_shortintertext_sep=\dimen304
-\xmathstrut@box=\box86
-\xmathstrut@dim=\dimen305
+\g_MT_multlinerow_int=\count358
+\l_MT_multwidth_dim=\dimen310
+\origjot=\skip69
+\l_MT_shortvdotswithinadjustabove_dim=\dimen311
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen312
+\l_MT_above_intertext_sep=\dimen313
+\l_MT_below_intertext_sep=\dimen314
+\l_MT_above_shortintertext_sep=\dimen315
+\l_MT_below_shortintertext_sep=\dimen316
+\xmathstrut@box=\box91
+\xmathstrut@dim=\dimen317
 )
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math.sty
 (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-02-20 L3 programming layer (loader) 
+Package: expl3 2025-01-18 L3 programming layer (loader) 
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
-File: l3backend-luatex.def 2024-02-20 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count342
+File: l3backend-luatex.def 2024-05-08 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count359
 Inserting `l3color' in `luaotfload.parse_color'.
-\l__pdf_internal_box=\box87
+\l__pdf_internal_box=\box92
 ))
 Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
 
@@ -805,31 +847,31 @@ Package: unicode-math-luatex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaL
 aTeX
 
 (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-02-18 L3 Experimental document command parser
+Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 )
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
-Package: fontspec 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2024/02/13 2.9a Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2024/02/13 v2.9a Font selection for XeLaTeX and LuaLaT
+Package: fontspec-luatex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaT
 eX
-\l__fontspec_script_int=\count343
-\l__fontspec_language_int=\count344
-\l__fontspec_strnum_int=\count345
-\l__fontspec_tmp_int=\count346
-\l__fontspec_tmpa_int=\count347
-\l__fontspec_tmpb_int=\count348
-\l__fontspec_tmpc_int=\count349
-\l__fontspec_em_int=\count350
-\l__fontspec_emdef_int=\count351
-\l__fontspec_strong_int=\count352
-\l__fontspec_strongdef_int=\count353
-\l__fontspec_tmpa_dim=\dimen306
-\l__fontspec_tmpb_dim=\dimen307
-\l__fontspec_tmpc_dim=\dimen308
+\l__fontspec_script_int=\count360
+\l__fontspec_language_int=\count361
+\l__fontspec_strnum_int=\count362
+\l__fontspec_tmp_int=\count363
+\l__fontspec_tmpa_int=\count364
+\l__fontspec_tmpb_int=\count365
+\l__fontspec_tmpc_int=\count366
+\l__fontspec_em_int=\count367
+\l__fontspec_emdef_int=\count368
+\l__fontspec_strong_int=\count369
+\l__fontspec_strongdef_int=\count370
+\l__fontspec_tmpa_dim=\dimen318
+\l__fontspec_tmpb_dim=\dimen319
+\l__fontspec_tmpc_dim=\dimen320
 
 (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -845,41 +887,41 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 (/usr/share/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
 Package: lualatex-math 2022/01/01 v1.12 Patches for mathematics typesetting wit
 h LuaLaTeX
-Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
-h LuaLaTeX)
-\g__um_fam_int=\count354
-\g__um_fonts_used_int=\count355
-\l__um_primecount_int=\count356
-\g__um_primekern_muskip=\muskip18
+Lua module: lualatex-math 2013/08/03 v1.3 Patches for mathematics typesetting wi
+th LuaLaTeX)
+\g__um_fam_int=\count371
+\g__um_fonts_used_int=\count372
+\l__um_primecount_int=\count373
+\g__um_primekern_muskip=\muskip19
 
 (/usr/share/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count357
-\lst@gtempboxa=\box88
-\lst@token=\toks49
-\lst@length=\count358
-\lst@currlwidth=\dimen309
-\lst@column=\count359
-\lst@pos=\count360
-\lst@lostspace=\dimen310
-\lst@width=\dimen311
-\lst@newlines=\count361
-\lst@lineno=\count362
-\lst@maxwidth=\dimen312
+\lst@mode=\count374
+\lst@gtempboxa=\box93
+\lst@token=\toks51
+\lst@length=\count375
+\lst@currlwidth=\dimen321
+\lst@column=\count376
+\lst@pos=\count377
+\lst@lostspace=\dimen322
+\lst@width=\dimen323
+\lst@newlines=\count378
+\lst@lineno=\count379
+\lst@maxwidth=\dimen324
 
 (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-\c@lstnumber=\count363
-\lst@skipnumbers=\count364
-\lst@framebox=\box89
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count380
+\lst@skipnumbers=\count381
+\lst@framebox=\box94
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2024/02/21 1.10 listings configuration
+File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
-Package: listings 2024/02/21 1.10 (Carsten Heinz)
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
 
 (/usr/share/texmf-dist/tex/latex/luacolor/luacolor.sty
 Package: luacolor 2023-08-18 v1.18 Color support via LuaTeX's attributes (HO)
@@ -889,99 +931,21 @@ Inserting `luacolor.process' in `pre_shipout_filter'.
 (/usr/share/texmf-dist/tex/lualatex/lua-ul/lua-ul.sty
 Package: lua-ul 2024-02-26 v0.2.1 Underlining and related functionality for Lua
 TeX
-Lua function luaul.restore_everyhbox = 26
-Lua function luaul.new_underline_type = 27
-Lua function luaul.set_underline_func = 28
-Lua function luaul.reset_underline_func = 29
+Lua function luaul.restore_everyhbox = 30
+Lua function luaul.new_underline_type = 31
+Lua function luaul.set_underline_func = 32
+Lua function luaul.reset_underline_func = 33
 Module luatexbase Info: Uninstalling kernel luatexbase code on input line 36
 Inserting `add underlines to list' in `pre_append_to_vlist_filter'.
 Inserting `add underlines to list' in `hpack_filter'.
 Inserting `add underlines to list' in `vpack_filter'.
-Lua function sw@slant = 30
-\l__luaul_top_dim=\dimen313
-\l__luaul_bottom_dim=\dimen314
-\l__luaul_height_dim=\dimen315
+Lua function sw@slant = 34
+\l__luaul_top_dim=\dimen325
+\l__luaul_bottom_dim=\dimen326
+\l__luaul_height_dim=\dimen327
 )
 (/usr/share/texmf-dist/tex/latex/minted/minted.sty
-Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
-
-(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
-Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
-b
-
-(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count365
-\FV@InFile=\read4
-\FV@TabBox=\box90
-\c@FancyVerbLine=\count366
-\FV@StepNumber=\count367
-\FV@OutFile=\write5
-)
-(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-
-(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-))
-(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-\linenopenalty=\count368
-\output=\toks50
-\linenoprevgraf=\count369
-\linenumbersep=\dimen316
-\linenumberwidth=\dimen317
-\c@linenumber=\count370
-\c@pagewiselinenumber=\count371
-\c@LN@truepage=\count372
-\c@internallinenumber=\count373
-\c@internallinenumbers=\count374
-\quotelinenumbersep=\dimen318
-\bframerule=\dimen319
-\bframesep=\dimen320
-\bframebox=\box91
-\linenoamsmath@ams@eqpen=\count375
-LaTeX Info: Redefining \\ on input line 3180.
-)
-\c@FancyVerbWriteLine=\count376
-\c@FancyVerbBufferIndex=\count377
-\c@FancyVerbBufferLength=\count378
-\c@FancyVerbBufferLine=\count379
-\c@FV@oldbufferlength=\count380
-\c@FV@TrueTabGroupLevel=\count381
-\c@FV@TrueTabCounter=\count382
-\FV@TabBox@Group=\box92
-\FV@TmpLength=\skip69
-\c@FV@HighlightLinesStart=\count383
-\c@FV@HighlightLinesStop=\count384
-\FV@LoopCount=\count385
-\FV@NCharsBox=\box93
-\FV@BreakIndent=\dimen321
-\FV@BreakIndentNChars=\count386
-\FV@BreakSymbolSepLeft=\dimen322
-\FV@BreakSymbolSepLeftNChars=\count387
-\FV@BreakSymbolSepRight=\dimen323
-\FV@BreakSymbolSepRightNChars=\count388
-\FV@BreakSymbolIndentLeft=\dimen324
-\FV@BreakSymbolIndentLeftNChars=\count389
-\FV@BreakSymbolIndentRight=\dimen325
-\FV@BreakSymbolIndentRightNChars=\count390
-\c@FancyVerbLineBreakLast=\count391
-\FV@LineBox=\box94
-\FV@LineIndentBox=\box95
-\c@FV@BreakBufferDepth=\count392
-\FV@LineWidth=\dimen326
-)
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
-Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Unrestricted shell escape enabled on input line 75.
-)
-(/usr/share/texmf-dist/tex/latex/ifplatform/ifplatform.sty
-Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+Package: minted 2025/03/06 v3.6.0 Yet another Pygments shim for LaTeX
 
 (/usr/share/texmf-dist/tex/generic/catchfile/catchfile.sty
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
@@ -989,67 +953,118 @@ Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 ))
-(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+(/usr/share/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2025/03/04 v1.12.0 fvextra - extensions and patches for fancyv
+rb
+
+(/usr/share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count382
+\FV@InFile=\read4
+\FV@TabBox=\box95
+\c@FancyVerbLine=\count383
+\FV@StepNumber=\count384
+\FV@OutFile=\write5
 )
-runsystem(uname -s > "main.w18")...executed.
- (./main.w18)
-runsystem(rm -- "main.w18")...executed.
+(/usr/share/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+))
+(/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2025/01/29 line numbers on paragraphs v5.4
+\linenopenalty=\count385
+\output=\toks52
+\linenoprevgraf=\count386
+\linenumbersep=\dimen328
+\linenumberwidth=\dimen329
+\c@linenumber=\count387
+\c@pagewiselinenumber=\count388
+\c@LN@truepage=\count389
+\c@internallinenumber=\count390
+\c@internallinenumbers=\count391
+\quotelinenumbersep=\dimen330
+\bframerule=\dimen331
+\bframesep=\dimen332
+\bframebox=\box96
+\@LN@amsmath@ams@eqpen=\count392
+LaTeX Info: Redefining \\ on input line 3187.
 )
-(/usr/share/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count393
-\xs_countb=\count394
+\c@FancyVerbWriteLine=\count393
+\c@FancyVerbBufferLine=\count394
+\c@FV@TrueTabGroupLevel=\count395
+\c@FV@TrueTabCounter=\count396
+\FV@TabBox@Group=\box97
+\FV@bgcolorstructbox=\box98
+\FV@TmpLength=\skip70
+\c@FV@HighlightLinesStart=\count397
+\c@FV@HighlightLinesStop=\count398
+\FV@LoopCount=\count399
+\FV@NCharsBox=\box99
+\FV@BreakIndent=\dimen333
+\FV@BreakIndentNChars=\count400
+\FV@BreakSymbolSepLeft=\dimen334
+\FV@BreakSymbolSepLeftNChars=\count401
+\FV@BreakSymbolSepRight=\dimen335
+\FV@BreakSymbolSepRightNChars=\count402
+\FV@BreakSymbolIndentLeft=\dimen336
+\FV@BreakSymbolIndentLeftNChars=\count403
+\FV@BreakSymbolIndentRight=\dimen337
+\FV@BreakSymbolIndentRightNChars=\count404
+\c@FancyVerbLineBreakLast=\count405
+\FV@LineBox=\box100
+\FV@LineIndentBox=\box101
+\c@FV@BreakBufferDepth=\count406
+\FV@LineWidth=\dimen338
 )
-Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+(/usr/share/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
+Package: latex2pydata 2025/03/03 v0.5.0 latex2pydata - write data to file in Py
+thon literal format
 )
-(/usr/share/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip70
-\fb@frw=\dimen327
-\fb@frh=\dimen328
-\FrameRule=\dimen329
-\FrameSep=\dimen330
+(/usr/share/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks53
+\pgfopts@list@add@b@toks=\toks54
+)
+(/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count395
-\float@exts=\toks51
-\float@box=\box96
-\@float@everytoks=\toks52
-\@floatcapt=\box97
+\c@float@type=\count407
+\float@exts=\toks55
+\float@box=\box102
+\@float@everytoks=\toks56
+\@floatcapt=\box103
 )
-\minted@appexistsfile=\read5
-\minted@bgbox=\box98
-\minted@code=\write6
-\c@minted@FancyVerbLineTemp=\count396
-\c@minted@pygmentizecounter=\count397
-\@float@every@listing=\toks53
-\c@listing=\count398
+\c@minted@FancyVerbLineTemp=\count408
+\@float@every@listing=\toks57
+\c@listing=\count409
 )
-runsystem(mkdir -p _minted-main)...executed.
-
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2019/06/20 v3.9 Customized lists
+Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip71
-\enit@outerparindent=\dimen331
-\enit@toks=\toks54
-\enit@inbox=\box99
-\enit@count@id=\count399
-\enitdp@description=\count400
+\enit@outerparindent=\dimen339
+\enit@toks=\toks58
+\enit@inbox=\box104
+\enit@count@id=\count410
+\enitdp@description=\count411
 )
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2022-09-14 v5.2n context-sensitive quotations (JAW)
-\csq@reset=\count401
-\csq@gtype=\count402
-\csq@glevel=\count403
-\csq@qlevel=\count404
-\csq@maxlvl=\count405
-\csq@tshold=\count406
-\csq@ltx@everypar=\toks55
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count412
+\csq@gtype=\count413
+\csq@glevel=\count414
+\csq@qlevel=\count415
+\csq@maxlvl=\count416
+\csq@tshold=\count417
+\csq@ltx@everypar=\toks59
 
 (/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2022-09-14 v5.2n csquotes generic definitions (JAW)
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
@@ -1059,181 +1074,191 @@ File: csquotes.cfg
 ))
 (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen332
-\lightrulewidth=\dimen333
-\cmidrulewidth=\dimen334
-\belowrulesep=\dimen335
-\belowbottomsep=\dimen336
-\aboverulesep=\dimen337
-\abovetopsep=\dimen338
-\cmidrulesep=\dimen339
-\cmidrulekern=\dimen340
-\defaultaddspace=\dimen341
-\@cmidla=\count407
-\@cmidlb=\count408
-\@aboverulesep=\dimen342
-\@belowrulesep=\dimen343
-\@thisruleclass=\count409
-\@lastruleclass=\count410
-\@thisrulewidth=\dimen344
+\heavyrulewidth=\dimen340
+\lightrulewidth=\dimen341
+\cmidrulewidth=\dimen342
+\belowrulesep=\dimen343
+\belowbottomsep=\dimen344
+\aboverulesep=\dimen345
+\abovetopsep=\dimen346
+\cmidrulesep=\dimen347
+\cmidrulekern=\dimen348
+\defaultaddspace=\dimen349
+\@cmidla=\count418
+\@cmidlb=\count419
+\@aboverulesep=\dimen350
+\@belowrulesep=\dimen351
+\@thisruleclass=\count420
+\@lastruleclass=\count421
+\@thisrulewidth=\dimen352
+)
+(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip72
+\multirow@cntb=\count422
+\multirow@dima=\skip73
+\bigstrutjot=\dimen353
 )
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2023/03/05 v3.19 programmable bibliographies (PK/MW)
+Package: biblatex 2024/03/21 v3.20 programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count411
+\lrq@indent=\count423
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count412
-\c@listtotal=\count413
-\c@listcount=\count414
-\c@liststart=\count415
-\c@liststop=\count416
-\c@citecount=\count417
-\c@citetotal=\count418
-\c@multicitecount=\count419
-\c@multicitetotal=\count420
-\c@instcount=\count421
-\c@maxnames=\count422
-\c@minnames=\count423
-\c@maxitems=\count424
-\c@minitems=\count425
-\c@citecounter=\count426
-\c@maxcitecounter=\count427
-\c@savedcitecounter=\count428
-\c@uniquelist=\count429
-\c@uniquename=\count430
-\c@refsection=\count431
-\c@refsegment=\count432
-\c@maxextratitle=\count433
-\c@maxextratitleyear=\count434
-\c@maxextraname=\count435
-\c@maxextradate=\count436
-\c@maxextraalpha=\count437
-\c@abbrvpenalty=\count438
-\c@highnamepenalty=\count439
-\c@lownamepenalty=\count440
-\c@maxparens=\count441
-\c@parenlevel=\count442
-\blx@tempcnta=\count443
-\blx@tempcntb=\count444
-\blx@tempcntc=\count445
-\c@blx@maxsection=\count446
-\blx@maxsegment@0=\count447
-\blx@notetype=\count448
-\blx@parenlevel@text=\count449
-\blx@parenlevel@foot=\count450
-\blx@sectionciteorder@0=\count451
-\blx@sectionciteorderinternal@0=\count452
-\blx@entrysetcounter=\count453
-\blx@biblioinstance=\count454
-\labelnumberwidth=\skip72
-\labelalphawidth=\skip73
-\biblabelsep=\skip74
-\bibitemsep=\skip75
-\bibnamesep=\skip76
-\bibinitsep=\skip77
-\bibparsep=\skip78
-\bibhang=\skip79
-\blx@bcfin=\read6
-\blx@bcfout=\write7
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count424
+\c@listtotal=\count425
+\c@listcount=\count426
+\c@liststart=\count427
+\c@liststop=\count428
+\c@citecount=\count429
+\c@citetotal=\count430
+\c@multicitecount=\count431
+\c@multicitetotal=\count432
+\c@instcount=\count433
+\c@maxnames=\count434
+\c@minnames=\count435
+\c@maxitems=\count436
+\c@minitems=\count437
+\c@citecounter=\count438
+\c@maxcitecounter=\count439
+\c@savedcitecounter=\count440
+\c@uniquelist=\count441
+\c@uniquename=\count442
+\c@refsection=\count443
+\c@refsegment=\count444
+\c@maxextratitle=\count445
+\c@maxextratitleyear=\count446
+\c@maxextraname=\count447
+\c@maxextradate=\count448
+\c@maxextraalpha=\count449
+\c@abbrvpenalty=\count450
+\c@highnamepenalty=\count451
+\c@lownamepenalty=\count452
+\c@maxparens=\count453
+\c@parenlevel=\count454
+\blx@tempcnta=\count455
+\blx@tempcntb=\count456
+\blx@tempcntc=\count457
+\c@blx@maxsection=\count458
+\blx@maxsegment@0=\count459
+\blx@notetype=\count460
+\blx@parenlevel@text=\count461
+\blx@parenlevel@foot=\count462
+\blx@sectionciteorder@0=\count463
+\blx@sectionciteorderinternal@0=\count464
+\blx@entrysetcounter=\count465
+\blx@biblioinstance=\count466
+\labelnumberwidth=\skip74
+\labelalphawidth=\skip75
+\biblabelsep=\skip76
+\bibitemsep=\skip77
+\bibnamesep=\skip78
+\bibinitsep=\skip79
+\bibparsep=\skip80
+\bibhang=\skip81
+\blx@bcfin=\read5
+\blx@bcfout=\write6
 \blx@langwohyphens=\language2
-\c@mincomprange=\count455
-\c@maxcomprange=\count456
-\c@mincompwidth=\count457
+\c@mincomprange=\count467
+\c@maxcomprange=\count468
+\c@mincompwidth=\count469
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count458
-\c@savedafterword=\count459
-\c@annotator=\count460
-\c@savedannotator=\count461
-\c@author=\count462
-\c@savedauthor=\count463
-\c@bookauthor=\count464
-\c@savedbookauthor=\count465
-\c@commentator=\count466
-\c@savedcommentator=\count467
-\c@editor=\count468
-\c@savededitor=\count469
-\c@editora=\count470
-\c@savededitora=\count471
-\c@editorb=\count472
-\c@savededitorb=\count473
-\c@editorc=\count474
-\c@savededitorc=\count475
-\c@foreword=\count476
-\c@savedforeword=\count477
-\c@holder=\count478
-\c@savedholder=\count479
-\c@introduction=\count480
-\c@savedintroduction=\count481
-\c@namea=\count482
-\c@savednamea=\count483
-\c@nameb=\count484
-\c@savednameb=\count485
-\c@namec=\count486
-\c@savednamec=\count487
-\c@translator=\count488
-\c@savedtranslator=\count489
-\c@shortauthor=\count490
-\c@savedshortauthor=\count491
-\c@shorteditor=\count492
-\c@savedshorteditor=\count493
-\c@labelname=\count494
-\c@savedlabelname=\count495
-\c@institution=\count496
-\c@savedinstitution=\count497
-\c@lista=\count498
-\c@savedlista=\count499
-\c@listb=\count500
-\c@savedlistb=\count501
-\c@listc=\count502
-\c@savedlistc=\count503
-\c@listd=\count504
-\c@savedlistd=\count505
-\c@liste=\count506
-\c@savedliste=\count507
-\c@listf=\count508
-\c@savedlistf=\count509
-\c@location=\count510
-\c@savedlocation=\count511
-\c@organization=\count512
-\c@savedorganization=\count513
-\c@origlocation=\count514
-\c@savedoriglocation=\count515
-\c@origpublisher=\count516
-\c@savedorigpublisher=\count517
-\c@publisher=\count518
-\c@savedpublisher=\count519
-\c@language=\count520
-\c@savedlanguage=\count521
-\c@origlanguage=\count522
-\c@savedoriglanguage=\count523
-\c@pageref=\count524
-\c@savedpageref=\count525
-\shorthandwidth=\skip80
-\shortjournalwidth=\skip81
-\shortserieswidth=\skip82
-\shorttitlewidth=\skip83
-\shortauthorwidth=\skip84
-\shorteditorwidth=\skip85
-\locallabelnumberwidth=\skip86
-\locallabelalphawidth=\skip87
-\localshorthandwidth=\skip88
-\localshortjournalwidth=\skip89
-\localshortserieswidth=\skip90
-\localshorttitlewidth=\skip91
-\localshortauthorwidth=\skip92
-\localshorteditorwidth=\skip93
+\c@afterword=\count470
+\c@savedafterword=\count471
+\c@annotator=\count472
+\c@savedannotator=\count473
+\c@author=\count474
+\c@savedauthor=\count475
+\c@bookauthor=\count476
+\c@savedbookauthor=\count477
+\c@commentator=\count478
+\c@savedcommentator=\count479
+\c@editor=\count480
+\c@savededitor=\count481
+\c@editora=\count482
+\c@savededitora=\count483
+\c@editorb=\count484
+\c@savededitorb=\count485
+\c@editorc=\count486
+\c@savededitorc=\count487
+\c@foreword=\count488
+\c@savedforeword=\count489
+\c@holder=\count490
+\c@savedholder=\count491
+\c@introduction=\count492
+\c@savedintroduction=\count493
+\c@namea=\count494
+\c@savednamea=\count495
+\c@nameb=\count496
+\c@savednameb=\count497
+\c@namec=\count498
+\c@savednamec=\count499
+\c@translator=\count500
+\c@savedtranslator=\count501
+\c@shortauthor=\count502
+\c@savedshortauthor=\count503
+\c@shorteditor=\count504
+\c@savedshorteditor=\count505
+\c@labelname=\count506
+\c@savedlabelname=\count507
+\c@institution=\count508
+\c@savedinstitution=\count509
+\c@lista=\count510
+\c@savedlista=\count511
+\c@listb=\count512
+\c@savedlistb=\count513
+\c@listc=\count514
+\c@savedlistc=\count515
+\c@listd=\count516
+\c@savedlistd=\count517
+\c@liste=\count518
+\c@savedliste=\count519
+\c@listf=\count520
+\c@savedlistf=\count521
+\c@location=\count522
+\c@savedlocation=\count523
+\c@organization=\count524
+\c@savedorganization=\count525
+\c@origlocation=\count526
+\c@savedoriglocation=\count527
+\c@origpublisher=\count528
+\c@savedorigpublisher=\count529
+\c@publisher=\count530
+\c@savedpublisher=\count531
+\c@language=\count532
+\c@savedlanguage=\count533
+\c@origlanguage=\count534
+\c@savedoriglanguage=\count535
+\c@pageref=\count536
+\c@savedpageref=\count537
+\shorthandwidth=\skip82
+\shortjournalwidth=\skip83
+\shortserieswidth=\skip84
+\shorttitlewidth=\skip85
+\shortauthorwidth=\skip86
+\shorteditorwidth=\skip87
+\locallabelnumberwidth=\skip88
+\locallabelalphawidth=\skip89
+\localshorthandwidth=\skip90
+\localshortjournalwidth=\skip91
+\localshortserieswidth=\skip92
+\localshorttitlewidth=\skip93
+\localshortauthorwidth=\skip94
+\localshorteditorwidth=\skip95
 Package biblatex Info: Trying to load enhanced support for Unicode engines...
 Package biblatex Info: ... file 'blx-unicode.def' found.
 
@@ -1242,45 +1267,45 @@ Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+File: blx-compat.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
-\c@textcitecount=\count526
-\c@textcitetotal=\count527
-\c@textcitemaxnames=\count528
-\c@biburlbigbreakpenalty=\count529
-\c@biburlbreakpenalty=\count530
-\c@biburlnumpenalty=\count531
-\c@biburlucpenalty=\count532
-\c@biburllcpenalty=\count533
-\biburlbigskip=\muskip19
-\biburlnumskip=\muskip20
-\biburlucskip=\muskip21
-\biburllcskip=\muskip22
-\c@smartand=\count534
+File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
+\c@textcitecount=\count538
+\c@textcitetotal=\count539
+\c@textcitemaxnames=\count540
+\c@biburlbigbreakpenalty=\count541
+\c@biburlbreakpenalty=\count542
+\c@biburlnumpenalty=\count543
+\c@biburlucpenalty=\count544
+\c@biburllcpenalty=\count545
+\biburlbigskip=\muskip20
+\biburlnumskip=\muskip21
+\biburlucskip=\muskip22
+\biburllcskip=\muskip23
+\c@smartand=\count546
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
+File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count535
-\c@bbx:relatedtotal=\count536
+File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count547
+\c@bbx:relatedtotal=\count548
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2023/03/05 v3.19 biblatex citation style (PK/MW)
+File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -1303,41 +1328,39 @@ Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Document encoding is UTF8 ....
 Package biblatex Info: ... and expl3
-(biblatex)             2024-02-20 L3 programming layer (loader) 
+(biblatex)             2025-01-18 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/blx-case-expl3.sty
-Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
+Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 (./beamer_template.tex)
-runsystem(command -v pygmentize && touch main.aex)...executed.
-runsystem(rm main.aex)...executed.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
  (./main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1375,17 +1398,17 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count537
-\scratchdimen=\dimen345
-\scratchbox=\box100
-\nofMPsegments=\count538
-\nofMParguments=\count539
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count540
-\MPscratchDim=\dimen346
-\MPnumerator=\count541
-\makeMPintoPDFobject=\count542
-\everyMPtoPDFconversion=\toks57
+\scratchcounter=\count549
+\scratchdimen=\dimen354
+\scratchbox=\box105
+\nofMPsegments=\count550
+\nofMParguments=\count551
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count552
+\MPscratchDim=\dimen355
+\MPnumerator=\count553
+\makeMPintoPDFobject=\count554
+\everyMPtoPDFconversion=\toks61
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1395,12 +1418,12 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 46.
  (./main.out)
 (./main.out)
-\@outlinefile=\write8
+\@outlinefile=\write7
 
-\openout8 = main.out
+\openout7 = main.out
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1427,21 +1450,22 @@ sh.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 45.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 45.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 45.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 46.
 
-Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
 sFont={},Script=Math,RawFeature={mathfontdimen=xetex},BoldFont={latinmodern-mat
@@ -1453,14 +1477,13 @@ h.otf}].
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
 (fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
 e=dflt;mathfontdimen=xetex;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
 e=dflt;mathfontdimen=xetex;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 
-Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
 sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
@@ -1476,24 +1499,23 @@ f}].
 anguage=dflt;mathfontdimen=xetex;"<6.57-9.3075>"[latinmodern-math.otf]:mode=bas
 e;script=math;language=dflt;mathfontdimen=xetex;+ssty=0;"<-6.57>"[latinmodern-m
 ath.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;+ssty=1;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
 e=dflt;mathfontdimen=xetex;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 45.
+(Font)              `operators' in the math version `normal' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 45.
+ line 46.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 45.
+(Font)              `operators' in the math version `bold' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 45.
+t line 46.
 
-Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
 sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
@@ -1510,24 +1532,23 @@ anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"<6.57-9.3075>"[latinmodern
 -math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
 n=tex2;+ssty=0;"<-6.57>"[latinmodern-math.otf]:mode=base;script=math;language=d
 flt;mathfontdimen=xetex;mathfontdimen=tex2;+ssty=1;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
 e=dflt;mathfontdimen=xetex;mathfontdimen=tex2;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 45.
+(Font)              `symbols' in the math version `normal' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 45.
+t line 46.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 45.
+(Font)              `symbols' in the math version `bold' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 45.
+t line 46.
 
-Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             'latinmodern-math.otf' with options
 (fontspec)             [Renderer=Basic,BoldItalicFont={},ItalicFont={},SmallCap
 sFont={},Script=Math,SizeFeatures={{Size=9.3075-},{Size=6.57-9.3075,Font=latinm
@@ -1544,30 +1565,28 @@ anguage=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"<6.57-9.3075>"[latinmodern
 -math.otf]:mode=base;script=math;language=dflt;mathfontdimen=xetex;mathfontdime
 n=tex3;+ssty=0;"<-6.57>"[latinmodern-math.otf]:mode=base;script=math;language=d
 flt;mathfontdimen=xetex;mathfontdimen=tex3;+ssty=1;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.:
 (fontspec)             <->"[latinmodern-math.otf]:mode=base;script=math;languag
 e=dflt;mathfontdimen=xetex;mathfontdimen=tex3;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 4
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 45.
+t line 46.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 45.
+(Font)              `largesymbols' in the math version `bold' on input line 46.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 45.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 45.
+t line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 45.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1591,46 +1610,27 @@ Package unicode-math Warning: I'm going to overwrite the following commands
 (unicode-math)                colon-like commands, using them will lead to
 (unicode-math)                inconsistencies.
 
-\c@lstlisting=\count543
+\c@lstlisting=\count555
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2023/03/05 v3.19 biblatex localization (PK/MW)
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 
-\openout7 = main.bcf
+\openout6 = main.bcf
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
 
-(./main.nav) (./code_defs.tex
-\@verb\btreeStructure=\box101
+(./main.nav)
 
-(/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/02/21 1.10 listings language file
-)
-(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
-)
-\@verb\btreeCreateEmpty=\box102
 
-(./resources/code/b_tree_struct.c
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 1.
-)
-\@verb\btreeSearch=\box103
-\@verb\btreeDestroy=\box104
-\@verb\btreeInsert=\box105
-\@verb\btreeInsertInternalPartOne=\box106
-\@verb\btreeInsertInternalPartTwo=\box107
-\@verb\btreeInsertInternalPartThree=\box108
-)
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1638,34 +1638,38 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [2
 
-] (./history.tex
-<resources/made/ibm360_44.png, id=88, 187.1793pt x 240.9pt>
+] (./sections/history.tex
+<resources/made/ibm360_44.png, id=95, 187.1793pt x 240.9pt>
 File: resources/made/ibm360_44.png Graphic file (type png)
 <use resources/made/ibm360_44.png>
-Package luatex.def Info: resources/made/ibm360_44.png  used on input line 55.
+Package luatex.def Info: resources/made/ibm360_44.png  used on input line 65.
 (luatex.def)             Requested size: 130.3163pt x 167.71722pt.
-<resources/made/ibmdisk_2311.png, id=89, 144.54pt x 207.4149pt>
+<resources/made/ibmdisk_2311.png, id=96, 144.54pt x 207.4149pt>
 File: resources/made/ibmdisk_2311.png Graphic file (type png)
 <use resources/made/ibmdisk_2311.png>
-Package luatex.def Info: resources/made/ibmdisk_2311.png  used on input line 55
+Package luatex.def Info: resources/made/ibmdisk_2311.png  used on input line 65
 .
 (luatex.def)             Requested size: 130.32077pt x 187.01031pt.
-<resources/made/r_bayer.png, id=90, 120.45pt x 120.45pt>
+<resources/made/r_bayer.png, id=97, 120.45pt x 120.45pt>
 File: resources/made/r_bayer.png Graphic file (type png)
 <use resources/made/r_bayer.png>
-Package luatex.def Info: resources/made/r_bayer.png  used on input line 55.
+Package luatex.def Info: resources/made/r_bayer.png  used on input line 65.
 (luatex.def)             Requested size: 103.41956pt x 103.41582pt.
-<resources/made/McCreight.png, id=91, 120.45pt x 156.585pt>
+<resources/made/McCreight.png, id=98, 120.45pt x 156.585pt>
 File: resources/made/McCreight.png Graphic file (type png)
 <use resources/made/McCreight.png>
-Package luatex.def Info: resources/made/McCreight.png  used on input line 55.
+Package luatex.def Info: resources/made/McCreight.png  used on input line 65.
 (luatex.def)             Requested size: 92.81293pt x 120.65266pt.
+
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1674,8 +1678,10 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [3
 
 <./resources/made/ibm360_44.png><./resources/made/ibmdisk_2311.png>]
-Overfull \vbox (18.5402pt too high) detected at line 55
+Overfull \vbox (18.5402pt too high) detected at line 65
  []
+
+
 
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -1686,62 +1692,27 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 <./resources/made/r_bayer.png><./resources/made/McCreight.png>])
-(./definition.tex
-Package epstopdf Info: Source file: <resources/made/single_node.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 30140 bytes
-(epstopdf)             Output file: <resources/made/single_node-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:52
-(epstopdf)                    size: 12577 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/single_node-
-eps-converted-to.pdf resources/made/single_node.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/single_node-eps-converted-to.pdf, id=102, 227.85126pt x 79.2962
-5pt>
-File: resources/made/single_node-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/single_node-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/single_node-eps-converted-to.pdf  used 
-on input line 46.
-(luatex.def)             Requested size: 182.44225pt x 63.49393pt.
-Package epstopdf Info: Source file: <resources/made/single_leaf.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 32715 bytes
-(epstopdf)             Output file: <resources/made/single_leaf-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:52
-(epstopdf)                    size: 12474 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/single_leaf-
-eps-converted-to.pdf resources/made/single_leaf.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/single_leaf-eps-converted-to.pdf, id=103, 227.85126pt x 114.427
-5pt>
-File: resources/made/single_leaf-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/single_leaf-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/single_leaf-eps-converted-to.pdf  used 
-on input line 46.
-(luatex.def)             Requested size: 182.44225pt x 91.62418pt.
-Package epstopdf Info: Source file: <resources/made/single_node_generic.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 27008 bytes
-(epstopdf)             Output file: <resources/made/single_node_generic-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 12151 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/single_node_
-generic-eps-converted-to.pdf resources/made/single_node_generic.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/single_node_generic-eps-converted-to.pdf, id=104, 114.4275pt x 
-73.27374pt>
-File: resources/made/single_node_generic-eps-converted-to.pdf Graphic file (typ
-e pdf)
-<use resources/made/single_node_generic-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/single_node_generic-eps-converted-to.pd
-f  used on input line 46.
-(luatex.def)             Requested size: 130.31361pt x 83.45016pt.
+(./sections/definition.tex
+<resources/made/B-Trees_general.pdf, id=108, page=2, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 2>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page2 used on inp
+ut line 55.
+(luatex.def)             Requested size: 182.44225pt x 102.6219pt.
+<resources/made/B-Trees_general.pdf, id=109, page=1, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 1>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page1 used on inp
+ut line 55.
+(luatex.def)             Requested size: 182.44225pt x 102.6219pt.
+<resources/made/B-Trees_general.pdf, id=110, page=3, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 3>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page3 used on inp
+ut line 55.
+(luatex.def)             Requested size: 182.44225pt x 102.6219pt.
+
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1750,6 +1721,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [5
 
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1757,109 +1730,46 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [6
 
 
-<./resources/made/single_node-eps-converted-to.pdf><./resources/made/single_leaf
--eps-converted-to.pdf><./resources/made/single_node_generic-eps-converted-to.pdf
->]) (./prop-alpha.tex
+<./resources/made/B-Trees_general.pdf><./resources/made/B-Trees_general.pdf><./r
+esources/made/B-Trees_general.pdf>]) (./sections/properties/prop-alpha.tex
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 148.
-Package epstopdf Info: Source file: <resources/made/min_node.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 27024 bytes
-(epstopdf)             Output file: <resources/made/min_node-eps-converted-to.p
-df>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 12153 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/min_node-eps
--converted-to.pdf resources/made/min_node.eps>
-(epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/min_node-eps-converted-to.pdf, id=147, 114.4275pt x 73.27374pt>
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 167.
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 3>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page3 used on inp
+ut line 167.
+(luatex.def)             Requested size: 117.28146pt x 65.96236pt.
+<resources/made/B-Trees_general.pdf, id=187, page=4, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 4>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page4 used on inp
+ut line 167.
+(luatex.def)             Requested size: 117.28146pt x 65.96236pt.
+<resources/made/B-Trees_general.pdf, id=188, page=10, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 10>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page10 used on in
+put line 167.
+(luatex.def)             Requested size: 469.12585pt x 263.88669pt.
 
-File: resources/made/min_node-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/min_node-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/min_node-eps-converted-to.pdf  used on 
-input line 148.
-(luatex.def)             Requested size: 117.28146pt x 75.1038pt.
-Package epstopdf Info: Source file: <resources/made/max_node.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 29442 bytes
-(epstopdf)             Output file: <resources/made/max_node-eps-converted-to.p
-df>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 10425 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/max_node-eps
--converted-to.pdf resources/made/max_node.eps>
-(epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/max_node-eps-converted-to.pdf, id=148, 114.4275pt x 73.27374pt>
-
-File: resources/made/max_node-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/max_node-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/max_node-eps-converted-to.pdf  used on 
-input line 148.
-(luatex.def)             Requested size: 117.28146pt x 75.1038pt.
-Package epstopdf Info: Source file: <resources/made/mendivelso_a2_btree.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 273245 bytes
-(epstopdf)             Output file: <resources/made/mendivelso_a2_btree-eps-con
-verted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 180825 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/mendivelso_a
-2_btree-eps-converted-to.pdf resources/made/mendivelso_a2_btree.eps>
-(epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/mendivelso_a2_btree-eps-converted-to.pdf, id=149, 948.54375pt x
- 398.48875pt>
-File: resources/made/mendivelso_a2_btree-eps-converted-to.pdf Graphic file (typ
-e pdf)
-<use resources/made/mendivelso_a2_btree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/mendivelso_a2_btree-eps-converted-to.pd
-f  used on input line 148.
-(luatex.def)             Requested size: 495.19017pt x 208.03012pt.
-
-Overfull \hbox (20.77196pt too wide) detected at line 148
+Overfull \hbox (20.77196pt too wide) detected at line 167
 [][]
  []
 
-Package epstopdf Info: Source file: <resources/made/generic_min_btree.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 165774 bytes
-(epstopdf)             Output file: <resources/made/generic_min_btree-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 47970 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/generic_min_
-btree-eps-converted-to.pdf resources/made/generic_min_btree.eps>
-(epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/generic_min_btree-eps-converted-to.pdf, id=150, 806.01125pt x 3
-71.3875pt>
-File: resources/made/generic_min_btree-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use resources/made/generic_min_btree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/generic_min_btree-eps-converted-to.pdf 
- used on input line 148.
-(luatex.def)             Requested size: 312.75587pt x 144.1095pt.
-Package epstopdf Info: Source file: <resources/made/generic_max_btree.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 209605 bytes
-(epstopdf)             Output file: <resources/made/generic_max_btree-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:54
-(epstopdf)                    size: 62481 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/generic_max_
-btree-eps-converted-to.pdf resources/made/generic_max_btree.eps>
-(epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/generic_max_btree-eps-converted-to.pdf, id=151, 806.01125pt x 3
-71.3875pt>
-File: resources/made/generic_max_btree-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use resources/made/generic_max_btree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/generic_max_btree-eps-converted-to.pdf 
- used on input line 148.
-(luatex.def)             Requested size: 312.75587pt x 144.1095pt.
+<resources/made/B-Trees_general.pdf, id=189, page=5, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 5>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page5 used on inp
+ut line 167.
+(luatex.def)             Requested size: 312.75587pt x 175.91618pt.
+<resources/made/B-Trees_general.pdf, id=190, page=6, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 6>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page6 used on inp
+ut line 167.
+(luatex.def)             Requested size: 312.75587pt x 175.91618pt.
+
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -1867,8 +1777,13 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [7
 
-<./resources/made/min_node-eps-converted-to.pdf><./resources/made/max_node-eps-c
-onverted-to.pdf>]
+<./resources/made/B-Trees_general.pdf>]
+Overfull \vbox (9.95041pt too high) detected at line 167
+ []
+
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1876,7 +1791,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [8
 
 
-<./resources/made/mendivelso_a2_btree-eps-converted-to.pdf>]
+<./resources/made/B-Trees_general.pdf>]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1884,7 +1801,13 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [9
 
 
-<./resources/made/generic_min_btree-eps-converted-to.pdf>]
+<./resources/made/B-Trees_general.pdf>]
+Overfull \vbox (6.42937pt too high) detected at line 167
+ []
+
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1892,7 +1815,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [10
 
 
-<./resources/made/generic_max_btree-eps-converted-to.pdf>]
+<./resources/made/B-Trees_general.pdf>]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -1900,7 +1825,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [11
 
 
-]) (./prop-keys.tex
+]) (./sections/properties/prop-keys.tex
 Package epstopdf Info: Source file: <resources/made/btree_2subtrees.eps>
 (epstopdf)                    date: 2025-02-15 12:54:45
 (epstopdf)                    size: 17942 bytes
@@ -1910,15 +1835,15 @@ ed-to.pdf>
 (epstopdf)                    size: 8227 bytes
 (epstopdf)             Command: <epstopdf --outfile=resources/made/btree_2subtr
 ees-eps-converted-to.pdf resources/made/btree_2subtrees.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/btree_2subtrees-eps-converted-to.pdf, id=242, 94.3525pt x 56.21
+<resources/made/btree_2subtrees-eps-converted-to.pdf, id=349, 94.3525pt x 56.21
 pt>
 File: resources/made/btree_2subtrees-eps-converted-to.pdf Graphic file (type pd
 f)
 <use resources/made/btree_2subtrees-eps-converted-to.pdf>
 Package luatex.def Info: resources/made/btree_2subtrees-eps-converted-to.pdf  u
-sed on input line 123.
+sed on input line 131.
 (luatex.def)             Requested size: 153.13812pt x 91.22112pt.
 Package epstopdf Info: Source file: <resources/made/key_subtree_order.eps>
 (epstopdf)                    date: 2025-02-15 12:54:45
@@ -1929,89 +1854,41 @@ rted-to.pdf>
 (epstopdf)                    size: 19309 bytes
 (epstopdf)             Command: <epstopdf --outfile=resources/made/key_subtree_
 order-eps-converted-to.pdf resources/made/key_subtree_order.eps>
-(epstopdf)             \includegraphics on input line 123.
+(epstopdf)             \includegraphics on input line 131.
 Package epstopdf Info: Output file is already uptodate.
-<resources/made/key_subtree_order-eps-converted-to.pdf, id=243, 186.6975pt x 23
+<resources/made/key_subtree_order-eps-converted-to.pdf, id=350, 186.6975pt x 23
 .08624pt>
 File: resources/made/key_subtree_order-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use resources/made/key_subtree_order-eps-converted-to.pdf>
 Package luatex.def Info: resources/made/key_subtree_order-eps-converted-to.pdf 
- used on input line 123.
+ used on input line 131.
 (luatex.def)             Requested size: 443.0695pt x 54.7909pt.
-Package epstopdf Info: Source file: <resources/made/single_leaf.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 32715 bytes
-(epstopdf)             Output file: <resources/made/single_leaf-eps-converted-t
-o.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:52
-(epstopdf)                    size: 12474 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/single_leaf-
-eps-converted-to.pdf resources/made/single_leaf.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-File: resources/made/single_leaf-eps-converted-to.pdf Graphic file (type pdf)
-<use resources/made/single_leaf-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/single_leaf-eps-converted-to.pdf  used 
-on input line 123.
-(luatex.def)             Requested size: 234.56293pt x 117.80052pt.
-Package epstopdf Info: Source file: <resources/made/keys_comp_case1.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 35981 bytes
-(epstopdf)             Output file: <resources/made/keys_comp_case1-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:54
-(epstopdf)                    size: 14393 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/keys_comp_ca
-se1-eps-converted-to.pdf resources/made/keys_comp_case1.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case1-eps-converted-to.pdf, id=244, 197.73875pt x 173
-.64874pt>
-File: resources/made/keys_comp_case1-eps-converted-to.pdf Graphic file (type pd
-f)
-<use resources/made/keys_comp_case1-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/keys_comp_case1-eps-converted-to.pdf  u
-sed on input line 123.
-(luatex.def)             Requested size: 143.34576pt x 125.88283pt.
-Package epstopdf Info: Source file: <resources/made/keys_comp_case3.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 34811 bytes
-(epstopdf)             Output file: <resources/made/keys_comp_case3-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:54
-(epstopdf)                    size: 13916 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/keys_comp_ca
-se3-eps-converted-to.pdf resources/made/keys_comp_case3.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case3-eps-converted-to.pdf, id=246, 210.7875pt x 173.
-64874pt>
-File: resources/made/keys_comp_case3-eps-converted-to.pdf Graphic file (type pd
-f)
-<use resources/made/keys_comp_case3-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/keys_comp_case3-eps-converted-to.pdf  u
-sed on input line 123.
-(luatex.def)             Requested size: 143.34576pt x 118.09018pt.
-Package epstopdf Info: Source file: <resources/made/keys_comp_case2.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 44457 bytes
-(epstopdf)             Output file: <resources/made/keys_comp_case2-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:55
-(epstopdf)                    size: 16007 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/keys_comp_ca
-se2-eps-converted-to.pdf resources/made/keys_comp_case2.eps>
-(epstopdf)             \includegraphics on input line 123.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/keys_comp_case2-eps-converted-to.pdf, id=248, 283.0575pt x 166.
-6225pt>
-File: resources/made/keys_comp_case2-eps-converted-to.pdf Graphic file (type pd
-f)
-<use resources/made/keys_comp_case2-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/keys_comp_case2-eps-converted-to.pdf  u
-sed on input line 123.
-(luatex.def)             Requested size: 156.37793pt x 92.05452pt.
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 1>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page1 used on inp
+ut line 131.
+(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+<resources/made/B-Trees_general.pdf, id=351, page=7, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 7>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page7 used on inp
+ut line 131.
+(luatex.def)             Requested size: 156.37793pt x 87.95808pt.
+<resources/made/B-Trees_general.pdf, id=353, page=8, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 8>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page8 used on inp
+ut line 131.
+(luatex.def)             Requested size: 156.37793pt x 87.95808pt.
+<resources/made/B-Trees_general.pdf, id=355, page=9, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 9>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page9 used on inp
+ut line 131.
+(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -2020,6 +1897,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [12
 
 <./resources/made/btree_2subtrees-eps-converted-to.pdf>]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2028,6 +1907,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 <./resources/made/key_subtree_order-eps-converted-to.pdf>]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2036,6 +1917,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2044,6 +1927,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2051,43 +1936,20 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [16
 
 
-<./resources/made/keys_comp_case1-eps-converted-to.pdf><./resources/made/keys_co
-mp_case3-eps-converted-to.pdf><./resources/made/keys_comp_case2-eps-converted-to
-.pdf>]) (./prop-height.tex
-Package epstopdf Info: Source file: <resources/made/generic_min_btree.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 165774 bytes
-(epstopdf)             Output file: <resources/made/generic_min_btree-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:53
-(epstopdf)                    size: 47970 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/generic_min_
-btree-eps-converted-to.pdf resources/made/generic_min_btree.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-File: resources/made/generic_min_btree-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use resources/made/generic_min_btree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/generic_min_btree-eps-converted-to.pdf 
- used on input line 121.
-(luatex.def)             Requested size: 247.59508pt x 114.08055pt.
-Package epstopdf Info: Source file: <resources/made/generic_max_btree.eps>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 209605 bytes
-(epstopdf)             Output file: <resources/made/generic_max_btree-eps-conve
-rted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:54
-(epstopdf)                    size: 62481 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/generic_max_
-btree-eps-converted-to.pdf resources/made/generic_max_btree.eps>
-(epstopdf)             \includegraphics on input line 121.
-Package epstopdf Info: Output file is already uptodate.
-File: resources/made/generic_max_btree-eps-converted-to.pdf Graphic file (type 
-pdf)
-<use resources/made/generic_max_btree-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/generic_max_btree-eps-converted-to.pdf 
- used on input line 121.
-(luatex.def)             Requested size: 247.59508pt x 114.08055pt.
+<./resources/made/B-Trees_general.pdf><./resources/made/B-Trees_general.pdf><./r
+esources/made/B-Trees_general.pdf>]) (./sections/properties/prop-height.tex
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 5>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page5 used on inp
+ut line 125.
+(luatex.def)             Requested size: 247.59508pt x 139.26904pt.
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 6>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page6 used on inp
+ut line 125.
+(luatex.def)             Requested size: 247.59508pt x 139.26904pt.
+
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -2096,6 +1958,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [17
 
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2104,6 +1968,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2111,43 +1977,49 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [19
 
 
-]) (./prop-summary.tex
+]) (./sections/properties/prop-summary.tex
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [20
 
-]) (./structure.tex (./_minted-main/default.pygstyle)
-(./_minted-main/1AE1F3F499EC0C0ADE4821E8D6C507BC8A22025C6F3644EC60314DB42E3EAAF
-1.pygtex)
+]) (./sections/operations/op-insert.tex
+\pydata@fh@_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted=\write8
+
+\openout8 = _FAD58DE7366495DB4650CFEFAC2FCD61.data.minted
+runsystem(latexminted config  --timestamp 20250328212735 FAD58DE7366495DB4650CFE
+FAC2FCD61)...executed.
+
+(./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20250328212735 FAD58DE7366495DB46
+50CFEFAC2FCD61)...executed.
+
+(./_minted/default.style.minted)
+(./_minted/D48FF5873F8DD93380225D5FBD2BE099.highlight.minted
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
+)
+<resources/made/B-Trees_insert_example.pdf, id=544, page=1, 1445.4pt x 813.0374
+9pt>
+File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_insert_example.pdf, page 1>
+Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page1 used
+ on input line 44.
+(luatex.def)             Requested size: 234.56293pt x 131.93713pt.
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [21
 
-]) (./operations.tex
-Package epstopdf Info: Source file: <resources/made/external_storage_wblocks.ep
-s>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 22262 bytes
-(epstopdf)             Output file: <resources/made/external_storage_wblocks-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:55
-(epstopdf)                    size: 7599 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/external_sto
-rage_wblocks-eps-converted-to.pdf resources/made/external_storage_wblocks.eps>
-(epstopdf)             \includegraphics on input line 24.
-Package epstopdf Info: Output file is already uptodate.
-<resources/made/external_storage_wblocks-eps-converted-to.pdf, id=376, 185.6937
-6pt x 107.40125pt>
-File: resources/made/external_storage_wblocks-eps-converted-to.pdf Graphic file
- (type pdf)
-<use resources/made/external_storage_wblocks-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/external_storage_wblocks-eps-converted-
-to.pdf  used on input line 24.
-(luatex.def)             Requested size: 260.62724pt x 150.74582pt.
+]
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -2155,26 +2027,19 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [22
 
-<./resources/made/external_storage_wblocks-eps-converted-to.pdf>])
-(./op-create.tex
-(./_minted-main/C5354BD4CF04878041D5624C720362D48A22025C6F3644EC60314DB42E3EAAF
-1.pygtex)
+
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [23
 
-]) (./op-search.tex
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F38A22025C6F3644EC60314DB42E3EAAF
-1.pygtex)
-<resources/made/B-Trees_insert_example.pdf, id=388, page=62, 1445.4pt x 813.037
-49pt>
-File: resources/made/B-Trees_insert_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_insert_example.pdf, page 62>
-Package luatex.def Info: resources/made/B-Trees_insert_example.pdf , page62 use
-d on input line 29.
-(luatex.def)             Requested size: 286.69156pt x 161.26477pt.
+
+]
+
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -2182,7 +2047,10 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [24
 
+
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2190,123 +2058,8 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [25
 
 
-<./resources/made/B-Trees_insert_example.pdf>]) (./op-search_example.tex
-\c@search-example=\count544
-\c@search-img-example=\count545
-\c@search-step-example=\count546
+]
 
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F383BC62E9C71B656DCBB12F4FBD36166
-E.pygtex
-LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <7.5> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 2.
-)
-Lua-only attribute luaul1 = 5
-<resources/made/B-Trees_search_example.pdf, id=421, page=1, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 1>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page1 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3ED497970ABB3FF1B270502242833DD8
-8.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=422, page=2, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 2>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page2 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3C9B436FB0AD0B71F9AB18CBE70779EB
-1.pygtex)
-LaTeX Font Info:    Calculating math sizes for size <7.5> on input line 339.
-<resources/made/B-Trees_search_example.pdf, id=423, page=3, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 3>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page3 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F357A613163FCF34EF850E1E8EB8EE472
-8.pygtex)
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F37DA0DAF41069BC8F5FCE95F3F94C5C7
-1.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=424, page=4, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 4>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page4 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3FDD1BEBDC06D395D63A1E452FEA8E63
-7.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=425, page=5, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 5>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page5 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3C9B436FB0AD0B71F9AB18CBE70779EB
-1.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=426, page=6, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 6>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page6 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F357A613163FCF34EF850E1E8EB8EE472
-8.pygtex)
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F37DA0DAF41069BC8F5FCE95F3F94C5C7
-1.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=427, page=7, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 7>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page7 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3FDD1BEBDC06D395D63A1E452FEA8E63
-7.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=428, page=8, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 8>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page8 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3C9B436FB0AD0B71F9AB18CBE70779EB
-1.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=429, page=9, 1445.4pt x 813.0374
-9pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 9>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page9 used
- on input line 339.
-(luatex.def)             Requested size: 398.33534pt x 224.06322pt.
-
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F357A613163FCF34EF850E1E8EB8EE472
-8.pygtex)
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3DE851FA65D2C197C230931AA9250141
-4.pygtex)
-(./_minted-main/44F0BC06DD4F7F6B076B4E0FBCA359F3867B669A43B25776B396AFD7303B607
-7.pygtex)
-<resources/made/B-Trees_search_example.pdf, id=430, page=10, 1445.4pt x 813.037
-49pt>
-File: resources/made/B-Trees_search_example.pdf Graphic file (type pdf)
-<use resources/made/B-Trees_search_example.pdf, page 10>
-Package luatex.def Info: resources/made/B-Trees_search_example.pdf , page10 use
-d on input line 339.
-(luatex.def)             Requested size: 306.41011pt x 172.35794pt.
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
@@ -2314,7 +2067,10 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [26
 
-<./resources/made/B-Trees_search_example.pdf>]
+
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2322,15 +2078,24 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [27
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+<./resources/made/B-Trees_insert_example.pdf>])
+(./sections/operations/op-delete.tex
+(./_minted/FFD8C8199B63DFA87421D4B08E259FF3.highlight.minted)
+Overfull \vbox (0.80754pt too high) detected at line 33
+ []
+
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [28
 
+]
 
-<./resources/made/B-Trees_search_example.pdf>]
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2338,7 +2103,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [29
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2346,7 +2113,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [30
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2354,7 +2123,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [31
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2362,7 +2133,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [32
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2370,7 +2143,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [33
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2378,7 +2153,9 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [34
 
 
-<./resources/made/B-Trees_search_example.pdf>]
+]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2386,11 +2163,7 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [35
 
 
-<./resources/made/B-Trees_search_example.pdf>]) (./op-delete.tex
-(./_minted-main/BB0E8F8FC4F9967794D4B4DA3CC15DAB8A22025C6F3644EC60314DB42E3EAAF
-1.pygtex)
-Overfull \vbox (0.80754pt too high) detected at line 33
- []
+]
 
 
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
@@ -2399,23 +2172,35 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 
 [36
 
-]
+
+]) (./sections/ab-trees/ab-definition.tex
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [37
 
+]) (./sections/ab-trees/ab-constants.tex
+<resources/made/B-Trees_general.pdf, id=647, page=11, 1445.4pt x 813.03749pt>
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 11>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page11 used on in
+put line 36.
+(luatex.def)             Requested size: 495.19017pt x 278.5381pt.
 
-]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [38
 
-
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2423,15 +2208,34 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [39
 
 
-]
+<./resources/made/B-Trees_general.pdf>])
+(./sections/ab-trees/ab-comparison.tex
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 10>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page10 used on in
+put line 56.
+(luatex.def)             Requested size: 275.75366pt x 155.1211pt.
+File: resources/made/B-Trees_general.pdf Graphic file (type pdf)
+<use resources/made/B-Trees_general.pdf, page 11>
+Package luatex.def Info: resources/made/B-Trees_general.pdf , page11 used on in
+put line 56.
+(luatex.def)             Requested size: 275.75366pt x 155.1211pt.
+
+Overfull \vbox (3.03322pt too high) detected at line 56
+ []
+
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [40
 
-
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2439,15 +2243,19 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [41
 
 
-]
+]) (./sections/ab-trees/ab-codediff.tex
+(./_minted/45F60E75B3A2E6DD1DB6FC0767F638EF.highlight.minted)
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [42
 
-
 ]
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
@@ -2455,66 +2263,19 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [43
 
 
-]
+])
+
+LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
+(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 92.
+
+
+
+
 Overfull \hbox (1.593pt too wide) has occurred while \output is active
 [] 
  []
 
 [44
-
-
-]) (./op-delete_example.tex
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
-[45
-
-]) (./memoryaccess.tex
-Package epstopdf Info: Source file: <resources/made/external_storage_wblocks.ep
-s>
-(epstopdf)                    date: 2025-02-15 12:54:45
-(epstopdf)                    size: 22262 bytes
-(epstopdf)             Output file: <resources/made/external_storage_wblocks-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2025-02-15 14:35:55
-(epstopdf)                    size: 7599 bytes
-(epstopdf)             Command: <epstopdf --outfile=resources/made/external_sto
-rage_wblocks-eps-converted-to.pdf resources/made/external_storage_wblocks.eps>
-(epstopdf)             \includegraphics on input line 47.
-Package epstopdf Info: Output file is already uptodate.
-File: resources/made/external_storage_wblocks-eps-converted-to.pdf Graphic file
- (type pdf)
-<use resources/made/external_storage_wblocks-eps-converted-to.pdf>
-Package luatex.def Info: resources/made/external_storage_wblocks-eps-converted-
-to.pdf  used on input line 47.
-(luatex.def)             Requested size: 182.44225pt x 105.52289pt.
-
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
-[46
-
-]
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
-[47
-
-
-])
-
-LaTeX Font Warning: Font shape `TU/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `TU/lmr/m/sc' tried instead on input line 111.
-
-
-Overfull \hbox (1.593pt too wide) has occurred while \output is active
-[] 
- []
-
-[48
 
 ]
 \tf@nav=\write9
@@ -2528,58 +2289,45 @@ Overfull \hbox (1.593pt too wide) has occurred while \output is active
 \openout11 = main.snm
  (./main.aux)
  ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 2B4A3E4DFC272264DB6DFA6E2D37FD21;872
-(rerunfilecheck)             After:  DBF19FBC516F971EE50930B7325A3626;872.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: F000B0F95BF1B2B502A818632D34EB4D;1098.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45436 strings out of 476447
- 745685,2373549 words of node,token memory allocated
- 369354 words of node memory still in use:
-   14208 hlist, 17 vlist, 5426 rule, 1027 disc, 130 local_par, 8 math, 9873 glue
-, 9906 kern, 217 penalty, 2906 glyph, 13721 attribute, 79 glue_spec, 6339 attrib
-ute_list, 10 write, 4 pdf_start_link, 4 pdf_end_link, 5 pdf_dest, 4 pdf_action n
-odes
-   avail lists: 1:8,2:65350,3:927,4:40,5:1382,6:269,7:16290,8:48,9:3277,10:38,11
-:201
- 66053 multiletter control sequences out of 65536+600000
- 122 fonts using 37127239 bytes
- 128i,20n,116p,1189b,1927s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-warning  (pdf backend): unreferenced destination with name 'Navigation49'
-
-warning  (pdf backend): unreferenced destination with name 'Outline0.1.6.47'
+ 48459 strings out of 475506
+ 244169,2373549 words of node,token memory allocated
+ 10481 words of node memory still in use:
+   36 hlist, 9 vlist, 4 rule, 54 disc, 6 local_par, 8 math, 218 glue, 45 kern, 6
+9 penalty, 770 glyph, 468 attribute, 78 glue_spec, 235 attribute_list, 9 write, 
+4 pdf_start_link, 4 pdf_end_link, 5 pdf_dest, 4 pdf_action nodes
+   avail lists: 1:6,2:29045,3:768,4:29,5:1394,6:271,7:16703,8:48,9:3297,10:25,11
+:201,12:1
+ 70120 multiletter control sequences out of 65536+600000
+ 101 fonts using 29270143 bytes
+ 128i,20n,116p,1189b,1929s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/
-share/texmf-dist/fonts/opentype/public/lm/lmmono8-regular.otf></usr/share/texmf-
+share/texmf-dist/fonts/opentype/public/lm/lmmono10-italic.otf></usr/share/texmf-
 dist/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf-dist/fonts/o
 pentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf-dist/fonts/opentype/publ
-ic/lm/lmmono10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroma
-n6-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular
-.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/
-share/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf
--dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/
-fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/
-opentype/public/lm/lmsans9-regular.otf></usr/share/texmf-dist/fonts/opentype/pub
-lic/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsan
-s10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
-f>
-Output written on main.pdf (48 pages, 2538606 bytes).
+ic/lm/lmroman6-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmrom
+an10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-obliqu
+e.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr
+/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share
+/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf
+-dist/fonts/opentype/public/lm/lmsans9-regular.otf></usr/share/texmf-dist/fonts/
+opentype/public/lm/lmsans8-regular.otf></usr/share/texmf-dist/fonts/opentype/pub
+lic/lm/lmsans10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsa
+ns10-bold.otf>
+Output written on main.pdf (44 pages, 2171035 bytes).
 
-PDF statistics: 873 PDF objects out of 1000 (max. 8388607)
- 640 compressed objects within 7 object streams
- 121 named destinations out of 1000 (max. 131072)
- 80 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 803 PDF objects out of 1000 (max. 8388607)
+ 595 compressed objects within 6 object streams
+ 113 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 

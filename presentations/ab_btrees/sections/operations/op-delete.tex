@@ -8,8 +8,8 @@
                     \item The deletion algorithm, just like the insert or find, in the B-Tree almost has nothing to share with any tree deletion algorithm.
                     \item Also, the first part is a \lstinline|find| algorithm where we are going to search if the key to delete exists and if it does
                         and it's position, and we store the nodes that we access and their pointer index on separated stacks.
-                    \item Then, when reached a leaf with the value to delete, we just delete it. But now, we have to check 
-                        for all the rebalancing cases.
+                    \item Then, when reached a leaf with the value to delete, we just delete it. 
+                        But now, we have to check for all the rebalancing cases.
                     \item If the current balancing node has a degree greater than \(\alpha\) we can stop the rebalancing process.
                     \item Then, if we are not on the root, we will check if our current node is not the last sub-tree on the parent node.
                     \item If the node isn't, we will check if the next neighbor node can share a key, or if it has more than \(\alpha\) keys.

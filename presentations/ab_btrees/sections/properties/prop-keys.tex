@@ -68,12 +68,13 @@
         \end{column}
     \end{columns}
     \begin{figure}
-        \includegraphics[width=0.45\textwidth]{resources/made/single_leaf.eps}
+        \includegraphics[%
+            width=0.45\textwidth,%
+            page=1,%
+            ]{resources/made/B-Trees_general.pdf}
         \caption[]{Leaf of a B-Tree}
     \end{figure}
-
-    \framebreak
-
+    \framebreak{}
     \begin{columns}
         \begin{column}{\textlecolumn}
             \begin{block}{}
@@ -86,7 +87,7 @@
                 \vspace{0.5cm}
                 \begin{align}
                     \forall y \in K\left(p_0\right);\mspace{20mu}& y < k_1 \tag{Case 1}\label{case1-subt-t-comp} \\
-                    \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i \leq y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l} \wedge i \in \symbb{N} \tag{Case 2}\label{case2-subt-t-comp} \\
+                    \forall y \in K\left(p_{i}\right);\mspace{20mu}& k_i \leq y < k_{i + 1};\mspace{20mu} 0 < i < \symit{l}, i \in \symbb{N} \tag{Case 2}\label{case2-subt-t-comp} \\
                     \forall y \in K\left(p_{\symit{l}}\right);\mspace{20mu}& k_{\symit{l}} \leq y \tag{Case 3}\label{case3-subt-t-comp}
                 \end{align}
             \end{block}
@@ -96,28 +97,35 @@
             \end{block}
         \end{column}
     \end{columns}
-    
-    \framebreak
-
+    \framebreak{}
     \begin{columns}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \centering
-                \includegraphics[width=0.55\textwidth]{resources/made/keys_comp_case1.eps}
-                \caption{Sub-tree Keys \eqref{case1-subt-t-comp}}
+                \centering{}
+                \includegraphics[%
+                    width=0.6\textwidth,%
+                    page=7,%
+                    ]{resources/made/B-Trees_general.pdf}
+                \caption{Sub-tree Keys~\eqref{case1-subt-t-comp}}
             \end{figure}
         \end{column}
         \begin{column}{0.5\textwidth}
             \begin{figure}
-                \centering
-                \includegraphics[width=0.55\textwidth]{resources/made/keys_comp_case3.eps}
-                \caption{Sub-tree Keys \eqref{case3-subt-t-comp}}
+                \centering{}
+                \includegraphics[%
+                    width=0.6\textwidth,%
+                    page=8,%
+                    ]{resources/made/B-Trees_general.pdf}
+                \caption{Sub-tree Keys~\eqref{case3-subt-t-comp}}
             \end{figure}
         \end{column}
     \end{columns}
     \begin{figure}
-        \centering
-        \includegraphics[width=0.3\textwidth]{resources/made/keys_comp_case2.eps}
-        \caption{Sub-tree Keys \eqref{case2-subt-t-comp}}
+        \centering{}
+        \includegraphics[%
+            width=0.45\textwidth,%
+            page=9,%
+            ]{resources/made/B-Trees_general.pdf}
+        \caption{Sub-tree Keys~\eqref{case2-subt-t-comp}}
     \end{figure}
 \end{frame}
