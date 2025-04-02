@@ -104,9 +104,9 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
                                 neighbor->key[j-1] =
                                     neighbor->key[j];
                             }
-                            neighbor->degree -=1;
-                            current->degree+=1;
-                            finished =1;
+                            neighbor->degree -= 1;
+                            current->degree += 1;
+                            finished = 1;
                         } /* sharing complete */
                         else { 
                             /* must join */
@@ -169,9 +169,9 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
                                 }
                                 upper->key[curr] =
                                     neighbor->key[i-1];
-                                neighbor->degree -=1;
-                                current->degree+=1;
-                                finished =1;
+                                neighbor->degree -= 1;
+                                current->degree += 1;
+                                finished = 1;
                             } /* sharing complete */
                             else { 
                                 /* must join */

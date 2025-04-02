@@ -1,4 +1,4 @@
-\begin{frame}[allowframebreaks, allowdisplaybreaks]
+\begin{frame}[t,squeeze,allowframebreaks,allowdisplaybreaks]
     \frametitle{B-Tree Operations---Insert (Example)}
     \newcounter{insert-example}
     \newcounter{insert-img-example}
@@ -1587,7 +1587,7 @@
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={21,23,24},%
+                highlightlines={21,24},%
                 firstline=20,%
                 lastline=27,%
                 tabsize=1,%
@@ -1599,8 +1599,254 @@
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
                     \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item finished; \hlght{lower=2; uppper=3;}
+                    \item finished; \hlght{lower=1; uppper=2;}
                     \item current\_node=(*pag 0);
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={20,26},%
+                firstline=20,%
+                lastline=27,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
+                    \item finished; lower=1; uppper=2;
+                    \item \hlght{current\_node=(*pag 0) \rarr{} (*pag 3);}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={30,31,35,39},%
+                firstline=30,%
+                lastline=39,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
+                    \item finished=0; \hlght{insert\_key=40; insert\_pt=(*40);}
+                    \item current\_node=(*pag 3);
+                    \item \hlght{start=0;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={42,44,45},%
+                firstline=42,%
+                lastline=48,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
+                    \item finished=0; insert\_key=40; insert\_pt=(*40);
+                    \item current\_node=(*pag 3);
+                    \item \hlght{start=0; i=2;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={33},%
+                firstline=33,%
+                lastline=33,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={51,52,53,54},%
+                firstline=51,%
+                lastline=54,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={126},%
+                firstline=124,%
+                lastline=127,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
+                    \item finished=0; insert\_key=40; insert\_pt=(*40);
+                    \item current\_node=(*pag 3);
+                    \item start=0; \hlght{i=2;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    % Insert 9
+    \stepcounter{insert-example}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={20,21,24},%
+                firstline=1,%
+                lastline=1,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={14},%
+                firstline=13,%
+                lastline=14,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={18,19},%
+                firstline=17,%
+                lastline=19,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); \hlght{new\_key=55; new\_object=(*55);}
+                    \item finished;
+                    \item current\_node=(*pag 0);
+                    \item \hlght{lower=0; upper=3;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={20,21,24},%
+                firstline=20,%
+                lastline=25,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished;
+                    \item current\_node=(*pag 0);
+                    \item \hlght{lower=0 \rarr{} 1; upper=3;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={20,21,24},%
+                firstline=20,%
+                lastline=25,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished;
+                    \item current\_node=(*pag 0);
+                    \item \hlght{lower=1 \rarr{} 2; upper=3;}
                 \end{itemize}
             }
         \end{column}
@@ -1624,8 +1870,15 @@
                 fontsize=\examplefnt,%
             ]{c}{resources/code/b_tree_insert.c}
             \inputminted[%
-                highlightlines={20,26},%
+                highlightlines={20},%
                 firstline=20,%
+                lastline=20,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={26},%
+                firstline=25,%
                 lastline=27,%
                 tabsize=1,%
                 fontsize=\examplefnt,%
@@ -1635,9 +1888,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item finished; \hlght{lower=2; uppper=3;}
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished;
                     \item \hlght{current\_node=(*pag 0) \rarr{} (*pag 1);}
+                    \item \hlght{lower=2; upper=3;}
                 \end{itemize}
             }
         \end{column}
@@ -1654,7 +1908,7 @@
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={33,35,38,39},%
+                highlightlines={30,31,35,39},%
                 firstline=30,%
                 lastline=39,%
                 tabsize=1,%
@@ -1665,11 +1919,218 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item \hlght{insert\_key=40; insert\_pt=(*40);}
-                    \item finished;
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; \hlght{insert\_pt=(*55); insert\_key=55;}
                     \item current\_node=(*pag 1);
-                    \item \hlght{start=0; i;}
+                    \item \hlght{start=0;}
+                    \item \hlght{i;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={42},%
+                firstline=42,%
+                lastline=42,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={61,62,60},%
+                firstline=56,%
+                lastline=62,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*55); insert\_key=55;
+                    \item current\_node=(*pag 1); start=0; \hlght{insert\_done=0;}
+                    \item \hlght{i=2; j=1;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={65},%
+                firstline=63,%
+                lastline=75,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*55); insert\_key=55;
+                    \item current\_node=(*pag 1); start=0; insert\_done=0;
+                    \item \hlght{i=2 \rarr{} 1; j=1 \rarr{} 0;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={65},%
+                firstline=63,%
+                lastline=75,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*55); insert\_key=55;
+                    \item current\_node=(*pag 1); start=0; insert\_done=0;
+                    \item \hlght{i=1 \rarr{} 0; j=0 \rarr{} -1;}
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={77,78,84},%
+                firstline=77,%
+                lastline=78,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={84,85,87,89},%
+                firstline=84,%
+                lastline=91,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*55); insert\_key=55;
+                    \item current\_node=(*pag 1); start=0; \hlght{insert\_done=0 \rarr{} 1};
+                    \item i=0; j=-1;
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={94,95,98,99,100,102},%
+                firstline=94,%
+                lastline=102,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+            \inputminted[%
+                highlightlines={},%
+                firstline=122,%
+                lastline=124,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; \hlght{insert\_pt=(*pag 4); insert\_key=70;}
+                    \item \hlght{current\_node=(*pag 1) \rarr{} (*pag 0)}; start=0; insert\_done=1;
+                    \item i=0; j=-1;
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.42\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+	\stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={33,35,36},%
+                firstline=33,%
+                lastline=39,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 4); insert\_key=70;
+                    \item current\_node=(*pag 0); \hlght{start=1;} insert\_done=1;
+                    \item i;
                 \end{itemize}
             }
         \end{column}
@@ -1704,11 +2165,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=40; insert\_pt=(*40);
-                    \item finished; insert\_done=0;
-                    \item current\_node=(*pag 1); \hlght{new\_node=(*pag 4);}
-                    \item \hlght{start=0; i=2; j=1;}
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 4); insert\_key=70;
+                    \item current\_node=(*pag 0); start=1; \hlght{insert\_done=0;}
+                    \item \hlght{i=2; j=1;}
                 \end{itemize}
             }
         \end{column}
@@ -1721,245 +2181,7 @@
     \end{figure}
     \framebreak{}
     \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={65,66,68},%
-                firstline=63,%
-                lastline=75,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=40; insert\_pt=(*40);
-                    \item finished; insert\_done=0;
-                    \item current\_node=(*pag 1); new\_node=(*pag 4);
-                    \item start=0; \hlght{i=2 \rarr{} 1; j=1 \rarr{} 0;}
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={65,66,68},%
-                firstline=63,%
-                lastline=75,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=40; insert\_pt=(*40);
-                    \item finished; insert\_done=0;
-                    \item current\_node=(*pag 1); new\_node=(*pag 4);
-                    \item start=0; \hlght{i=1 \rarr{} 0; j=1 \rarr{} -1;}
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={63,66,68},%
-                firstline=63,%
-                lastline=63,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-            \inputminted[%
-                highlightlines={77,78,79,81},%
-                firstline=77,%
-                lastline=91,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=40; insert\_pt=(*40);
-                    \item finished; insert\_done=0;
-                    \item current\_node=(*pag 1); new\_node=(*pag 4);
-                    \item start=0; \hlght{i=0 \rarr{} -1; j=-1;}
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={78,84,85,87,89},%
-                firstline=77,%
-                lastline=91,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=40; insert\_pt=(*40);
-                    \item finished; \hlght{insert\_done=1;}
-                    \item current\_node=(*pag 1); new\_node=(*pag 4);
-                    \item start=0; i=-1; j=-1;
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={77},%
-                firstline=77,%
-                lastline=77,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-            \inputminted[%
-                highlightlines={98,99,100,102},%
-                firstline=94,%
-                lastline=103,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item \hlght{insert\_key=70; insert\_pt=(*pag 4);}
-                    \item finished; insert\_done=1;
-                    \item \hlght{current\_node=(*pag 1) \rarr{} (*pag 0)}; new\_node=(*pag 4);
-                    \item start=0; i=-1; j=-1;
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={33,35,36},%
-                firstline=33,%
-                lastline=40,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=70; insert\_pt=(*pag 4);
-                    \item finished=0;
-                    \item current\_node=(*pag 0);
-                    \item \hlght{start=1;} i;
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={60,61,62},%
-                firstline=56,%
-                lastline=62,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=70; insert\_pt=(*pag 4);
-                    \item finished=0;
-                    \item current\_node=(*pag 0); \hlght{new\_node=(*pag 5)}
-                    \item start=1; \hlght{i=2; j=1};
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
+    \stepcounter{insert-step-example}
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
@@ -1974,11 +2196,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=70; insert\_pt=(*pag 4);
-                    \item finished=0; \hlght{insert\_done=1;}
-                    \item current\_node=(*pag 0); new\_node=(*pag 5);
-                    \item \hlght{start=1; i=2; j=1 \rarr{} 0;}
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 4); insert\_key=70;
+                    \item current\_node=(*pag 0); start=1; \hlght{insert\_done=0 \rarr{} 1;}
+                    \item i=2; \hlght{j=1 \rarr{} 0;}
                 \end{itemize}
             }
         \end{column}
@@ -1991,11 +2212,11 @@
     \end{figure}
     \framebreak{}
     \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
+    \stepcounter{insert-step-example}
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={65,66,68},%
+                highlightlines={63,65,66,68},%
                 firstline=63,%
                 lastline=75,%
                 tabsize=1,%
@@ -2006,11 +2227,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=70; insert\_pt=(*pag 4);
-                    \item finished=0; \hlght{insert\_done=1;}
-                    \item current\_node=(*pag 0); new\_node=(*pag 5);
-                    \item \hlght{start=1; i=2 \rarr{} 1; j=0 \rarr{} -1;}
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 4); insert\_key=70;
+                    \item current\_node=(*pag 0); start=1; insert\_done=1;
+                    \item \hlght{i=2 \rarr{} 1; j=0 \rarr{} -1;}
                 \end{itemize}
             }
         \end{column}
@@ -2021,18 +2241,13 @@
             page=\value{insert-img-example},%
         ]{resources/made/B-Trees_insert_example.pdf}
     \end{figure}
-    \framebreak{}
+\end{frame}
+\begin{frame}[t,squeeze,allowframebreaks,allowdisplaybreaks]
+    \frametitle{B-Tree Operations---Insert (Example)}
     \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
+    \stepcounter{insert-step-example}
     \begin{columns}
         \begin{column}{.47\textwidth}
-            \inputminted[%
-                highlightlines={63},%
-                firstline=63,%
-                lastline=63,%
-                tabsize=1,%
-                fontsize=\examplefnt,%
-            ]{c}{resources/code/b_tree_insert.c}
             \inputminted[%
                 highlightlines={77},%
                 firstline=77,%
@@ -2041,40 +2256,46 @@
                 fontsize=\examplefnt,%
             ]{c}{resources/code/b_tree_insert.c}
             \inputminted[%
-                highlightlines={98,99,100},%
+                highlightlines={94,95,98,99},%
                 firstline=94,%
+                lastline=99,%
+                tabsize=1,%
+                fontsize=\examplefnt,%
+            ]{c}{resources/code/b_tree_insert.c}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \examplefnt{%
+                \begin{itemize}
+                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; \hlght{insert\_pt=(*pag 5); insert\_key=50;}
+                    \item current\_node=(*pag 0); start=1; insert\_done=1;
+                    \item i=1; j=-1;
+                \end{itemize}
+            }
+        \end{column}
+    \end{columns}
+    \begin{figure}[h!]
+        \includegraphics[%
+            height=0.4\textheight,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
+    \framebreak{}
+    \stepcounter{insert-img-example}
+    \stepcounter{insert-step-example}
+    \begin{columns}
+        \begin{column}{.47\textwidth}
+            \inputminted[%
+                highlightlines={100},%
+                firstline=100,%
                 lastline=100,%
                 tabsize=1,%
                 fontsize=\examplefnt,%
             ]{c}{resources/code/b_tree_insert.c}
-        \end{column}
-        \begin{column}{.5\textwidth}
-            \examplefnt{%
-                \begin{itemize}
-                    \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item \hlght{insert\_key=50; insert\_pt=(*pag 5);}
-                    \item finished=0; \hlght{insert\_done=1;}
-                    \item current\_node=(*pag 0); new\_node=(*pag 5);
-                    \item \hlght{start=1; i=1; j=-1;}
-                \end{itemize}
-            }
-        \end{column}
-    \end{columns}
-    \begin{figure}[h!]
-        \includegraphics[%
-            height=0.42\textheight,%
-            page=\value{insert-img-example},%
-        ]{resources/made/B-Trees_insert_example.pdf}
-    \end{figure}
-    \framebreak{}
-    \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
-    \begin{columns}
-        \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={105,107,109},%
-                firstline=104,%
+                highlightlines={105,106,107,109},%
+                firstline=103,%
                 lastline=111,%
                 tabsize=1,%
                 fontsize=\examplefnt,%
@@ -2084,11 +2305,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=50; insert\_pt=(*pag 5);
-                    \item finished=0; insert\_done=1;
-                    \item current\_node=(*pag 0); \hlght{new\_node=(*pag 6);}
-                    \item start=1; \hlght{i=0;} j=-1;
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 5); insert\_key=50;
+                    \item current\_node=(*pag 0); start=1; insert\_done=1;
+                    \item i=1; j=-1;
                 \end{itemize}
             }
         \end{column}
@@ -2101,12 +2321,12 @@
     \end{figure}
     \framebreak{}
     \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
+    \stepcounter{insert-step-example}
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={107,109},%
-                firstline=104,%
+                highlightlines={106,107,109},%
+                firstline=106,%
                 lastline=111,%
                 tabsize=1,%
                 fontsize=\examplefnt,%
@@ -2116,11 +2336,10 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=50; insert\_pt=(*pag 5);
-                    \item finished=0; insert\_done=1;
-                    \item current\_node=(*pag 0); new\_node=(*pag 6);
-                    \item start=1; \hlght{i=1;} j=-1;
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item finished=0; insert\_pt=(*pag 5); insert\_key=50;
+                    \item current\_node=(*pag 0); start=1; insert\_done=1;
+                    \item i=1; j=-1;
                 \end{itemize}
             }
         \end{column}
@@ -2133,18 +2352,18 @@
     \end{figure}
     \framebreak{}
     \stepcounter{insert-img-example}
-	\stepcounter{insert-step-example}
+    \stepcounter{insert-step-example}
     \begin{columns}
         \begin{column}{.47\textwidth}
             \inputminted[%
-                highlightlines={112,114,116,117,118,119,120},%
+                highlightlines={112,114,116,117,118,119,120,121,126},%
                 firstline=112,%
                 lastline=121,%
                 tabsize=1,%
                 fontsize=\examplefnt,%
             ]{c}{resources/code/b_tree_insert.c}
             \inputminted[%
-                highlightlines={126},%
+                highlightlines={112,114,116,117,118,119,120,121,126},%
                 firstline=125,%
                 lastline=127,%
                 tabsize=1,%
@@ -2155,30 +2374,26 @@
             \examplefnt{%
                 \begin{itemize}
                     \item Insert \arabic{insert-example}; Step \arabic{insert-step-example};
-                    \item tree=(*pag 0); new\_key=40; new\_object=(*40);
-                    \item insert\_key=50; insert\_pt=(*pag 5);
-                    \item \hlght{finished=1}; insert\_done=1;
-                    \item current\_node=(*pag 0); new\_node=(*pag 6);
-                    \item start=1; i=1; j=-1;
+                    \item tree=(*pag 0); new\_key=55; new\_object=(*55);
+                    \item \hlght{finished=0 \rarr{} 1}; insert\_pt=(*pag 5); insert\_key=50;
+                    \item current\_node=(*pag 0); start=1; insert\_done=1;
+                    \item i=1; j=-1;
                 \end{itemize}
             }
         \end{column}
     \end{columns}
     \begin{figure}[h!]
         \includegraphics[%
-            height=0.5\textheight,%
+            height=0.42\textheight,%
             page=\value{insert-img-example},%
         ]{resources/made/B-Trees_insert_example.pdf}
     \end{figure}
     \framebreak{}
-    \begin{columns}
-        \begin{column}{\textwidth}
-            \begin{figure}[h!]
-                \includegraphics[%
-                    width=\linewidth,%
-                    page=62%
-                ]{resources/made/B-Trees_insert_example.pdf}
-            \end{figure}
-        \end{column}
-    \end{columns}
+    \stepcounter{insert-img-example}
+    \begin{figure}[h!]
+        \includegraphics[%
+            width=\textwidth,%
+            page=\value{insert-img-example},%
+        ]{resources/made/B-Trees_insert_example.pdf}
+    \end{figure}
 \end{frame}

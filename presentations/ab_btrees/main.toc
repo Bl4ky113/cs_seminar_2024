@@ -5,12 +5,15 @@
 \beamer@subsubsectionintoc {1}{3}{1}{The \(\mitalpha \) Constant}{7}{0}{1}
 \beamer@subsubsectionintoc {1}{3}{2}{Keys and Sub-trees}{12}{0}{1}
 \beamer@subsubsectionintoc {1}{3}{3}{Height}{17}{0}{1}
-\beamer@subsubsectionintoc {1}{3}{4}{Insert}{21}{0}{1}
-\beamer@subsubsectionintoc {1}{3}{5}{Delete}{28}{0}{1}
-\beamer@sectionintoc {2}{AB-Tree}{37}{0}{2}
-\beamer@subsectionintoc {2}{1}{AB-Tree Definition}{37}{0}{2}
-\beamer@subsectionintoc {2}{2}{The \(\mitalpha \) \& \(\mitbeta \) Constants}{38}{0}{2}
-\beamer@subsectionintoc {2}{3}{Differences with B-Trees}{40}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{1}{Examples}{40}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{2}{Code Implementation}{42}{0}{2}
-\beamer@sectionintoc {3}{Bibliography}{44}{0}{3}
+\beamer@subsectionintoc {1}{4}{Structure}{21}{0}{1}
+\beamer@subsectionintoc {1}{5}{Operations}{22}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{1}{Creating an empty B-Tree}{23}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{2}{Delete}{24}{0}{1}
+\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{68}{0}{1}
+\beamer@sectionintoc {2}{AB-Tree}{70}{0}{2}
+\beamer@subsectionintoc {2}{1}{AB-Tree Definition}{70}{0}{2}
+\beamer@subsectionintoc {2}{2}{The \(\mitalpha \) \& \(\mitbeta \) Constants}{71}{0}{2}
+\beamer@subsectionintoc {2}{3}{Differences with B-Trees}{73}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Examples}{73}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{2}{Code Implementation}{75}{0}{2}
+\beamer@sectionintoc {3}{Bibliography}{77}{0}{3}

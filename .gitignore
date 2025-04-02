@@ -4,6 +4,7 @@
 
 # Latex stuff
 _minted_main/
+_minted/
 *.log
 *.nav
 *.bbl 
