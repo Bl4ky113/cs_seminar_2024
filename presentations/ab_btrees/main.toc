@@ -8,12 +8,14 @@
 \beamer@subsectionintoc {1}{4}{Structure}{21}{0}{1}
 \beamer@subsectionintoc {1}{5}{Operations}{22}{0}{1}
 \beamer@subsubsectionintoc {1}{5}{1}{Creating an empty B-Tree}{23}{0}{1}
-\beamer@subsubsectionintoc {1}{5}{2}{Delete}{24}{0}{1}
-\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{68}{0}{1}
-\beamer@sectionintoc {2}{AB-Tree}{70}{0}{2}
-\beamer@subsectionintoc {2}{1}{AB-Tree Definition}{70}{0}{2}
-\beamer@subsectionintoc {2}{2}{The \(\mitalpha \) \& \(\mitbeta \) Constants}{71}{0}{2}
-\beamer@subsectionintoc {2}{3}{Differences with B-Trees}{73}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{1}{Examples}{73}{0}{2}
-\beamer@subsubsectionintoc {2}{3}{2}{Code Implementation}{75}{0}{2}
-\beamer@sectionintoc {3}{Bibliography}{77}{0}{3}
+\beamer@subsubsectionintoc {1}{5}{2}{Search value}{24}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{3}{Insert}{36}{0}{1}
+\beamer@subsubsectionintoc {1}{5}{4}{Delete}{111}{0}{1}
+\beamer@subsectionintoc {1}{6}{Secondary Memory Access}{175}{0}{1}
+\beamer@sectionintoc {2}{AB-Tree}{177}{0}{2}
+\beamer@subsectionintoc {2}{1}{AB-Tree Definition}{177}{0}{2}
+\beamer@subsectionintoc {2}{2}{The \(\mitalpha \) \& \(\mitbeta \) Constants}{178}{0}{2}
+\beamer@subsectionintoc {2}{3}{Differences with B-Trees}{180}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{1}{Examples}{180}{0}{2}
+\beamer@subsubsectionintoc {2}{3}{2}{Code Implementation}{182}{0}{2}
+\beamer@sectionintoc {3}{Bibliography}{184}{0}{3}

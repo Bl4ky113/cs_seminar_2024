@@ -69,7 +69,7 @@ object_t *delete(tree_node_t *tree, key_t delete_key) {
                         return_node( tmp_node );
                         finished = 1;
                     }
-                    /* done with root */
+                /* done with root */
                 } else { 
                     /* delete from non-root node */
                     tree_node_t *upper, *neighbor;
